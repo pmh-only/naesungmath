@@ -1,0 +1,20 @@
+{
+    "name": "Nmath",
+    "version": "20190607",
+    "description": "Math and Science",
+    "main": "math.js",
+    "scripts": {
+        "test": "node ./math.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ttakkku/Sangoon_Is_Math.git"
+    },
+    "author": "Naesung",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/Naesung/Nmath/issues"
+    },
+    "homepage": "https://naesung.xyz",
+    "keywords": ["Nmath","Naesung"]
+}
