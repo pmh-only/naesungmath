@@ -27,26 +27,26 @@ exports.plus = function (a, b) {
  };
  
  exports.random = function(a, b){
- var ranNum = Math.floor((Math.random() * b) + a); 
-   return ranNum;
+    var ranNum = Math.floor((Math.random() * b) + a); 
+        return ranNum;
  };
  
  exports.primenumber = function(a, b) {
-     let results = [];
-     for (let i = a; i <= b; i++) {
-         let isPrimeNumber = true;
-         for (let j = 2; j < i; j++) {
-             if (i % j === 0) {
-                 isPrimeNumber = false;
-             }
-         }
+    let results = [];
+    for (let i = a; i <= b; i++) {
+        let isPrimeNumber = true;
+        for (let j = 2; j < i; j++) {
+            if (i % j === 0) {
+                isPrimeNumber = false;
+            }
+        }
  
-         if (isPrimeNumber) {
-             results.push(i);
-         }
-     }
+        if (isPrimeNumber) {
+            results.push(i);
+        }
+    }
  
-     return results;
+    return results;
  };
  
  exports.pi2 = function(a) {
