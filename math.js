@@ -4,7 +4,7 @@ exports.plus = function (a, b) {
  
  exports.minus = function (a, b) {
      return a - b;
- };
+ };pi2
  
  exports.multiply = function (a, b) {
      return a * b;
@@ -15,7 +15,7 @@ exports.plus = function (a, b) {
  };
  
  exports.caret = function (a, b) {
-     return a ^ b;
+     return a ** b;
  };
  
  exports.pow = function(a, b){
@@ -59,33 +59,35 @@ exports.plus = function (a, b) {
     return Math.round(a);
  };
 
- exports.equilateraltrianglearea = function(a)
-    return (3^0.5/4*a*a);
+ exports.equilateraltrianglearea = function(a) {
+    return 3**0.5/4*a*a;
  };
 
- exports.equilateraltriangleheight = function(a)
+ exports.equilateraltriangleheight = function(a) {
     return (3^0.5/2*a);
  };
 
- exports.righttriangle = function(a, b)
+ exports.righttriangle = function(a, b) {
     return (0.5*a*b);
  };
 
- exports.pytagoras = function(a, b)
-    return (a*a+b*b)
+ exports.pytagoras = function(a, b) {
+    return (a*a+b*b);
  };
 
- exports.quadrilateraltriangle = function (a, b)
-    return (a/4*(4*b*b-a*a)^0.5)
+ exports.quadrilateraltriangle = function (a, b) {
+    return (a/4*(4*b*b-a*a)**0.5)
  };
 
- exports.trianglearea = function(a, b, c)
-    return ((((a+b+c)/2)*(((a+b+c)/2)-a)*(((a+b+c)/2)-b)*(((a+b+c)/2)-c))^0.5);
+ exports.trianglearea = function(a, b, c) {
+    const cos_theta = ((a*a)+(b*b)-(c*c)) / (2*a*b);
+    const sin_theta = sqrt(1-(cos_theta**2));
+    return (a*b*sin_theta)/2;
  };
 
- exports.trianglewithheight = function (a, b, h)
+ exports.trianglewithheight = function (a, b, h) {
  };
 
- exports.trianglewithangle = function (a, b, t)
+ exports.trianglewithangle = function (a, b, t) {
     return (0.5*a*b*(sin(t)));
 };
