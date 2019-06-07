@@ -4,7 +4,7 @@ exports.plus = function (a, b) {
  
  exports.minus = function (a, b) {
      return a - b;
- };pi2
+ };
  
  exports.multiply = function (a, b) {
      return a * b;
