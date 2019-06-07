@@ -10,3 +10,7 @@
 이 라이브러리를 만들 떄 도움을 주신 딱구님 감사합니다.
 
 또한 Sangoon_is_Math에서 착안했습니다.
+
+[Sangoon_is_Math](https://github.com/ttakkku/Sangoon_Is_Math)
+
+(사칙연산 코드에 대한 저작권...)
