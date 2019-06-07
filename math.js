@@ -81,7 +81,7 @@ exports.plus = function (a, b) {
 
  exports.trianglearea = function(a, b, c) {
     const cos_theta = ((a*a)+(b*b)-(c*c)) / (2*a*b);
-    const sin_theta = sqrt(1-(cos_theta**2));
+    const sin_theta = Math.sqrt(1-(cos_theta**2));
     return (a*b*sin_theta)/2;
  };
 
