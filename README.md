@@ -11,4 +11,4 @@
 
 또한 [Sangoon_is_Math](https://github.com/ttakkku/Sangoon_Is_Math)에서 착안했습니다.
 
-뭐 비슷한 코드가 있을 겁니다.
+수학  비슷한 코드가 있을 겁니다.
