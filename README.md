@@ -9,4 +9,6 @@
 
 이 라이브러리를 만들 떄 도움을 주신 딱구님 감사합니다.
 
-또한 Sangoon_is_Math에서 착안했습니다.
+또한 [Sangoon_is_Math](https://github.com/ttakkku/Sangoon_Is_Math)에서 착안했습니다.
+
+수학 파일에는 비슷한 코드가 있을 겁니다.
