@@ -12,5 +12,3 @@
 또한 [Sangoon_is_Math](https://github.com/ttakkku/Sangoon_Is_Math)에서 착안했습니다.
 
 수학 파일에는 비슷한 코드가 있을 겁니다.
-
-사실은 KMO 답 1차이로 여러개 틀려서 빡쳐서 만든 거라고 카더라
