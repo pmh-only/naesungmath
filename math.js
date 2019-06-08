@@ -101,4 +101,19 @@ exports.quadrilateraltriangle = function (a, b) {
  exports.triangleAreaWithAngle = function (a, b, t) {
     return (0.5*a*b*(sin(t)));
 };
-//
+//009 내접원과 삼각형의 넓이 공식//
+ exports.inscribedcircle = function (a, b, c, r) {
+    return (((a+b+c)/2)*r);
+};
+//010.1 외접원과 삼각형의 넓이 공식//
+ exports.circumscribedcircle1 = function (a, b, c, r) {
+    return (a*b*c/4r);
+ };
+//010.2 외접원과 삼각형의 넓이 공식//
+ exports.circumscribedcircle2 = function (a, b, c, r) {
+    return (2*r*r*(sin(a))*(sin(b))*(sin(c)));
+ };
+//011 두 벡터가 생성하는 삼각형의 넓이 공식//
+
+//012 사선 공식//
+ 
