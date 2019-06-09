@@ -107,7 +107,7 @@ exports.quadrilateraltriangle = function (a, b) {
 };
 //010.1 외접원과 삼각형의 넓이 공식//
  exports.circumscribedcircle1 = function (a, b, c, r) {
-    return (a*b*c/4r);
+    return (a*b*c/4/r);
  };
 //010.2 외접원과 삼각형의 넓이 공식//
  exports.circumscribedcircle2 = function (a, b, c, r) {
