@@ -39,6 +39,7 @@ exports.plus = function (a, b) {
         for (let j = 2; j < i; j++) {
             if (i % j === 0) {
                 isPrimeNumber = false;
+                break;
             }
         }
  
@@ -117,3 +118,20 @@ exports.quadrilateraltriangle = function (a, b) {
 
 //012 사선 공식//
  
+//013 뉴턴 방법//
+ exports.newtonsmethod = function (f, count, initx=2) {
+     function diff(f, x, density=5) {
+         const dx = 2 * (10**density);
+         const dy = f(x+(10**density)) - f(x-(10**density));
+         return dy / dx;
+     }
+     function newton_go(f, x, go=0) {
+         const next = x - f(x) / diff(f, x);
+         if(go == count - 1) {
+            return next;
+        }
+         return newton_go(f, next, go+1);
+     }
+
+     return newton_go(f, initx, 0);
+ }
