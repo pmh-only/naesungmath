@@ -135,6 +135,7 @@ exports.quadrilateraltriangle = function (a, b) {
 
      return newton_go(f, initx, 0);
  };
+<<<<<<< HEAD
 //014.1 테일러 급수//
  exports.taylor = function(f, a, count) {
      let diffs = [(x) => f(a)];
