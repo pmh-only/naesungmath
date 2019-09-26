@@ -118,7 +118,7 @@ exports.quadrilateraltriangle = function (a, b) {
 
 //012 사선 공식//
  
-//013 뉴턴 방법//
+//110 뉴턴 방법//
  exports.newtonsmethod = function (f, count, initx=2) {
      function diff(f, x, density=5) {
          const dx = 2 * (10**density);
@@ -134,4 +134,5 @@ exports.quadrilateraltriangle = function (a, b) {
      }
 
      return newton_go(f, initx, 0);
- }
+ };
+//014
