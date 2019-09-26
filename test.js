@@ -11,4 +11,44 @@ assert(nmath.sqrt(4) === 4 ** 0.5);
 assert(nmath.primenumber(1, 3).every(e => [1, 2, 3].includes(e)));
 assert(nmath.pi2(4) === 2 * 4 * Math.PI);
 
-console.log(nmath.newtonsmethod((x) => (x*x - 2), 20, 2))
+console.log(nmath.newtonsmethod((x) => (x*x - 2), 20, 2));
+console.log(nmath.taylor((x) => Math.sin(x), Math.PI/2, 10)(Math.PI/2));
+console.log(
+    nmath.matrixmultiply(
+        [
+            [2, 2],
+            [2, 2],
+            [2, 2],
+            [3, 3],
+            [4, 4],
+        ], [
+            [1, 2, 3, 4, 5],
+            [5, 4, 3, 2, 1],
+        ]
+    )  
+);
+console.log(
+    nmath.LUDecomposition(
+        [
+            [2, -1, -2],
+            [-4, 6, 3],
+            [-4, -2, 8],
+        ]
+    )
+);
+console.log(
+    nmath.determinant(
+        [
+            [1, 2, 3],
+            [4, 5, 6],
+            [7, 8, 9],
+        ]
+    )
+);
+console.log(
+    nmath.gaussian([
+        [2, 1, -1, 8],
+        [-3, -1, 2, -11],
+        [-2, 1, 2, -3],   
+    ])
+)

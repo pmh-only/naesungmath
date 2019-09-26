@@ -134,4 +134,212 @@ exports.quadrilateraltriangle = function (a, b) {
      }
 
      return newton_go(f, initx, 0);
+ };
+//014.1 테일러 급수//
+ exports.taylor = function(f, a, count) {
+     let diffs = [(x) => f(a)];
+     let taylors = [];
+     let fact = [1];
+
+     function diff(fun, density=5) {
+        const dx = 2 * (10**density);
+        const dy = (x) => fun(x+(10**density)) - fun(x-(10**density));
+        return (x) => dy(x) / dx;
+    }
+
+    taylors.push((x) => diffs[0](x));
+
+    for(let i=1;i<=count;i++) {
+        diffs.push(diff(diffs[i-1]));
+        let factorial = 1;
+        for(let j=1;j<=i;j++) {
+            factorial *= j;
+        }
+        fact.push(factorial);
+
+        taylors.push(
+            function(x) {
+                return diffs[i](a)/fact[i]*((x-a)**i);
+            }
+        );
+    }
+
+    function res(x) {
+        result = 0;
+        for(let i=0;i<=count;i++) {
+            result += taylors[i](x);
+        }
+        return result;
+    }
+
+    return res;
+ };
+//014.2 매클로린 급수//
+ exports.maclaurin = function(f, count) {
+     return exports.taylor(f, 0, count);
+ };
+//015 행렬곱//
+ exports.matrixmultiply = function(matrix_a, matrix_b) {
+     if(matrix_a[0].length != matrix_b.length) {
+         console.log("잘못된 행렬곱 인자의 크기");
+         return;
+     }
+     let result = [];
+     for(let i=0;i<matrix_a.length;i++) {
+         result.push([]);
+         for(let j=0;j<matrix_b[0].length;j++) {
+             let sum = 0;
+             for(let k=0;k<matrix_b.length;k++) {
+                 sum += matrix_a[i][k] * matrix_b[k][j];
+             }
+             result[i].push(sum);
+         }
+     }
+
+     return result;
+ };
+//016 LU 분해법//
+ exports.LUDecomposition = function(matrix) {
+     if(matrix.length !== matrix[0].length) {
+         console.log("행과 열의 크기가 같지 않음");
+         return;
+     }
+     const len = matrix.length;
+     let L = [];
+     let U = [];
+     for(let i=0;i<len;i++) {
+         L.push([]);
+         U.push([]);
+         for(let j=0;j<len;j++) {
+             L[i].push(0);
+             U[i].push(0);
+         }
+     }
+
+     for(let i=0;i<len;i++) {
+         for(let k=i;k<len;k++) {
+             let sum = 0;
+             for(let j=0;j<i;j++) {
+                 sum += L[i][j] * U[j][k];
+             }
+             U[i][k] = matrix[i][k] - sum;
+         }
+         for(let k=i;k<len;k++) {
+             if(i === k) {
+                 L[i][i] = 1;
+             } else {
+                let sum = 0;
+                for(let j=0;j<i;j++) {
+                    sum += L[k][j] * U[j][i];
+                }
+                L[k][i] = (matrix[k][i] - sum) / U[i][i];
+             }
+        }
+     }
+
+     return {Lower:L, Upper:U};
+ };
+//017 행렬의 스칼라곱//
+ exports.matrix_scala_multiplation = function(matrix, k) {
+     for(let i=0;i<matrix.length;i++) {
+         for(let j=0;j<matrix[0].length;j++) {
+             matrix[i][j] *= k;
+         }
+     }
+
+     return matrix;
+ };
+//018 행렬식//
+ exports.determinant = function(matrix) {
+     if(matrix.length !== matrix[0].length) {
+        console.log("행과 열의 크기가 같지 않음");
+        return;
+     }
+     if(matrix.length > 2) {
+         let result = 0;
+         for(let i=0;i<matrix[0].length;i++) {
+             const K = matrix[0][i];
+             let mat = [];
+             for(let j=1;j<matrix.length;j++) {
+                 mat.push([]);
+                 for(let k=0;k<matrix[0].length;k++) {
+                     if(k !== i) {
+                        mat[j-1].push(matrix[j][k]);
+                     }
+                 }
+             }
+             console.log(mat);
+             if(i % 2 == 0) {
+                result += K * exports.determinant(mat);
+             } else {
+                result -= K * exports.determinant(mat);
+             }
+         }
+         return result;
+     } else {
+         return matrix[0][0] * matrix[1][1] - matrix[0][1] * matrix[1][0];
+     }
+ }
+//019 가우스 소거법//
+ exports.gaussian = function(matrix) {
+    let h = 0;
+    let k = 0;
+    while(h < matrix[0].length && k < matrix.length) {
+        let max = 0;
+        for(let i=h;i<matrix.length;i++) {
+            let temp = Math.abs(matrix[i][k]);
+            if(temp < max) {
+                max = temp;
+            }
+        }
+        if(max == 0) {
+            k += 1;
+        } else {
+            for(let j=0;j<matrix[0].length;j++) {
+                let temp = matrix[h][j];
+                matrix[h][j] = matrix[k][j];
+                matrix[k][j] = temp;
+            }
+            for(let i=h+1;i<matrix[0].length;i++) {
+                let f = matrix[i][k] / matrix[j][k];
+                matrix[i][k] = 0;
+                for(let j=k+1;j<matrix.length;j++) {
+                    matrix[i][j] = matrix[i][j] - matrix[h][j] * f;
+                }
+            }
+            h += 1;
+            k += 1;
+        }
+    }
+    return matrix;
+ }
+//020 행렬의 덧셈//
+ exports.matrix_add = function(matrix_a, matrix_b) {
+     if(matrix_a.length !== matrix_b.length || matrix_a[0].length !== matrix_b[0].length) {
+         console.log("행렬의 크기 불일치");
+         return;
+     }
+     let result = [];
+     for(let i=0;i<matrix_a.length;i++) {
+         result.push([]);
+         for(let j=0;j<matrix_a[0].length;j++) {
+             result[i].push(matrix_a[i][j] + matrix_a[i][j]);
+         }
+     }
+     return result;
+ }
+//021 행렬의 뺄셈//
+ exports.matrix_sub = function(matrix) {
+    if(matrix_a.length !== matrix_b.length || matrix_a[0].length !== matrix_b[0].length) {
+        console.log("행렬의 크기 불일치");
+        return;
+    }
+    let result = [];
+    for(let i=0;i<matrix_a.length;i++) {
+        result.push([]);
+        for(let j=0;j<matrix_a[0].length;j++) {
+            result[i].push(matrix_a[i][j] - matrix_a[i][j]);
+        }
+    }
+    return result;
  }
