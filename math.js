@@ -282,6 +282,7 @@ exports.quadrilateraltriangle = function (a, b) {
  }
 //019 가우스 소거법//
  exports.gaussian = function(matrix) {
+    // 불행히도, 작동하지 않습니다. //
     let h = 0;
     let k = 0;
     while(h < matrix[0].length && k < matrix.length) {
