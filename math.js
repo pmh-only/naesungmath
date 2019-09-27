@@ -199,46 +199,47 @@ exports.quadrilateraltriangle = function (a, b) {
      return result;
  };
 //204 LU 분해법//
- exports.LUDecomposition = function(matrix) {
-     if(matrix.length !== matrix[0].length) {
-         console.log("행과 열의 크기가 같지 않음");
-         return;
-     }
-     const len = matrix.length;
-     let L = [];
-     let U = [];
-     for(let i=0;i<len;i++) {
-         L.push([]);
-         U.push([]);
-         for(let j=0;j<len;j++) {
-             L[i].push(0);
-             U[i].push(0);
-         }
-     }
-
-     for(let i=0;i<len;i++) {
-         for(let k=i;k<len;k++) {
-             let sum = 0;
-             for(let j=0;j<i;j++) {
-                 sum += L[i][j] * U[j][k];
-             }
-             U[i][k] = matrix[i][k] - sum;
-         }
-         for(let k=i;k<len;k++) {
-             if(i === k) {
-                 L[i][i] = 1;
-             } else {
-                let sum = 0;
-                for(let j=0;j<i;j++) {
-                    sum += L[k][j] * U[j][i];
-                }
-                L[k][i] = (matrix[k][i] - sum) / U[i][i];
-             }
+exports.LUDecomposition = function(matrix) {
+    if(matrix.length !== matrix[0].length) {
+        console.log("행과 열의 크기가 같지 않음");
+        return;
+    }
+    const len = matrix.length;
+    let L = [];
+    let U = [];
+    for(let i=0;i<len;i++) {
+        L.push([]);
+        U.push([]);
+        for(let j=0;j<len;j++) {
+            L[i].push(0);
+            U[i].push(0);
         }
-     }
-
-     return {Lower:L, Upper:U};
- };
+    }
+  
+    for(let i=0;i<len;i++) {
+        for(let k=i;k<len;k++) {
+            let sum = 0;
+            for(let j=0;j<i;j++) {
+                sum += L[i][j] * U[j][k];
+            }
+            U[i][k] = matrix[i][k] - sum;
+        }
+        for(let k=i;k<len;k++) {
+            if(i === k) {
+                L[i][i] = 1;
+            } else {
+               let sum = 0;
+               for(let j=0;j<i;j++) {
+                   sum += L[k][j] * U[j][i];
+               }
+               L[k][i] = (matrix[k][i] - sum) / U[i][i];
+            }
+       }
+    }
+  
+    return {Lower:L, Upper:U};
+  };
+  
 //205 행렬의 스칼라곱//
  exports.matrix_scala_multiplation = function(matrix, k) {
      for(let i=0;i<matrix.length;i++) {
@@ -329,8 +330,8 @@ exports.quadrilateraltriangle = function (a, b) {
      }
      return result;
  }
-//209 행렬의 뺄셈//
- exports.matrix_sub = function(matrix) {
+  //209 행렬의 뺄셈//
+  exports.matrix_sub = function(matrix_a, matrix_b) {
     if(matrix_a.length !== matrix_b.length || matrix_a[0].length !== matrix_b[0].length) {
         console.log("행렬의 크기 불일치");
         return;
@@ -339,11 +340,11 @@ exports.quadrilateraltriangle = function (a, b) {
     for(let i=0;i<matrix_a.length;i++) {
         result.push([]);
         for(let j=0;j<matrix_a[0].length;j++) {
-            result[i].push(matrix_a[i][j] - matrix_a[i][j]);
+            result[i].push(matrix_a[i][j] - matrix_b[i][j]);
         }
     }
     return result;
- }
+  }
 
 //013 무게중심 공식//
   exports.centerofgravity = function (a1, a2, b1, b2, c1, c2) {
@@ -600,17 +601,7 @@ exports.InverseMatrix = function(mat) {
 
     return res;
 }
-
 exports.houseHolder = function(mat) {
-    function s(BSq, k) {
-        let res = 0;
-        for(let i=k;i<Bsq.length;i++) {
-            res += Bsq[i][k];
-        }
-
-        return res**0.5;
-    }
-
     function SG(N) {
         if(N < 0) {
             return -1;
@@ -629,38 +620,111 @@ exports.houseHolder = function(mat) {
 
     
     while(1) {
-      let Bsq = exports.matrixmultiply(B, B);
-      let S = s(Bsq, k);
+      function s(k) {
+        let res = 0;
+        for(let i=k+1;i<B.length;i++) {
+            res += B[i][k]**2;
+        }
+
+        return res**0.5;
+      }
+      let S = s(K-1);
       if(S === 0) {
-        k += 1;
+        K += 1;
         continue;
       }
-      let z = 1/2*(1+SG(B[k][k-1])/S);
+      let z = 1/2*(1+SG(B[K][K-1])*B[K][K-1]/S);
+
 
       let v = [];
 
-      for(let i=0;i<k;i++) {
+      for(let i=0;i<K;i++) {
         v.push(0);
       }
       v.push(z**0.5);
-      for(let i=k+1;i<mat.length;i++) {
-        v.push(SG(B[k][i])/(2*v[k]*S));
+      for(let i=K+1;i<mat.length;i++) {
+        v.push(SG(B[K][K-1])*B[K-1][i]/(2*v[K]*S));
       }
-      v = exports.InverseMatrix(v);
-      let H = exports.matrix_sub(exports.IdentityMatrix(n), exports.outterProduct_matrix(v, v));
+
+      v = exports.InverseMatrix([v]);
+
+      let vv = exports.matrixmultiply(v, exports.InverseMatrix(v));
+
+      let H = exports.matrix_sub(exports.IdentityMatrix(mat.length), exports.matrix_scala_multiplation(vv, 2));
       
       let A = exports.matrixmultiply(exports.matrixmultiply(H, B), H);
 
-      if(k == n - 3) {
+      if(K == B.length - 2) {
         return A;
       } else {
-        k += 1;
+        K += 1;
         B = A;
       }
     }
 
 
 }
+
+
+
+exports.trace = function(matrix) {
+    let res = 0;
+    for(let i=0;i<matrix.length;i++) {
+        res += matrix[i][i];
+    }
+    return res;
+}
+
+exports.outterProduct_matrix = function(u, v) {
+    return exports.matrixmultiply(u, exports.InverseMatrix(v));
+}
+
+
+exports.degreeToRad = function(deg) {
+    return deg * Math.PI / 180;
+}
+
+exports.radToDegree = function(rad) {
+    return rad * 180 / Math.PI;
+}
+
+exports.diff = function(f, density=5) {
+    let dx = 2 * (10**(-density));
+    let dy = (x) => f(x + (10**(-density))) - f(x - (10**(-density)));
+
+    return (x) => dy(x) / dx;
+}
+
+exports.integral = function(f, density=5) {
+    let g = (a, b) => {
+        let sum = 0;
+        for(let k = a; k < b; k += 10**(-density)) {
+            sum += (f(k+10**(-density)) - f(k)) / 10**(-density);
+        }
+        return sum;
+    }
+
+    return g;
+}
+
+exports.SingularValueDecomposition = function(mat) {
+    let inv = exports.InverseMatrix(mat);
+    let AAT = exports.matrixmultiply(mat, inv);
+}
+
+exports.InverseMatrix = function(mat) {
+    let res = [];
+
+    for(let i=0;i<mat[0].length;i++) {
+        res.push([]);
+        for(let j=0;j<mat.length;j++) {
+            res[i].push(mat[j][i]);
+        }
+    }
+
+    return res;
+}
+
 
 exports.IdentityMatrix = function(n) {
     let res = [];
