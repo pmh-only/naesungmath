@@ -595,11 +595,40 @@ exports.InverseMatrix = function(mat) {
     for(let i=0;i<mat[0].length;i++) {
         res.push([]);
         for(let j=0;j<mat.length;j++) {
-            res[i].push(arr[j][i]);
+            res[i].push(mat[j][i]);
         }
     }
 
     return res;
+}
+
+
+exports.IdentityMatrix = function(n) {
+    let res = [];
+    for(let i=0;i<n;i++) {
+        res.push([]);
+        for(let j=0;j<n;j++) {
+            if(i == j) {
+                res[i].push(1);
+            } else {
+                res[i].push(0);
+            }
+        }
+    }
+
+    return res;
+}
+
+exports.trace = function(matrix) {
+    let res = 0;
+    for(let i=0;i<matrix.length;i++) {
+        res += matrix[i][i];
+    }
+    return res;
+}
+
+exports.outterProduct_matrix = function(u, v) {
+    return exports.matrixmultiply(u, exports.InverseMatrix(v));
 }
 exports.houseHolder = function(mat) {
     function SG(N) {
@@ -667,89 +696,3 @@ exports.houseHolder = function(mat) {
 
 
 
-exports.trace = function(matrix) {
-    let res = 0;
-    for(let i=0;i<matrix.length;i++) {
-        res += matrix[i][i];
-    }
-    return res;
-}
-
-exports.outterProduct_matrix = function(u, v) {
-    return exports.matrixmultiply(u, exports.InverseMatrix(v));
-}
-
-
-exports.degreeToRad = function(deg) {
-    return deg * Math.PI / 180;
-}
-
-exports.radToDegree = function(rad) {
-    return rad * 180 / Math.PI;
-}
-
-exports.diff = function(f, density=5) {
-    let dx = 2 * (10**(-density));
-    let dy = (x) => f(x + (10**(-density))) - f(x - (10**(-density)));
-
-    return (x) => dy(x) / dx;
-}
-
-exports.integral = function(f, density=5) {
-    let g = (a, b) => {
-        let sum = 0;
-        for(let k = a; k < b; k += 10**(-density)) {
-            sum += (f(k+10**(-density)) - f(k)) / 10**(-density);
-        }
-        return sum;
-    }
-
-    return g;
-}
-
-exports.SingularValueDecomposition = function(mat) {
-    let inv = exports.InverseMatrix(mat);
-    let AAT = exports.matrixmultiply(mat, inv);
-}
-
-exports.InverseMatrix = function(mat) {
-    let res = [];
-
-    for(let i=0;i<mat[0].length;i++) {
-        res.push([]);
-        for(let j=0;j<mat.length;j++) {
-            res[i].push(mat[j][i]);
-        }
-    }
-
-    return res;
-}
-
-
-exports.IdentityMatrix = function(n) {
-    let res = [];
-    for(let i=0;i<n;i++) {
-        res.push([]);
-        for(let j=0;j<n;j++) {
-            if(i == j) {
-                res[i].push(1);
-            } else {
-                res[i].push(0);
-            }
-        }
-    }
-
-    return res;
-}
-
-exports.trace = function(matrix) {
-    let res = 0;
-    for(let i=0;i<matrix.length;i++) {
-        res += matrix[i][i];
-    }
-    return res;
-}
-
-exports.outterProduct_matrix = function(u, v) {
-    return exports.matrixmultiply(u, exports.InverseMatrix(v));
-}
