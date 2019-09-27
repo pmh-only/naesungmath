@@ -354,42 +354,42 @@ exports.quadrilateraltriangle = function (a, b) {
   //exports.ApolloniusTheorem = function (ab, ac , am, bm) {
       
 //015 정사각형의 넓이 공식//
-   exports.square = function (a)
-      return (a^2)
+   exports.square = function (a) {
+      return (a**2)
    };
 //016 직사각형의 넓이 공식//
-   exports.rectarea = function (a, b)
+   exports.rectarea = function (a, b){
       return (a*b)
    };
 //017 직사각형의 둘레 공식//
-   exports.rectper = function (a, b)
+   exports.rectper = function (a, b) {
       return ((a)*2+(b)*2)
    };      
 //018 직사각형의 대각선 길이 공식//
-   exports.rectdiag = function (a, b)
-      return (((a)^2+(b)^2)^0.5)
+   exports.rectdiag = function (a, b) {
+      return (((a)**2+(b)**2)**0.5)
    };      
 //019 마름모의 넓이 공식//
-   exports.rhomarea = function (a, b)
+   exports.rhomarea = function (a, b) {
       return (0.5*(a)*(b))
    };    
 //020 평행사변형의 넓이 공식//
-   exports.paraarea = function (a, h)
+   exports.paraarea = function (a, h) {
       return (a*h)
    };   
 //021 사다리꼴의 넓이 공식//
-   exports.trapearea = function (a, b, h)
+   exports.trapearea = function (a, b, h) {
       return (0.5*(a+b)*h)
    };   
 //022 사각형의 넓이 공식//
-   exports.squarearea = function (a, b, t)
+   exports.squarearea = function (a, b, t) {
       return (0.5*(a)*(b)*(sin(t))
    };
 //023 정오각형의 넓이 공식//
-   exports.pentarea = function (a)
-      return ((((a)^2)/4)*((25+10((5)^0.5))^0.5)
+   exports.pentarea = function (a) {
+      return ((((a)**2)/4)*((25+10((5)**0.5))**0.5)
    };        
 //024 정오각형의 넓이 공식//
-    exports.pentheight = function (a)
-      return (((5+2*((5)^0.5))/2)*(a))        
+    exports.pentheight = function (a) {
+      return (((5+2*((5)**0.5))/2)*(a))        
    };
