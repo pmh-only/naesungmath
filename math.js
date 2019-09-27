@@ -118,7 +118,7 @@ exports.quadrilateraltriangle = function (a, b) {
 
 //012 사선 공식//
  
-//013 뉴턴 방법//
+//201 뉴턴 방법//
  exports.newtonsmethod = function (f, count, initx=2) {
      function diff(f, x, density=5) {
          const dx = 2 * (10**density);
@@ -135,7 +135,7 @@ exports.quadrilateraltriangle = function (a, b) {
 
      return newton_go(f, initx, 0);
  };
-//014.1 테일러 급수//
+//202.1 테일러 급수//
  exports.taylor = function(f, a, count) {
      let diffs = [(x) => f(a)];
      let taylors = [];
@@ -174,11 +174,11 @@ exports.quadrilateraltriangle = function (a, b) {
 
     return res;
  };
-//014.2 매클로린 급수//
+//202.2 매클로린 급수//
  exports.maclaurin = function(f, count) {
      return exports.taylor(f, 0, count);
  };
-//015 행렬곱//
+//203 행렬곱//
  exports.matrixmultiply = function(matrix_a, matrix_b) {
      if(matrix_a[0].length != matrix_b.length) {
          console.log("잘못된 행렬곱 인자의 크기");
@@ -198,7 +198,7 @@ exports.quadrilateraltriangle = function (a, b) {
 
      return result;
  };
-//016 LU 분해법//
+//204 LU 분해법//
  exports.LUDecomposition = function(matrix) {
      if(matrix.length !== matrix[0].length) {
          console.log("행과 열의 크기가 같지 않음");
@@ -239,7 +239,7 @@ exports.quadrilateraltriangle = function (a, b) {
 
      return {Lower:L, Upper:U};
  };
-//017 행렬의 스칼라곱//
+//205 행렬의 스칼라곱//
  exports.matrix_scala_multiplation = function(matrix, k) {
      for(let i=0;i<matrix.length;i++) {
          for(let j=0;j<matrix[0].length;j++) {
@@ -249,7 +249,7 @@ exports.quadrilateraltriangle = function (a, b) {
 
      return matrix;
  };
-//018 행렬식//
+//206 행렬식//
  exports.determinant = function(matrix) {
      if(matrix.length !== matrix[0].length) {
         console.log("행과 열의 크기가 같지 않음");
@@ -280,7 +280,7 @@ exports.quadrilateraltriangle = function (a, b) {
          return matrix[0][0] * matrix[1][1] - matrix[0][1] * matrix[1][0];
      }
  }
-//019 가우스 소거법//
+//207 가우스 소거법//
  exports.gaussian = function(matrix) {
     // 불행히도, 작동하지 않습니다. //
     let h = 0;
@@ -314,7 +314,7 @@ exports.quadrilateraltriangle = function (a, b) {
     }
     return matrix;
  }
-//020 행렬의 덧셈//
+//208 행렬의 덧셈//
  exports.matrix_add = function(matrix_a, matrix_b) {
      if(matrix_a.length !== matrix_b.length || matrix_a[0].length !== matrix_b[0].length) {
          console.log("행렬의 크기 불일치");
@@ -329,7 +329,7 @@ exports.quadrilateraltriangle = function (a, b) {
      }
      return result;
  }
-//021 행렬의 뺄셈//
+//209 행렬의 뺄셈//
  exports.matrix_sub = function(matrix) {
     if(matrix_a.length !== matrix_b.length || matrix_a[0].length !== matrix_b[0].length) {
         console.log("행렬의 크기 불일치");
