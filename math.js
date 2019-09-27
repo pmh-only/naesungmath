@@ -383,11 +383,11 @@ exports.quadrilateraltriangle = function (a, b) {
    };   
 //022 사각형의 넓이 공식//
    exports.squarearea = function (a, b, t) {
-      return (0.5*(a)*(b)*(sin(t))
+      return (0.5*(a)*(b)*(sin(t)))
    };
 //023 정오각형의 넓이 공식//
    exports.pentarea = function (a) {
-      return ((((a)**2)/4)*((25+10((5)**0.5))**0.5)
+      return ((((a)**2)/4)*((25+10((5)**0.5))**0.5))
    };        
 //024 정오각형의 넓이 공식//
     exports.pentheight = function (a) {
