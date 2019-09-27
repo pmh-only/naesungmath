@@ -121,8 +121,8 @@ exports.quadrilateraltriangle = function (a, b) {
 //201 뉴턴 방법//
  exports.newtonsmethod = function (f, count, initx=2) {
      function diff(f, x, density=5) {
-         const dx = 2 * (10**density);
-         const dy = f(x+(10**density)) - f(x-(10**density));
+         const dx = 2 * (10**-density);
+         const dy = f(x+(10**-density)) - f(x-(10**-density));
          return dy / dx;
      }
      function newton_go(f, x, go=0) {
@@ -142,8 +142,8 @@ exports.quadrilateraltriangle = function (a, b) {
      let fact = [1];
 
      function diff(fun, density=5) {
-        const dx = 2 * (10**density);
-        const dy = (x) => fun(x+(10**density)) - fun(x-(10**density));
+        const dx = 2 * (10**-density);
+        const dy = (x) => fun(x+(10**-density)) - fun(x-(10**-density));
         return (x) => dy(x) / dx;
     }
 
