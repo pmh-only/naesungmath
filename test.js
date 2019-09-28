@@ -74,3 +74,11 @@ const qr = nmath.QRDecomposition(
 );
 
 console.log(qr);
+
+console.log(
+    nmath.integral((x) => 3*x**2)(0, 4)
+);
+
+console.log(
+    nmath.diff((x) => x**2)(5)
+);
