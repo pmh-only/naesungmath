@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
     "name": "naesungmath",
     "version": "20190607",
@@ -33,3 +34,25 @@
         "assert": "^2.0.0"
     }
 }
+=======
+{
+    "name": "Nmath",
+    "version": "20190607",
+    "description": "Math and Science",
+    "main": "math.js",
+    "scripts": {
+        "test": "node ./math.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ttakkku/Sangoon_Is_Math.git"
+    },
+    "author": "Naesung",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/Naesung/Nmath/issues"
+    },
+    "homepage": "https://naesung.xyz",
+    "keywords": ["Nmath","Naesung"]
+}
+>>>>>>> b53ad209689f1c60d9e17884f3aacf9ac7414001
