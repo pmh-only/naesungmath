@@ -18,8 +18,9 @@
     },
     "homepage": "https://naesung.xyz",
     "keywords": [
-        "Nmath",
-        "Naesung"
+        "Naesungmath",
+        "Naesung",
+        "Nmath"
     ],
     "devDependencies": {
         "eslint": "^6.4.0",
