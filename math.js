@@ -286,38 +286,6 @@ exports.LUDecomposition = function(matrix) {
 //207 가우스 소거법//
  exports.gaussian = function(matrix) {
     // 불행히도, 작동하지 않습니다. //
-<<<<<<< HEAD
-    let h = 0;
-    let k = 0;
-    while(h < matrix[0].length && k < matrix.length) {
-        let max = 0;
-        for(let i=h;i<matrix.length;i++) {
-            let temp = Math.abs(matrix[i][k]);
-            if(temp < max) {
-                max = temp;
-            }
-        }
-        if(max == 0) {
-            k += 1;
-        } else {
-            for(let j=0;j<matrix[0].length;j++) {
-                let temp = matrix[h][j];
-                matrix[h][j] = matrix[k][j];
-                matrix[k][j] = temp;
-            }
-            for(let i=h+1;i<matrix[0].length;i++) {
-                let f = matrix[i][k] / matrix[j][k];
-                matrix[i][k] = 0;
-                for(let j=k+1;j<matrix.length;j++) {
-                    matrix[i][j] = matrix[i][j] - matrix[h][j] * f;
-                }
-            }
-            h += 1;
-            k += 1;
-        }
-    }
-    return matrix;
-=======
     let A = [];
     let B = [];
     let x = [];
@@ -352,7 +320,6 @@ exports.LUDecomposition = function(matrix) {
     console.log("B : ", B);
 
     return x;
->>>>>>> b53ad209689f1c60d9e17884f3aacf9ac7414001
  }
 //208 행렬의 덧셈//
  exports.matrix_add = function(matrix_a, matrix_b) {
@@ -723,11 +690,7 @@ exports.houseHolder = function(mat) {
       
       let A = exports.matrixmultiply(exports.matrixmultiply(H, B), H);
 
-<<<<<<< HEAD
-      if(K == B.length - 2) {
-=======
       if(K === B.length - 2) {
->>>>>>> b53ad209689f1c60d9e17884f3aacf9ac7414001
         return A;
       } else {
         K += 1;
@@ -798,8 +761,6 @@ exports.QRDecomposition = function(mat) {
             return {Q:exports.InverseMatrix(Q), R:r};
         }
     }
-<<<<<<< HEAD
-=======
 }
 
 exports.isinrange = function(a, b) {
@@ -838,5 +799,4 @@ exports.Durand_Kerner = function(f, roots_number=1, iteration_count=15) {
     }
 
     return roots;
->>>>>>> b53ad209689f1c60d9e17884f3aacf9ac7414001
 }
