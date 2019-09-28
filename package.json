@@ -1,0 +1,35 @@
+{
+    "name": "naesungmath",
+    "version": "20190607",
+    "description": "Math and Science",
+    "main": "math.js",
+    "scripts": {
+        "test": "node ./math.js",
+        "publish": "npm publish"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Naesung/nmath.git"
+    },
+    "author": "Naesung",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/Naesung/nmath/issues"
+    },
+    "homepage": "https://naesung.xyz",
+    "keywords": [
+        "Nmath",
+        "Naesung"
+    ],
+    "devDependencies": {
+        "eslint": "^6.4.0",
+        "eslint-config-standard": "^14.1.0",
+        "eslint-plugin-import": "^2.18.2",
+        "eslint-plugin-node": "^10.0.0",
+        "eslint-plugin-promise": "^4.2.1",
+        "eslint-plugin-standard": "^4.0.1"
+    },
+    "dependencies": {
+        "assert": "^2.0.0"
+    }
+}
