@@ -690,7 +690,7 @@ exports.houseHolder = function(mat) {
       
       let A = exports.matrixmultiply(exports.matrixmultiply(H, B), H);
 
-      if(K == B.length - 2) {
+      if(K === B.length - 2) {
         return A;
       } else {
         K += 1;
