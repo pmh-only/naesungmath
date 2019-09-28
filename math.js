@@ -939,8 +939,6 @@ exports.randomVector = function(len, norm=1) {
  * Eigendecomposition of a matrix.
  */
 exports.EigenVectorDecomposition = function(mat, iteration_count=100) {
-    let c = exports.randomVector(mat[0].length);
-
     let X = [];
 
     for(let i=0;i<mat.length;i++) {
