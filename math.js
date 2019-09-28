@@ -588,11 +588,101 @@ exports.integral = function(f, density=5) {
     }
 
     return g;
+};
+
+exports.sqrtDotProduct = function(row1, row2) {
+    let res = 0;
+    for(let i=0;i<row1.length;i++) {
+        res += row1[i]*row2[i];
+    }
+
+    return res**0.5;
 }
+
+exports.normailze = function(row) {
+    return exports.matrix_scala_multiplation(row, 1/exports.sqrtDotProduct(row, row));
+};
 
 exports.SingularValueDecomposition = function(mat) {
     let inv = exports.InverseMatrix(mat);
     let AAT = exports.matrixmultiply(mat, inv);
+
+    let eigen = exports.EigenVectorDecomposition(AAT);
+
+    let eigenQ = eigen["Q"];
+
+    let AATE = eigen["eigenvalue"];
+
+    console.log("eigen q was", eigenQ);
+
+    for(let i=0;i<eigenQ.length;i++) {
+        let sum = 0;
+        for(let j=0;j<eigenQ[i].length;j++) {
+            sum += Math.abs(eigenQ[i][j])**2;
+        }
+        sum = sum**0.5;
+        console.log("sum", sum);
+        for(let j=0;j<eigenQ[i].length;j++) {
+            eigenQ[i][j] /= sum;
+        }
+    }
+
+    console.log("eigen q", eigenQ);
+
+    let U = eigenQ;
+
+    let ATA = exports.matrixmultiply(inv, mat);
+
+    let eigen2 = exports.EigenVectorDecomposition(ATA);
+
+    let eigen2Q = eigen2["Q"];
+
+    for(let i=0;i<eigen2Q.length;i++) {
+        let sum = 0;
+        for(let j=0;j<eigen2Q[i].length;j++) {
+            sum += Math.abs(eigen2Q[i][j]);
+        }
+        sum = sum**0.5;
+        for(let j=0;j<eigen2Q[i].length;j++) {
+            eigen2Q[i][j] /= sum;
+        }
+    }
+
+    let ATAE = eigen2["eigenvalue"];
+
+    let VT = eigen2Q;
+
+    let sigma = [];
+
+    for(let i=0;i<mat.length;i++) {
+        sigma.push([]);
+        for(let j=0;j<mat[i].length;j++) {
+            sigma[i].push(0);
+        }
+    }
+
+    let small = mat.length;
+
+    if(small < mat[0].length) {
+        small = mat[0].length;
+    }
+
+    let k = 0;
+    let j = 0;
+
+    for(let i=0;i<small;i++) {
+        if(!(i < AATE.length)) {
+            if(i < AATE.length) {
+                sigma[i][i] = ATAE[k]**0.5;
+                k++;
+            }
+        } else {
+            sigma[i][i] = AATE[j]**0.5;
+            j++;
+        }
+    }
+
+    return {U:U, VT: VT, Sigma:sigma};
 }
 
 exports.InverseMatrix = function(mat) {
@@ -799,4 +889,94 @@ exports.Durand_Kerner = function(f, roots_number=1, iteration_count=15) {
     }
 
     return roots;
+}
+
+/**
+ * Gauss–Seidel method.
+ */
+exports.Gauss_Seidel = function(mat, iteration_count=15) {
+    let x = [];
+
+    for(let i=0;i<mat.length;i++) {
+        x.push(1);
+    }
+
+    for(let k=0;k<iteration_count;k++) {
+        for(let i=0;i<mat.length;i++) {
+            let n = 0;
+            for(let j=0;j<mat.length;j++) {
+                if(j !== i) {
+                    n += mat[i][j]*x[j];
+                }
+            }
+            x[i] = 1/mat[i][i]*(mat[i][mat[0].length-1]-n);
+        }
+    }
+
+    return x;
+}
+
+exports.randomVector = function(len, norm=1) {
+    let x = [];
+
+    let current_norm = 0;
+
+    for(let i=0;i<len;i++) {
+        x.push(Math.random());
+        current_norm += Math.abs(x[i])**2;
+    }
+
+    current_norm = current_norm**0.5;
+
+    for(let i=0;i<len;i++) {
+        x[i] *= norm/current_norm;
+    }
+
+    return x;
+}
+
+/**
+ * Eigendecomposition of a matrix.
+ */
+exports.EigenVectorDecomposition = function(mat, iteration_count=100) {
+    let c = exports.randomVector(mat[0].length);
+
+    let X = [];
+
+    for(let i=0;i<mat.length;i++) {
+        X.push([]);
+        for(let j=0;j<mat[0].length;j++) {
+            X[i].push(mat[i][j]);
+        }
+    }
+
+    let QR = exports.QRDecomposition(X)
+
+    for(let k=0;k<iteration_count;k++) {
+        let W = exports.matrixmultiply(X, QR["Q"]);
+
+        QR = exports.QRDecomposition(W);
+    }
+
+    let Q = exports.InverseMatrix(QR["Q"]);
+
+
+    let res = []
+
+    for(let i=0;i<Q.length;i++) {
+        let temp = [];
+        for(let j=0;j<Q[i].length;j++) {
+            temp.push([]);
+            temp[j].push(Q[i][j]);
+        }
+        let temp2 = exports.matrixmultiply(X, temp);
+        for(let j=0;j<Q[i].length;j++) {
+            if(temp2[j][0] !== 0 && Q[i][j] !== 0) {
+                res.push(temp2[j][0] / Q[i][j]);
+                break;
+            }
+        }
+    }
+
+    return {Q: Q, eigenvalue: res};
 }

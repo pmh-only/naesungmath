@@ -82,3 +82,30 @@ console.log(
 console.log(
     nmath.diff((x) => x**2)(5)
 );
+
+console.log(
+    nmath.EigenVectorDecomposition(
+        [
+            [8, -2],
+            [-2, 5]
+        ]
+    )
+);
+
+console.log(
+    nmath.Gauss_Seidel(
+        [
+            [16, 3, 11],
+            [7, -11, 13]
+        ]
+    )
+);
+
+console.log(
+    nmath.SingularValueDecomposition(
+        [
+            [2, 2],
+            [-1, 1]
+        ]
+    )
+);
