@@ -47,11 +47,12 @@ console.log(
 );
 console.log(
     nmath.gaussian([
-        [2, 1, -1, 8],
-        [-3, -1, 2, -11],
-        [-2, 1, 2, -3],   
+        [1, 2, 1, -1, 5],
+        [3, 2, 4, 4, 16],
+        [4, 4, 3, 4, 22],
+        [2, 0, 1, 5, 15]
     ])
-)
+);
 
 console.log(
     nmath.houseHolder(
@@ -81,4 +82,8 @@ console.log(
 
 console.log(
     nmath.diff((x) => x**2)(5)
+);
+
+console.log(
+    nmath.Durand_Kerner((x) => x**2 + x, 2, 15)
 );

@@ -286,36 +286,40 @@ exports.LUDecomposition = function(matrix) {
 //207 가우스 소거법//
  exports.gaussian = function(matrix) {
     // 불행히도, 작동하지 않습니다. //
-    let h = 0;
-    let k = 0;
-    while(h < matrix[0].length && k < matrix.length) {
-        let max = 0;
-        for(let i=h;i<matrix.length;i++) {
-            let temp = Math.abs(matrix[i][k]);
-            if(temp < max) {
-                max = temp;
-            }
-        }
-        if(max == 0) {
-            k += 1;
-        } else {
-            for(let j=0;j<matrix[0].length;j++) {
-                let temp = matrix[h][j];
-                matrix[h][j] = matrix[k][j];
-                matrix[k][j] = temp;
-            }
-            for(let i=h+1;i<matrix[0].length;i++) {
-                let f = matrix[i][k] / matrix[j][k];
-                matrix[i][k] = 0;
-                for(let j=k+1;j<matrix.length;j++) {
-                    matrix[i][j] = matrix[i][j] - matrix[h][j] * f;
-                }
-            }
-            h += 1;
-            k += 1;
+    let A = [];
+    let B = [];
+    let x = [];
+    for(let i=0;i<matrix.length;i++) {
+        x.push(0);
+        B.push(matrix[i][matrix[0].length-1]);
+        A.push([]);
+        for(let j=0;j<matrix[0].length;j++) {
+            A[i].push(matrix[i][j]);
         }
     }
-    return matrix;
+    for(let k=0;k<matrix.length-1;k++) {
+        for(let i=k+1;i<matrix.length;i++) {
+            A[i][k] /= A[k][k];
+            for(let j=k+1;j<matrix.length;j++) {
+                A[i][j] -= matrix[i][k] * A[k][j];
+            }
+            B[i] -= matrix[i][k] * B[k];
+            A[i][matrix[0].length-1] -= matrix[i][k] * B[k]
+        }
+    }
+
+    for(let i=matrix.length-1;i>=0;i--) {
+        x[i] = B[i];
+        for(let j=i+1;j<matrix.length;j++) {
+            x[i] -= A[i][j] * x[j];
+        }
+        x[i] /= A[i][i];
+    }
+
+    console.log("A : ", A);
+    console.log("B : ", B);
+
+    return x;
  }
 //208 행렬의 덧셈//
  exports.matrix_add = function(matrix_a, matrix_b) {
@@ -757,4 +761,42 @@ exports.QRDecomposition = function(mat) {
             return {Q:exports.InverseMatrix(Q), R:r};
         }
     }
+}
+
+exports.isinrange = function(a, b) {
+    let g = function(x) {
+        if(a <= x && x <= b) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    return g;
+}
+
+
+/**
+* Finding Multiple Roots of Function.
+*/
+exports.Durand_Kerner = function(f, roots_number=1, iteration_count=15) {
+
+    let roots = [];
+    for(let i=0;i<roots_number;i++) {
+        roots.push(i+1);
+    }
+
+    for(let k=0;k<iteration_count;k++) {
+        for(let i=0;i<roots_number;i++) {
+            let down = 1;
+            for(let j=0;j<roots_number;j++) {
+                if(i !== j) {
+                    down *= roots[i] - roots[j];
+                }
+            }
+            roots[i] -= f(roots[i]) / down;
+        }
+    }
+
+    return roots;
 }
