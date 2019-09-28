@@ -54,7 +54,7 @@ console.log(
 )
 
 console.log(
-    exports.houseHolder(
+    nmath.houseHolder(
         [
             [1, -1, 2, 2],
             [-1, 2, 1, -1],
@@ -63,3 +63,14 @@ console.log(
         ]
     )
 )
+
+const qr = nmath.QRDecomposition(
+    [
+        [0, 1, 1, 1],
+        [1, 0, 1, 1],
+        [1, 1, 0, 1],
+        [1, 1, 1, 0]
+    ]
+);
+
+console.log(qr);
