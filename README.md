@@ -11,6 +11,10 @@
 
 또한 [Sangoon_is_Math](https://github.com/ttakkku/Sangoon_Is_Math)에서 착안했습니다.
 
+## Contributors
+
+[![Naesung](https://avatars0.githubusercontent.com/u/42634731?s=460&v=4)](https://github.com/Naesung)  [![DPS0340](https://avatars0.githubusercontent.com/u/32592965?s=460&v=4)](https://github.com/DPS0340)
+
 ---
 
 Naesung : 통계에 힘쓰자
