@@ -12,3 +12,5 @@
 또한 [Sangoon_is_Math](https://github.com/ttakkku/Sangoon_Is_Math)에서 착안했습니다.
 
 Naesung : 통계에 힘쓰자
+
+DPS0340 : 행렬에 
