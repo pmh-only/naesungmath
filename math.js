@@ -607,11 +607,15 @@ exports.SingularValueDecomposition = function(mat) {
 
     let AAT = exports.matrixmultiply(mat, inv);
 
-    let eigen = exports.EigenVectorDecomposition(AAT, 300);
+    let eigen = exports.EigenVectorDecomposition(AAT, 500);
 
     let eigenQ = eigen["Q"];
 
     let AATE = eigen["eigenvalue"];
+
+    console.log(eigenQ);
+
+    console.log("AATE", AATE);
 
 
     for(let i=0;i<eigenQ.length;i++) {
@@ -624,6 +628,7 @@ exports.SingularValueDecomposition = function(mat) {
             }
         }
         sum = sum**0.5;
+        console.log(sum);
         if(sum !== 0) {
             for(let j=0;j<eigenQ[i].length;j++) {
                 if(!isNaN(eigenQ[i][j])) {
@@ -633,9 +638,11 @@ exports.SingularValueDecomposition = function(mat) {
         }
     }
 
+    console.log(eigenQ);
+
     for(let i=0;i<eigenQ.length;i++) {
         for(let j=0;j<i;j++) {
-            if(eigenQ[i] < eigenQ[j]) {
+            if(AATE[i] > AATE[j]) {
                 let temp = eigenQ[i];
                 eigenQ[i] = eigenQ[j];
                 eigenQ[j] = temp;
@@ -648,14 +655,17 @@ exports.SingularValueDecomposition = function(mat) {
 
     }
 
+    console.log("AATE", AATE);
+
 
     let U = exports.InverseMatrix(eigenQ);
 
     let ATA = exports.matrixmultiply(inv, mat);
 
-    let eigen2 = exports.EigenVectorDecomposition(ATA, 300);
+    let eigen2 = exports.EigenVectorDecomposition(ATA, 500);
 
     let eigen2Q = eigen2["Q"];
+
 
     for(let i=0;i<eigen2Q.length;i++) {
         let sum = 0;
@@ -680,7 +690,7 @@ exports.SingularValueDecomposition = function(mat) {
 
     for(let i=0;i<eigen2Q.length;i++) {
         for(let j=0;j<i;j++) {
-            if(eigen2Q[i] > eigen2Q[j]) {
+            if(ATAE[i] > ATAE[j]) {
                 let temp = eigen2Q[i];
                 eigen2Q[i] = eigen2Q[j];
                 eigen2Q[j] = temp;
@@ -707,8 +717,25 @@ exports.SingularValueDecomposition = function(mat) {
     let k = 0;
     let j = 0;
 
-    let res = [...new Set(AATE.concat(ATAE))].filter((x) => x !== undefined)
+    let res = [...new Set(AATE.concat(ATAE))].filter((x) => x !== undefined);
 
+    res = res.sort((a, b) => {
+        if (a < b) {
+            return 1;
+        } else if(a > b) {
+            return 1;
+        } else {
+            return 0;
+        }
+    });
+
+    for(let i=0;i<res.length-1;i++) {
+        if(Math.abs(res[i]-res[i+1]) < 0.000005) {
+            res[i+1] = undefined;
+        }
+    }
+
+    res = res.filter((x) => x !== undefined);
 
     for(let i=0;i<res.length && i < mat.length;i++) {
         sigma[i][i] = res[i]**0.5;
@@ -998,6 +1025,21 @@ exports.EigenVectorDecomposition = function(mat, iteration_count=100) {
 
     let Q = exports.InverseMatrix(QR["Q"]);
 
+    for(let i=0;i<Q.length;i++) {
+        for(let j=0;j<Q[i].length;j++) {
+            if(isNaN(Q[i][j])) {
+                Q[i][j] = 0;
+            }
+        }
+        if(Q[i][0] < 0) {
+            for(let j=0;j<Q[i].length;j++) {
+                Q[i][j] *= -1;
+            }
+        }
+    }
+
+    console.log("Q is", Q);
+
     let res = []
 
     for(let i=0;i<Q.length;i++) {
@@ -1008,7 +1050,7 @@ exports.EigenVectorDecomposition = function(mat, iteration_count=100) {
         }
         let temp2 = exports.matrixmultiply(X, temp);
         for(let j=0;j<Q[i].length;j++) {
-            if(temp2[j][0] > 0 && Q[i][j] > 0) {
+            if(Math.abs(temp2[j][0]) > 0.005 && Math.abs(Q[i][j]) > 0.005) {
                 res.push(temp2[j][0] / Q[i][j]);
                 break;
             }
