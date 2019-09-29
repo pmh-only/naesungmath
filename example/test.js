@@ -134,6 +134,8 @@ let svd = nmath.SingularValueDecomposition(
 
 console.log(svd);
 
+let res = [svd["U"], svd["Sigma"], svd["VT"]].reduce((x, y) => nmath.matrixmultiply(x, y));
+
 console.log(
-    [svd["U"], svd["Sigma"], svd["VT"]].reduce((x, y) => nmath.matrixmultiply(x, y))
+    res
 );

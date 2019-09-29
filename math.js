@@ -976,6 +976,8 @@ exports.EigenVectorDecomposition = function(mat, iteration_count=100) {
         V.push(exports.randomVector(mat[0].length, 1));
     }
 
+    V = exports.transpose(V);
+
     let X = [];
 
     for(let i=0;i<mat.length;i++) {
