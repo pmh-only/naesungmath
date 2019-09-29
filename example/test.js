@@ -45,13 +45,6 @@ console.log(
         ]
     )
 );
-console.log(
-    nmath.gaussian([
-        [2, 1, -1, 8],
-        [-3, -1, 2, -11],
-        [-2, 1, 2, -3],   
-    ])
-)
 
 console.log(
     nmath.houseHolder(
@@ -104,8 +97,43 @@ console.log(
 console.log(
     nmath.SingularValueDecomposition(
         [
-            [2, 2],
-            [-1, 1]
+            [3, 2, 2],
+            [2, 3, -2]
         ]
     )
+);
+
+
+console.log(
+    nmath.Cramer([
+        [2, 1, -1, 8],
+        [-3, -1, 2, -11],
+        [-2, 1, 2, -3]
+    ])
+)
+
+console.log(
+    nmath.Durand_Kerner((x) => x**5 + 22*x**4 + 49*x**3 - 812*x**2 - 860*x + 1600, 5, 100)
+);
+
+console.log(
+    nmath.EigenVectorDecomposition(
+        [
+            [4, 1],
+            [6, 3],
+        ], 200
+    )
+);
+
+let svd = nmath.SingularValueDecomposition(
+    [
+        [3, 1, 1],
+        [-1, 3, 1]
+    ]
+);
+
+console.log(svd);
+
+console.log(
+    [svd["U"], svd["Sigma"], svd["VT"]].reduce((x, y) => nmath.matrixmultiply(x, y))
 );
