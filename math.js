@@ -33,11 +33,11 @@ exports.plus = function (a, b) {
  };
  //000.9 소수//
  exports.primenumber = function(a, b) {
-    let results = [];
+    let results = [2];
     for (let i = a; i <= b; i++) {
         let isPrimeNumber = true;
-        for (let j = 2; j < i; j++) {
-            if (i % j === 0) {
+        for (let j = 0; j < results.length && j < i; j++) {
+            if (i % results[j] === 0) {
                 isPrimeNumber = false;
                 break;
             }
@@ -48,7 +48,7 @@ exports.plus = function (a, b) {
         }
     }
  
-    return results;
+    return results.filter((n) => a <= n && n <= b);
  };
  //000.10 호도법//
  exports.pi2 = function(a) {
@@ -913,6 +913,15 @@ exports.EigenVectorDecomposition = function(mat, iteration_count=100) {
     let Q = exports.Transpose(QR["Q"]);
 
     for(let i=0;i<Q.length;i++) {
+        let min = Math.abs(Q[i][0]);
+        for(let j=0;j<Q[i].length;j++) {
+            if(min > Math.abs(Q[i][j])) {
+                min = Math.abs(Q[i][j]);
+            }
+        }
+        for(let j=0;j<Q[i].length;j++) {
+            Q[i][j] /= min;
+        }
         if(Q[i][0] < 0) {
             for(let j=0;j<Q[i].length;j++) {
                 Q[i][j] *= -1;
@@ -953,6 +962,9 @@ exports.EigenVectorDecomposition = function(mat, iteration_count=100) {
     return {Q: Q, eigenvalue: res};
 }
 
+/**
+ * Solves System of linear equations.
+ */
 exports.Cramer = function(mat) {
     let B = [];
     let X = [];
@@ -990,28 +1002,47 @@ exports.Cramer = function(mat) {
     return X;
 }
 
-exports.default_seed = (x => () => x++)(2000);
+/**
+ * Generates Random Value with ACORN Algorithm,
+ * Which is Better, Faster, Simpler than Standard JS PRNG Implementation.
+ */
+exports.ACORN = function(seed=new Date().getTime(), Modulo_power=60, order=10) {
+    let M = 2**Modulo_power;
 
-exports.ACORN = function(seed=undefined, power_count=15, order=10) {
+    let temp = 0 + (seed.toString().split("").reverse().join(""));
+    seed = seed * temp;
 
-    if(seed === undefined) {
-        seed = exports.default_seed();
-    }
-
-    let M = 2**power_count;
-    let init = seed / 10**seed.toString().length;
-    let init2 = M-1;
-    function go(m, n) {
-        if(n >= 1) {
-            if(m === 0) {
-                return init2;
-            } else {
-                return (go(m-1, n) + go(m, n-1)) % M;
-            }
-        } else if(n === 0) {
-            return init2;
+    function oddorplusone(n) {
+        if(n % 2 === 1) {
+            return n;
+        } else {
+            return n+1;
         }
     }
 
-    return go(order, order) / M;
+    seed = oddorplusone(seed%M);
+
+    let seed2=seed-1;
+
+    const go = function(m, n) {
+        if(m === 0) {
+            return seed;
+        } else if(n === 0) {
+            return seed2;
+        } else {
+            return (go(m-1, n) + (m, n-1)) % M;
+        }
+    }
+
+    let xk = go(order, order);
+
+    return xk / M;
+}
+
+exports.gcd = function(a, b) {
+    if(b === 0) {
+        return a;
+    } else {
+        return exports.gcd(b, a%b);
+    }
 }
