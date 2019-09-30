@@ -33,11 +33,11 @@ exports.plus = function (a, b) {
  };
  //000.9 소수//
  exports.primenumber = function(a, b) {
-    let results = [];
+    let results = [2];
     for (let i = a; i <= b; i++) {
         let isPrimeNumber = true;
-        for (let j = 2; j < i; j++) {
-            if (i % j === 0) {
+        for (let j = 0; j < results.length && j < i; j++) {
+            if (i % results[j] === 0) {
                 isPrimeNumber = false;
                 break;
             }
@@ -48,7 +48,7 @@ exports.plus = function (a, b) {
         }
     }
  
-    return results;
+    return results.filter((n) => a <= n && n <= b);
  };
  //000.10 호도법//
  exports.pi2 = function(a) {
@@ -1102,4 +1102,48 @@ exports.Cramer = function(mat) {
     }
 
     return X;
+}
+
+/**
+ * Generates Random Value with ACORN Algorithm.
+ */
+exports.ACORN = function(seed=new Date().getTime(), Modulo_power=60, order=10) {
+    let M = 2**Modulo_power;
+
+    let temp = 0 + (seed.toString().split("").reverse().join(""));
+    seed = seed * temp;
+
+    function oddorplusone(n) {
+        if(n % 2 === 1) {
+            return n;
+        } else {
+            return n+1;
+        }
+    }
+
+    seed = oddorplusone(seed%M);
+
+    let seed2=seed-1;
+
+    const go = function(m, n) {
+        if(m === 0) {
+            return seed;
+        } else if(n === 0) {
+            return seed2;
+        } else {
+            return (go(m-1, n) + (m, n-1)) % M;
+        }
+    }
+
+    let xk = go(order, order);
+
+    return xk / M;
+}
+
+exports.gcd = function(a, b) {
+    if(b === 0) {
+        return a;
+    } else {
+        return exports.gcd(b, a%b);
+    }
 }

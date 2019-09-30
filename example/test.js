@@ -150,3 +150,7 @@ let res = [svd["U"], svd["Sigma"], svd["VT"]].reduce((x, y) => nmath.matrixmulti
 console.log(
     res
 );
+
+console.log(
+    nmath.ACORN()
+);
