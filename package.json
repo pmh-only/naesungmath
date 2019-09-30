@@ -1,6 +1,6 @@
 {
     "name": "naesungmath",
-    "version": "0.2.3",
+    "version": "0.2.4",
     "description": "Math and Science",
     "main": "math.js",
     "scripts": {
