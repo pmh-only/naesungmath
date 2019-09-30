@@ -94,15 +94,6 @@ console.log(
     )
 );
 
-console.log(
-    nmath.SingularValueDecomposition(
-        [
-            [3, 2, 2],
-            [2, 3, -2]
-        ]
-    )
-);
-
 
 console.log(
     nmath.Cramer([

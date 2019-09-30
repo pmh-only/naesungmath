@@ -670,7 +670,7 @@ exports.trace = function(matrix) {
 }
 
 exports.outterProduct_matrix = function(u, v) {
-    return exports.matrixmultiply(u, exports.Transpose(v));
+    return exports.matrixmultiply(u, exports.transpose(v));
 }
 
 exports.houseHolder = function(mat) {
@@ -718,9 +718,9 @@ exports.houseHolder = function(mat) {
         v.push(SG(B[K][K-1])*B[K-1][i]/(2*v[K]*S));
       }
 
-      v = exports.Transpose([v]);
+      v = exports.transpose([v]);
 
-      let vv = exports.matrixmultiply(v, exports.Transpose(v));
+      let vv = exports.matrixmultiply(v, exports.transpose(v));
 
       let H = exports.matrix_sub(exports.IdentityMatrix(mat.length), exports.matrix_scala_multiplation(vv, 2));
       
@@ -762,7 +762,7 @@ exports.QRDecomposition = function(mat) {
         return exports.matrix_scala_multiplation(row, 1/K);
     }
 
-    let X = exports.Transpose(mat);
+    let X = exports.transpose(mat);
 
     let r = [];
     for(let i=0;i<X.length;i++) {
@@ -794,7 +794,7 @@ exports.QRDecomposition = function(mat) {
         k += 1;
 
         if(k === X.length) {
-            return {Q:exports.Transpose(Q), R:r};
+            return {Q:exports.transpose(Q), R:r};
         }
     }
 }
@@ -910,7 +910,7 @@ exports.EigenVectorDecomposition = function(mat, iteration_count=100) {
         QR = exports.QRDecomposition(W);
     }
 
-    let Q = exports.Transpose(QR["Q"]);
+    let Q = exports.transpose(QR["Q"]);
 
     for(let i=0;i<Q.length;i++) {
         let min = Math.abs(Q[i][0]);
@@ -1022,7 +1022,7 @@ exports.ACORN = function(seed=new Date().getTime(), Modulo_power=60, order=10) {
 
     seed = oddorplusone(seed%M);
 
-    let seed2=seed-1;
+    let seed2=(seed+2) % M;
 
     const go = function(m, n) {
         if(m === 0) {
