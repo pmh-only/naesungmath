@@ -602,162 +602,48 @@ exports.transpose = function(mat) {
     return res;
 }
 
-exports.SingularValueDecomposition = function(mat, iteration_count=1000) {
-    let inv = exports.transpose(mat);
+exports.LQDecomposition = function(mat, iteration_count=1000) {
+    let AT = exports.transpose(mat);
 
-    let AAT = exports.matrixmultiply(mat, inv);
+    AT = exports.QRDecomposition(AT, iteration_count);
 
-    let eigen = exports.EigenVectorDecomposition(AAT, iteration_count);
-
-    let eigenQ = eigen["Q"];
-
-    let AATE = eigen["eigenvalue"];
-
-
-    for(let i=0;i<eigenQ.length;i++) {
-        let sum = 0;
-        for(let j=0;j<eigenQ[i].length;j++) {
-            if(!isNaN(eigenQ[i][j])) {
-                sum += Math.abs(eigenQ[i][j])**2;
-            } else {
-                eigenQ[i][j] = 0;
-            }
-        }
-        sum = sum**0.5;
-        if(sum !== 0) {
-            for(let j=0;j<eigenQ[i].length;j++) {
-                if(!isNaN(eigenQ[i][j])) {
-                    eigenQ[i][j] /= sum;
-                }
-            }
-        }
-    }
-
-    for(let i=0;i<eigenQ.length;i++) {
-        for(let j=0;j<i;j++) {
-            if(Math.abs(AATE[i]-AATE[j]) < 0.00005) {
-                AATE[i] = undefined;
-            } else if(AATE[i] > AATE[j]) {
-                let temp = eigenQ[i];
-                eigenQ[i] = eigenQ[j];
-                eigenQ[j] = temp;
-
-                temp = AATE[i];
-                AATE[i] = AATE[j];
-                AATE[j] = temp;
-            }
-        }
-
-    }
-
-    AATE = AATE.filter((x) => x !== undefined);
-
-
-    let U = exports.InverseMatrix(eigenQ);
-
-    let ATA = exports.matrixmultiply(inv, mat);
-
-    let eigen2 = exports.EigenVectorDecomposition(ATA, iteration_count);
-
-    let eigen2Q = eigen2["Q"];
-
-
-    for(let i=0;i<eigen2Q.length;i++) {
-        let sum = 0;
-        for(let j=0;j<eigen2Q[i].length;j++) {
-            if(!isNaN(eigen2Q[i][j])) {
-                sum += Math.abs(eigen2Q[i][j])**2;
-            } else {
-                eigen2Q[i][j] = 0;
-            }
-        }
-        sum = sum**0.5;
-        if(sum !== 0) {
-            for(let j=0;j<eigen2Q[i].length;j++) {
-                if(!isNaN(eigen2Q[i][j])) {
-                    eigen2Q[i][j] /= sum;
-                }
-            }
-        }
-    }
-
-    let ATAE = eigen2["eigenvalue"];
-
-    for(let i=0;i<eigen2Q.length;i++) {
-        for(let j=0;j<i;j++) {
-            if(Math.abs(ATAE[i]-ATAE[j]) < 0.00005) {
-                ATAE[i] = undefined;
-            }
-            else if(ATAE[i] > ATAE[j]) {
-                let temp = eigen2Q[i];
-                eigen2Q[i] = eigen2Q[j];
-                eigen2Q[j] = temp;
-                
-                temp = ATAE[i];
-                ATAE[i] = ATAE[j];
-                ATAE[j] = temp;
-            }
-        }
-    }
-
-    ATAE = ATAE.filter((x) => x !== undefined);
-
-    let VT = eigen2Q;
-
-    let sigma = [];
-
-    for(let i=0;i<mat.length;i++) {
-        sigma.push([]);
-        for(let j=0;j<mat[i].length;j++) {
-            sigma[i].push(0);
-        }
-    }
-
-    let k = 0;
-    let j = 0;
-
-    let res = [...new Set(AATE.concat(ATAE))].filter((x) => x !== undefined);
-
-    res = res.sort((a, b) => {
-        if (a < b) {
-            return 1;
-        } else if(a > b) {
-            return 1;
-        } else {
-            return 0;
-        }
-    });
-
-    for(let i=0;i<res.length-1;i++) {
-        if(Math.abs(res[i]-res[i+1]) < 0.000005) {
-            res[i+1] = undefined;
-        }
-    }
-
-    res = res.filter((x) => x !== undefined);
-
-    res = res.filter((x) => x !== 0);
-
-    for(let i=0;i<res.length && i < mat.length;i++) {
-        sigma[i][i] = res[i]**0.5;
-    }
-
-    return {U:U, VT: VT, Sigma:sigma};
+    return {L:exports.transpose(AT["R"]), Q:exports.transpose(AT["Q"])}
 }
 
-exports.InverseMatrix = function(mat) {
-    let res = [];
+// exports.SingularValueDecomposition = function(mat, iteration_count=2) {
 
-    for(let i=0;i<mat[0].length;i++) {
-        res.push([]);
-        for(let j=0;j<mat.length;j++) {
-            res[i].push(mat[j][i]);
-        }
-    }
+//     let M = mat;
+    
+//     let VT = [];
 
-    return res;
-}
+//     let Sigma = [];
 
+//     let Q = [];
+
+//     for(let i=0;i<iteration_count;i++) {
+//         let QR = exports.QRDecomposition(M);
+
+//         console.log("QR", QR);
+
+//         Q = QR["Q"];
+
+//         let LPV = exports.LQDecomposition(QR["R"]);
+
+//         VT = LPV["Q"];
+
+//         console.log(LPV);
+
+//         Sigma = LPV["L"];
+
+//         M = Sigma;
+//     }
+
+//     for(let i=0;i<Sigma.length;i++) {
+//         M[i][i] = M[i][i]**0.5;
+//     }
+
+//     return {U:Q, VT: VT, Sigma:Sigma};
+// }
 
 exports.IdentityMatrix = function(n) {
     let res = [];
@@ -784,7 +670,7 @@ exports.trace = function(matrix) {
 }
 
 exports.outterProduct_matrix = function(u, v) {
-    return exports.matrixmultiply(u, exports.InverseMatrix(v));
+    return exports.matrixmultiply(u, exports.Transpose(v));
 }
 
 exports.houseHolder = function(mat) {
@@ -832,15 +718,15 @@ exports.houseHolder = function(mat) {
         v.push(SG(B[K][K-1])*B[K-1][i]/(2*v[K]*S));
       }
 
-      v = exports.InverseMatrix([v]);
+      v = exports.Transpose([v]);
 
-      let vv = exports.matrixmultiply(v, exports.InverseMatrix(v));
+      let vv = exports.matrixmultiply(v, exports.Transpose(v));
 
       let H = exports.matrix_sub(exports.IdentityMatrix(mat.length), exports.matrix_scala_multiplation(vv, 2));
       
       let A = exports.matrixmultiply(exports.matrixmultiply(H, B), H);
 
-      if(K === B.length - 2) {
+      if(K >= B.length - 2) {
         return A;
       } else {
         K += 1;
@@ -876,7 +762,7 @@ exports.QRDecomposition = function(mat) {
         return exports.matrix_scala_multiplation(row, 1/K);
     }
 
-    let X = exports.InverseMatrix(mat);
+    let X = exports.Transpose(mat);
 
     let r = [];
     for(let i=0;i<X.length;i++) {
@@ -908,7 +794,7 @@ exports.QRDecomposition = function(mat) {
         k += 1;
 
         if(k === X.length) {
-            return {Q:exports.InverseMatrix(Q), R:r};
+            return {Q:exports.Transpose(Q), R:r};
         }
     }
 }
@@ -1024,7 +910,7 @@ exports.EigenVectorDecomposition = function(mat, iteration_count=100) {
         QR = exports.QRDecomposition(W);
     }
 
-    let Q = exports.InverseMatrix(QR["Q"]);
+    let Q = exports.Transpose(QR["Q"]);
 
     for(let i=0;i<Q.length;i++) {
         if(Q[i][0] < 0) {
@@ -1102,4 +988,30 @@ exports.Cramer = function(mat) {
     }
 
     return X;
+}
+
+exports.default_seed = (x => () => x++)(2000);
+
+exports.ACORN = function(seed=undefined, power_count=15, order=10) {
+
+    if(seed === undefined) {
+        seed = exports.default_seed();
+    }
+
+    let M = 2**power_count;
+    let init = seed / 10**seed.toString().length;
+    let init2 = M-1;
+    function go(m, n) {
+        if(n >= 1) {
+            if(m === 0) {
+                return init2;
+            } else {
+                return (go(m-1, n) + go(m, n-1)) % M;
+            }
+        } else if(n === 0) {
+            return init2;
+        }
+    }
+
+    return go(order, order) / M;
 }

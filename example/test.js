@@ -136,17 +136,4 @@ console.log(
     )
 );
 
-let svd = nmath.SingularValueDecomposition(
-    [
-        [3, 1, 1],
-        [-1, 3, 1]
-    ], 5000
-);
-
-console.log(svd);
-
-let res = [svd["U"], svd["Sigma"], svd["VT"]].reduce((x, y) => nmath.matrixmultiply(x, y));
-
-console.log(
-    res
-);
+console.log(nmath.ACORN());
