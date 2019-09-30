@@ -1118,7 +1118,7 @@ exports.Cramer = function(mat) {
 
 /**
  * Generates Random Value with ACORN Algorithm,
- * Which is Better, Faster, Simpler than Standard JS PSRG Implementation.
+ * Which is Better, Faster, Simpler than Standard JS PRNG Implementation.
  */
 exports.ACORN = function(seed=new Date().getTime(), Modulo_power=60, order=10) {
     let M = 2**Modulo_power;
