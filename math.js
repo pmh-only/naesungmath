@@ -1027,6 +1027,15 @@ exports.EigenVectorDecomposition = function(mat, iteration_count=100) {
     let Q = exports.InverseMatrix(QR["Q"]);
 
     for(let i=0;i<Q.length;i++) {
+        let min = Math.abs(Q[i][0]);
+        for(let j=0;j<Q[i].length;j++) {
+            if(min > Math.abs(Q[i][j])) {
+                min = Math.abs(Q[i][j]);
+            }
+        }
+        for(let j=0;j<Q[i].length;j++) {
+            Q[i][j] /= min;
+        }
         if(Q[i][0] < 0) {
             for(let j=0;j<Q[i].length;j++) {
                 Q[i][j] *= -1;
