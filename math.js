@@ -1067,6 +1067,9 @@ exports.EigenVectorDecomposition = function(mat, iteration_count=100) {
     return {Q: Q, eigenvalue: res};
 }
 
+/**
+ * Solves System of linear equations.
+ */
 exports.Cramer = function(mat) {
     let B = [];
     let X = [];
