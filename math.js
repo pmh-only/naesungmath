@@ -610,7 +610,7 @@ exports.LQDecomposition = function(mat, iteration_count=1000) {
     return {L:exports.transpose(AT["R"]), Q:exports.transpose(AT["Q"])}
 }
 
-// exports.SingularValueDecomposition = function(mat, iteration_count=2) {
+/* exports.SingularValueDecomposition = function(mat, iteration_count=2) {
 
 //     let M = mat;
     
@@ -643,7 +643,7 @@ exports.LQDecomposition = function(mat, iteration_count=1000) {
 //     }
 
 //     return {U:Q, VT: VT, Sigma:Sigma};
-// }
+*/ }
 
 exports.IdentityMatrix = function(n) {
     let res = [];
