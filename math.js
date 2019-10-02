@@ -284,29 +284,33 @@ exports.LUDecomposition = function(matrix) {
          return matrix[0][0] * matrix[1][1] - matrix[0][1] * matrix[1][0];
      }
  }
-// //207 가우스 소거법//
-//  exports.gaussian = function(matrix) {
-//     // 불행히도, 작동하지 않습니다. //
+//207 가우스 소거법//
+ exports.gaussian = function(matrix, m, n) {
+    let X = [];
+    for(let i=0;i<matrix.length;i++) {
+        X.push([]);
+        for(let j=0;j<matrix[i].length;j++) {
+            X[i].push(matrix[i][j]);
+        }
+    }
 
-//     let A = [];
+    for(let i=0;i<n;i++) {
+        let k = X[i][i];
+        for(let j=0;j<m;j++) {
+            X[i][j] /= k;
+        }
+        for(let j=0;j<n;j++) {
+            if(i !== j) {
+                let ratio = X[j][i];
+                for(let l=0;l<matrix[j].length;l++) {
+                    X[j][l] -= ratio * X[i][l];
+                }
+            }
+        }
+    }
 
-//     for(let i=0;i<matrix.length;i++) {
-//         A.push([]);
-//         for(let j=0;j<matrix[0].length;j++) {
-//             A[i].push(matrix[i][j]);
-//         }
-//     }
-
-//     let h = 0;
-//     let k = 0;
-
-//     while(h <= matrix.length && k <= matrix.length-1) {
-
-//     }
-
-
-//     return x;
-//  }
+    return X;
+ }
 //208 행렬의 덧셈//
  exports.matrix_add = function(matrix_a, matrix_b) {
      if(matrix_a.length !== matrix_b.length || matrix_a[0].length !== matrix_b[0].length) {
@@ -1045,4 +1049,34 @@ exports.gcd = function(a, b) {
     } else {
         return exports.gcd(b, a%b);
     }
+}
+
+exports.InverseMatrix = function(A) {
+    if(exports.determinant(A) === 0) {
+        return null;
+    }
+    let mat = [];
+    let I = exports.IdentityMatrix(A.length);
+    for(let i=0;i<A.length;i++) {
+        mat.push([]);
+        for(let j=0;j<A[i].length;j++) {
+            mat[i].push(A[i][j]);
+        }
+        for(let j=0;j<I[i].length;j++) {
+            mat[i].push(I[i][j]);
+        }
+    }
+
+    mat = exports.gaussian(mat, A.length, A[0].length);
+
+    let res = [];
+
+    for(let i=0;i<A.length;i++) {
+        res.push([]);
+        for(let j=A[i].length;j<mat[i].length;j++) {
+            res[i].push(mat[i][j]);
+        }
+    }
+
+    return res;
 }
