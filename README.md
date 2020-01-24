@@ -1,4 +1,4 @@
-# MyNSLibrary
+# MyNSLibrary / Naesungmath
 
 
 너무 기하 계산하기가 짜증나서 제가 라이브러리를 만들어봤습니다.
