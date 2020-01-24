@@ -63,16 +63,16 @@ exports.round = function(a) {
  };
 
 //001 정삼각형의 넓이//
-exports.equilateraltrianglearea = function(a) {
+exports.eqtria = function(a) {
     return 3**0.5/4*a*a;
 };
 //002 정삼각형의 높이//
-exports.equilateraltriangleheight = function(a) {
+exports.eqtrih = function(a) {
     return (3^0.5/2*a);
  };
 
 //003 직각삼각형의 넓이//
- exports.righttriangle = function(a, b) {
+ exports.rtria = function(a, b) {
     return (0.5*a*b);
  };
 
@@ -82,36 +82,36 @@ exports.pytagoras = function(a, b) {
  };
 
 //005 이등변삼각형의 넓이//
-exports.quadrilateraltriangle = function (a, b) {
+exports.quadtria = function (a, b) {
     return (a/4*(4*b*b-a*a)**0.5)
  };
 
 //006 헤론의 공식//
- exports.triangleAreaWithThreeEdge = function(a, b, c) {
+ exports.triaThreeEdge = function(a, b, c) {
     const cos_theta = ((a*a)+(b*b)-(c*c)) / (2*a*b);
     const sin_theta = Math.sqrt(1-(cos_theta**2));
     return (a*b*sin_theta)/2;
  };
 
 //007 삼각형의 넓이//
- exports.triangleAreaWithHeight = function (a, h) {
+ exports.triah = function (a, h) {
     return (0.5*a*h);
  };
 
 //008 각의 삼각형의 넓이//
- exports.triangleAreaWithAngle = function (a, b, t) {
+ exports.triaa = function (a, b, t) {
     return (0.5*a*b*(sin(t)));
 };
 //009 내접원과 삼각형의 넓이 공식//
- exports.inscribedcircle = function (a, b, c, r) {
+ exports.inscir = function (a, b, c, r) {
     return (((a+b+c)/2)*r);
 };
 //010.1 외접원과 삼각형의 넓이 공식//
- exports.circumscribedcircle1 = function (a, b, c, r) {
+ exports.circir1 = function (a, b, c, r) {
     return (a*b*c/4/r);
  };
 //010.2 외접원과 삼각형의 넓이 공식//
- exports.circumscribedcircle2 = function (a, b, c, r) {
+ exports.circri2 = function (a, b, c, r) {
     return (2*r*r*(sin(a))*(sin(b))*(sin(c)));
  };
 //011 두 벡터가 생성하는 삼각형의 넓이 공식//
