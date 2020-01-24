@@ -535,22 +535,38 @@ exports.LUDecomposition = function(matrix) {
     return ((1/3)*a*h);
   }
 
-//052.1 정사각뿔의 부피 공식//
-  exports.squarepyramidvolume = function (a, h) {
+//052A 정사각뿔의 부피 공식//
+  exports.squarepyramidvolume1 = function (a, h) {
     return ((1/3)*(a**2)*h)
   }
 
+//052B 정사각뿔의 부피 공식//
+  exports.squarepyramidvolume2 = function (a, b) {
+    return ((1/3)*(a**2)*(((b**2)-((a**2)/2))**(0.5)))
+  }
 
+//053A 정사각뿔의 겉넓이 공식//
+  exports.squarepyramidarea1 = function (a, b) {
+    return ((a*((4*(b**2)-(a**2))**(0.5)))+(a**2))
 
+//053B 정사각뿔의 겉넓이 공식//
+   exports.squarepyramidarea1 = function (a, h) {
+    return ((a*((4*(h**2)=(a**2))**(0.5)))+(a**2))
 
-
-
-
-
-
-
-
-
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
 
 
   exports.degreeToRad = function(deg) {
