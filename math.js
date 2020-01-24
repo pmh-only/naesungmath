@@ -1,37 +1,37 @@
-//000.1 더하기//
+//000A 더하기//
 exports.plus = function (a, b) {
     return a + b;
  };
-//000.2 빼기// 
+//000B 빼기// 
  exports.minus = function (a, b) {
      return a - b;
  };
- //000.3 곱하기//
+ //000C 곱하기//
  exports.multiply = function (a, b) {
      return a * b;
  };
- //000.4 나누기//
+ //000D 나누기//
  exports.divide = function (a, b) {
      return a / b;
  };
- //000.5 a의 b제곱//
+ //000E a의 b제곱//
  exports.caret = function (a, b) {
      return a ** b;
  };
- //000.6 좌표//
+ //000F 좌표//
  exports.pow = function(a, b){
   return Math.pow(a, b);
  };
- //000.7 제곱//
+ //000G 제곱//
  exports.sqrt = function(a){
  return Math.sqrt(a);	
  };
- //000.8 랜덤//
+ //000H 랜덤//
  exports.random = function(a, b){
     var ranNum = Math.floor((Math.random() * b) + a); 
         return ranNum;
  };
- //000.9 소수//
+ //000I 소수//
  exports.primenumber = function(a, b) {
     let results = [2];
     for (let i = a; i <= b; i++) {
@@ -50,12 +50,12 @@ exports.plus = function (a, b) {
  
     return results.filter((n) => a <= n && n <= b);
  };
- //000.10 호도법//
+ //000J 호도법//
  exports.pi2 = function(a) {
      return 2 * Math.PI * a;
  };
 
-//000.11 파이//
+//000K 파이//
 exports.pi= Math.PI;
  
 exports.round = function(a) {
