@@ -577,15 +577,17 @@ exports.LUDecomposition = function(matrix) {
        
        
 
-
+//210 60도법-라디안 변환//
   exports.degreeToRad = function(deg) {
     return deg * Math.PI / 180;
 }
 
+//211 라디안-60도법 변환//
 exports.radToDegree = function(rad) {
     return rad * 180 / Math.PI;
 }
 
+//212 diff//
 exports.diff = function(f, density=5) {
     let dx = 2 * (10**(-density));
     let dy = (x) => f(x + (10**(-density))) - f(x - (10**(-density)));
@@ -593,6 +595,7 @@ exports.diff = function(f, density=5) {
     return (x) => dy(x) / dx;
 }
 
+//213 적분//
 exports.integral = function(f, density=5) {
     let g = (a, b) => {
         let sum = 0;
@@ -605,6 +608,7 @@ exports.integral = function(f, density=5) {
     return g;
 };
 
+//214 sqrtDotProduct//
 exports.sqrtDotProduct = function(row1, row2) {
     let res = 0;
     for(let i=0;i<row1.length;i++) {
@@ -614,10 +618,12 @@ exports.sqrtDotProduct = function(row1, row2) {
     return res**0.5;
 }
 
+//215 일반화//
 exports.normailze = function(row) {
     return exports.matrix_scala_multiplation(row, 1/exports.sqrtDotProduct(row, row));
 };
 
+//216 교차//
 exports.transpose = function(mat) {
     let res = [];
 
@@ -631,6 +637,7 @@ exports.transpose = function(mat) {
     return res;
 }
 
+//217 LQ 분해//
 exports.LQDecomposition = function(mat, iteration_count=1000) {
     let AT = exports.transpose(mat);
 
