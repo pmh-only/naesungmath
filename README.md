@@ -12,7 +12,7 @@
 [Sangoon_is_Math](https://github.com/ttakkku/Sangoon_Is_Math)에서 착안했습니다.
 
 ## npm package 배포
-Naesungmath로 배포됩니다.
+Naesungmath로 배포됩니다. naesungmath@0.2.5
 
 ## Contributors
 
