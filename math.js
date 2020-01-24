@@ -552,26 +552,28 @@ exports.LUDecomposition = function(matrix) {
 
 //053B 정사각뿔의 겉넓이 공식//
    exports.squarepyramidarea1 = function (a, h) {
-    return ((a*((4*(h**2)=(a**2))**(0.5)))+(a**2))
+     return ((a*((4*(h**2)=(a**2))**(0.5)))+(a**2))
    }    
 
 //054 정사각뿔의 높이 공식//
    exports.squarepyramidheight = function (a, b) {
-    return (((b**2)-((a**2)/2))**(0.5))
+     return (((b**2)-((a**2)/2))**(0.5))
    }
        
 //055 정사면체의 부피 공식//       
    exports.tetrahedronvolume = function (a) {
-    return (((2**(0.5))/12)*(a**3))
+     return (((2**(0.5))/12)*(a**3))
    }
 
-//056        
+//056 정사면체의 겉넓이 공식//       
+   exports.tetrahedronarea = function (a) {
+     return ((3**(0.5))*(a**2))
+   }    
        
-       
-       
-       
-       
-       
+//057 정사면체의 높이 공식//       
+   exports.tetrahedronheight = function (a) {
+     return (((2/3)**(0.5))*a) 
+   }    
        
        
 
