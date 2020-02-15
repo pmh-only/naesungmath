@@ -552,7 +552,7 @@ exports.LUDecomposition = function(matrix) {
 
 //053B 정사각뿔의 겉넓이 공식//
    exports.squarepyramidarea1 = function (a, h) {
-     return ((a*((4*(h**2)=(a**2))**(0.5)))+(a**2))
+     return ((a*((4*(h**2)-(a**2))**(0.5)))+(a**2))
    }    
 
 //054 정사각뿔의 높이 공식//
@@ -574,7 +574,62 @@ exports.LUDecomposition = function(matrix) {
    exports.tetrahedronheight = function (a) {
      return (((2/3)**(0.5))*a) 
    }    
-       
+
+//058 정육면체의 부피 공식//
+    exports.tetrahedronvolume = function (a) {
+        return (a**3)
+    }
+
+//059 정육면체의 겉넓이 공식//
+    exports.tetrahedronarea = function (a) {
+        return (6*(a**2))
+    }
+
+//060 직육면체의 넓이 공식//
+    exports.cuboidvolume = function (a, b, c) {
+        return (a*b*c)
+    }
+
+//061 직육면체의 겉넓이 공식//
+    exports.cuboidarea = function (a, b, c) {
+        return (2*((a*b)+(b*c)+(c*a))
+    }
+ 
+//062 직육면체의 대각선 길이 공식//
+    exports.cuboiddiagonal = function (a, b, c) {
+        return (((a**2)+(b**2)+(c**2))**0.5)
+        }
+//063 오일러 다면체 정리//
+    exports.eulerpolyhedrontheorem = function (v, e, f) {
+       if ((v-e+f) == 2) return true;
+       if ((v-e+f) !== 2) return false;
+    }
+  
+//064A 근의 공식//
+    exports.rootformulaplus = function (a, b, c) {
+        return ((-b+(((b**2)-(4*a*c))**0.5))/(2*a))
+    }
+
+//064B 근의 공식//
+    exports.rootformulaminus = function (a, b, c) {
+        return ((-b-(((b**2)-(4*a*c))**0.5))/(2*a))
+    }
+        
+//065A 짝수 근의 공식//
+    exports.rootformulaevenplus = function (a, (2*b), c) {
+        return ((-b+(((b**2)-(a*c))**0.5))/a)
+    }
+        
+//065B 짝수 근의 공식//
+    exports.rootformulaevenminus = function (a, (2*b), c) {
+        return ((-b-(((b**2)-(a*c))**0.5))/a)
+    }
+//066 근과 계수와의 관계 공식//
+    exports.rootandcoefficient = function (a, b, c, type) {
+        if (type == 1) return -(b/a)
+        if (type == 2) return (b/c)
+    }
+//067 삼차방정식의 근과 계수와의 관계 공식//
        
 
 //210 60도법-라디안 변환//
