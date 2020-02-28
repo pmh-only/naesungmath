@@ -11,8 +11,8 @@ assert(nmath.sqrt(4) === 4 ** 0.5);
 assert(nmath.primenumber(1, 3).every(e => [1, 2, 3].includes(e)));
 assert(nmath.pi2(4) === 2 * 4 * Math.PI);
 
-console.log(nmath.newtonsmethod((x) => (x*x - 2), 20, 2));
-console.log(nmath.taylor((x) => Math.sin(x), Math.PI/2, 10)(Math.PI/2));
+console.log(nmath.newtonsmethod((x) => (x * x - 2), 20, 2));
+console.log(nmath.taylor((x) => Math.sin(x), Math.PI / 2, 10)(Math.PI / 2));
 console.log(
     nmath.matrixmultiply(
         [
@@ -25,7 +25,7 @@ console.log(
             [1, 2, 3, 4, 5],
             [5, 4, 3, 2, 1],
         ]
-    )  
+    )
 );
 console.log(
     nmath.LUDecomposition(
@@ -69,11 +69,11 @@ const qr = nmath.QRDecomposition(
 console.log(qr);
 
 console.log(
-    nmath.integral((x) => 3*x**2)(0, 4)
+    nmath.integral((x) => 3 * x ** 2)(0, 4)
 );
 
 console.log(
-    nmath.diff((x) => x**2)(5)
+    nmath.diff((x) => x ** 2)(5)
 );
 
 console.log(
@@ -104,7 +104,7 @@ console.log(
 )
 
 console.log(
-    nmath.Durand_Kerner((x) => x**5 + 22*x**4 + 49*x**3 - 812*x**2 - 860*x + 1600, 5, 100)
+    nmath.Durand_Kerner((x) => x ** 5 + 22 * x ** 4 + 49 * x ** 3 - 812 * x ** 2 - 860 * x + 1600, 5, 100)
 );
 
 console.log(

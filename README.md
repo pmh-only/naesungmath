@@ -4,12 +4,10 @@
 
 저작권에 문제가 있다면 Pull Request 부탁드립니다.
 
-이 라이브러리를 만들 떄 도움을 주신 ttakkku, Sangoon님 감사합니다.
-
 [Sangoon_is_Math](https://github.com/ttakkku/Sangoon_Is_Math)에서 착안했습니다.
 
 ## npm package 배포
-Naesungmath로 배포됩니다. naesungmath@0.2.5
+Naesungmath로 배포됩니다. naesungmath@0.3.5
 
 ## Contributors
 

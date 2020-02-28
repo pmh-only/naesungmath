@@ -1,6 +1,6 @@
 {
     "name": "naesungmath",
-    "version": "0.3.0",
+    "version": "0.3.5",
     "description": "Math and Science",
     "main": "math.js",
     "scripts": {
@@ -8,12 +8,12 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/Naesung/nmath.git"
+        "url": "git+https://github.com/Naesung/naesungmath.git"
     },
     "author": "Naesung",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/Naesung/nmath/issues"
+        "url": "https://github.com/Naesung/naesungmath/issues"
     },
     "homepage": "https://MyNSLab.net",
     "keywords": [
