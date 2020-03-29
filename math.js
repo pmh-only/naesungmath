@@ -916,6 +916,19 @@ exports.arithmeticProgression_d = function(a, n, s) {
     return ((s - a) / (n - 1))
 }
 
+/**
+ * 083A 등차수열의 합 공식
+ */
+exports.arithmeticProgressionSum_Term = function (a1, an, n) {
+    return (((a1 + an)/2)*n)
+}
+
+/**
+ * 083B 등차수열의 합 공식
+ */
+exports.artimeticProgressionSum = function (a1, n, d) {
+    return (((2 * a1) + ((n - 1) * d)) / 2) * n)
+}
 
 /**
  * 210 60도법-라디안 변환
