@@ -1,6 +1,12 @@
 /* eslint-disable prefer-const */
 /**
- * 000A 더하기
+ * Plus two number. (000A)
+ * 
+ * @author: Naesung
+ * @param {number} a
+ * @param {number} b
+ * @return {number} a + b
+ * @since <0.3.7
  */
 exports.plus = function (a, b) {
   return a + b
@@ -8,6 +14,12 @@ exports.plus = function (a, b) {
 
 /**
  * 000B 빼기
+ * 
+ * @author: Naesung
+ * @param {number} a
+ * @param {number} b
+ * @return {number} a - b
+ * @since <0.3.7
  */
 exports.minus = function (a, b) {
   return a - b
@@ -15,6 +27,12 @@ exports.minus = function (a, b) {
 
 /**
  * 000C 곱하기
+ * 
+ * @author: Naesung
+ * @param {number} a
+ * @param {number} b
+ * @return {number} a * b
+ * @since <0.3.7
  */
 exports.multiply = function (a, b) {
   return a * b
@@ -22,6 +40,12 @@ exports.multiply = function (a, b) {
 
 /**
  * 000D 나누기
+ * 
+ * @author: Naesung
+ * @param {number} a
+ * @param {number} b
+ * @return {number} a / b
+ * @since <0.3.7
  */
 exports.divide = function (a, b) {
   return a / b
@@ -29,6 +53,12 @@ exports.divide = function (a, b) {
 
 /**
  * 000E a의 b제곱
+ * 
+ * @author: Naesung
+ * @param {number} a
+ * @param {number} b
+ * @return {number} a ^ b
+ * @since <0.3.7
  */
 exports.caret = function (a, b) {
   return a ** b
@@ -36,6 +66,12 @@ exports.caret = function (a, b) {
 
 /**
  * 000F 좌표
+ * 
+ * @author: Naesung
+ * @param {number} a
+ * @param {number} b
+ * @return {number} (a, b)
+ * @since <0.3.7
  */
 exports.pow = function (a, b) {
   return Math.pow(a, b)
@@ -43,6 +79,11 @@ exports.pow = function (a, b) {
 
 /**
  * 000G 제곱
+ * 
+ * @author: Naesung
+ * @param {number} a
+ * @return {number} root a
+ * @since <0.3.7
  */
 exports.sqrt = function (a) {
   return Math.sqrt(a)
@@ -50,6 +91,12 @@ exports.sqrt = function (a) {
 
 /**
  * 000H 랜덤
+ * 
+ * @author: Naesung
+ * @param {number} a
+ * @param {number} b
+ * @return {number} random number from a to b
+ * @since <0.3.7
  */
 exports.random = function (a, b) {
   var ranNum = Math.floor((Math.random() * b) + a)
@@ -58,6 +105,12 @@ exports.random = function (a, b) {
 
 /**
  * 000I 소수
+ * 
+ * @author: Naesung
+ * @param {number} a
+ * @param {number} b
+ * @return {number} find prime number between a and b
+ * @since <0.3.7
  */
 exports.primeNumber = function (a, b) {
   const results = [2]
@@ -80,6 +133,11 @@ exports.primeNumber = function (a, b) {
 
 /**
  * 000J 호도법
+ * 
+ * @author: Naesung
+ * @param {number} a
+ * @return {number} change a to radian
+ * @since <0.3.7
  */
 exports.radian = function (a) {
   return 2 * Math.PI * a
@@ -87,6 +145,10 @@ exports.radian = function (a) {
 
 /**
  * 000K 파이
+ * 
+ * @author: Naesung
+ * @return {number} pi
+ * @since <0.3.7
  */
 exports.pi = Math.PI
 
@@ -96,6 +158,11 @@ exports.round = function (a) {
 
 /**
  * 001 정삼각형의 넓이
+ * @author: Naesung
+ * @param {number} a
+ * @param {number} b
+ * @return {number} a plus b
+ * @since <0.3.7
  */
 exports.equilateralTriangleArea = function (a) {
   return 3 ** 0.5 / 4 * a * a
@@ -103,6 +170,12 @@ exports.equilateralTriangleArea = function (a) {
 
 /**
  * 002 정삼각형의 높이
+ * 
+ * @author: Naesung
+ * @param {number} a
+ * @param {number} b
+ * @return {number} a plus b
+ * @since <0.3.7
  */
 exports.equilateralTriangleHeight = function (a) {
   return (3 ^ 0.5 / 2 * a)
@@ -110,6 +183,12 @@ exports.equilateralTriangleHeight = function (a) {
 
 /**
  * 003 직각삼각형의 넓이
+ *  
+ * @author: Naesung
+ * @param {number} a
+ * @param {number} b
+ * @return {number} Area of right triangle with each side a and b
+ * @since <0.3.7
  */
 exports.rtria = function (a, b) {
   return (0.5 * a * b)
@@ -117,6 +196,12 @@ exports.rtria = function (a, b) {
 
 /**
  * 004 피타고라스 정리
+ * 
+ * @author: Naesung
+ * @param {number} a
+ * @param {number} b
+ * @return {number} The length of the hypotenuse when each side is a, b in a right triangle
+ * @since <0.3.7
  */
 exports.pytagoras = function (a, b) {
   return ((a * a + b * b) ** 0.5)
@@ -124,6 +209,12 @@ exports.pytagoras = function (a, b) {
 
 /**
  * 005 이등변삼각형의 넓이
+ *  
+ * @author: Naesung
+ * @param {number} a
+ * @param {number} b
+ * @return {number} The length of an isosceles triangle with equal side a and base b
+ * @since <0.3.7
  */
 exports.quadtria = function (a, b) {
   return (a / 4 * (4 * b * b - a * a) ** 0.5)
@@ -131,6 +222,13 @@ exports.quadtria = function (a, b) {
 
 /**
  * 006 헤론의 공식
+ * 
+ * @author: Naesung
+ * @param {number} a
+ * @param {number} b
+ * @param {number} c
+ * @return {number} Heron's formula
+ * @since <0.3.7
  */
 exports.heron = function (a, b, c) {
   let cosTheta = ((a * a) + (b * b) - (c * c)) / (2 * a * b)
@@ -140,6 +238,12 @@ exports.heron = function (a, b, c) {
 
 /**
  * 007 삼각형의 넓이
+ * 
+ * @author: Naesung
+ * @param {number} a
+ * @param {number} h
+ * @return {number} Area of triangle given base and height
+ * @since <0.3.7
  */
 exports.triangleAreaSide = function (a, h) {
   return (0.5 * a * h)
@@ -147,6 +251,13 @@ exports.triangleAreaSide = function (a, h) {
 
 /**
  * 008 각의 삼각형의 넓이
+ * 
+ * @author: Naesung
+ * @param {number} a
+ * @param {number} b
+ * @param {number} t
+ * @return {number} Area of triangle using angle
+ * @since <0.3.7
  */
 exports.triangleAreaAngle = function (a, b, t) {
   return (0.5 * a * b * (Math.sin(t)))
@@ -154,6 +265,14 @@ exports.triangleAreaAngle = function (a, b, t) {
 
 /**
  * 009 내접원과 삼각형의 넓이 공식
+ * 
+ * @author: Naesung
+ * @param {number} a
+ * @param {number} b
+ * @param {number} c
+ * @param {number} r
+ * @return {number} Inscribed circle and triangle area formula
+ * @since <0.3.7
  */
 exports.inscribedCircleTriangleArea = function (a, b, c, r) {
   return (((a + b + c) / 2) * r)
@@ -161,6 +280,14 @@ exports.inscribedCircleTriangleArea = function (a, b, c, r) {
 
 /**
  * 010.1 외접원과 삼각형의 넓이 공식
+ * 
+ * @author: Naesung
+ * @param {number} a
+ * @param {number} b
+ * @param {number} c
+ * @param {number} r
+ * @return {number} Inscribed circle and triangle area formula
+ * @since <0.3.7
  */
 exports.circumscribedCircleTriangleArea_Side = function (a, b, c, r) {
   return (a * b * c / 4 / r)
@@ -168,6 +295,14 @@ exports.circumscribedCircleTriangleArea_Side = function (a, b, c, r) {
 
 /**
  * 010.2 외접원과 삼각형의 넓이 공식
+ * 
+ * @author: Naesung
+ * @param {number} a
+ * @param {number} b
+ * @param {number} c
+ * @param {number} r
+ * @return {number} Inscribed circle and triangle area formula 
+ * @since <0.3.7
  */
 exports.circumscribedCircleTriangleArea_Angle = function (a, b, c, r) {
   return (2 * r * r * (Math.sin(a)) * (Math.sin(b)) * (Math.sin(c)))
@@ -179,6 +314,13 @@ exports.circumscribedCircleTriangleArea_Angle = function (a, b, c, r) {
 
 /**
  * 201 뉴턴 방법
+ * 
+ * @author: DPS0340
+ * @param {number} f
+ * @param {number} count
+ * @param {number} initx
+ * @return Newton's method
+ * @since <0.3.7
  */
 exports.newtonsMethod = function (f, count, initx = 2) {
   function diff (f, x, density = 5) {
@@ -200,6 +342,13 @@ exports.newtonsMethod = function (f, count, initx = 2) {
 
 /**
  * 202.1 테일러 급수
+ * 
+ * @author: Naesung
+ * @param {number} f
+ * @param {number} a
+ * @param {number} count
+ * @return Taylor series
+ * @since <0.3.7
  */
 exports.taylor = function (f, a, count) {
   let diffs = [(x) => f(a)]
@@ -245,6 +394,12 @@ exports.taylor = function (f, a, count) {
 
 /**
  * 202.2 매클로린 급수
+ * 
+ * @author: DPS0340
+ * @param {number} f
+ * @param {number} count
+ * @return {number} Maclaurin series
+ * @since <0.3.7
  */
 exports.maclaurin = function (f, count) {
   return exports.taylor(f, 0, count)
@@ -252,6 +407,12 @@ exports.maclaurin = function (f, count) {
 
 /**
  * 203 행렬곱
+ * 
+ * @author: DPS0340/Naesung(대한수학협회 자료 중복 통합)
+ * @param {matrix} matrixA
+ * @param {matrix} matrixB
+ * @return {matrix} Matrix product of matrixA and matrixB
+ * @since <0.3.7
  */
 exports.matrixMultiply = function (matrixA, matrixB) {
   if (matrixA[0].length !== matrixB.length) {
@@ -277,6 +438,11 @@ exports.matrixMultiply = function (matrixA, matrixB) {
 
 /**
  * 204 LU 분해법
+ * 
+ * @author: DPS0340
+ * @param {matrix} matrix
+ * @return {number} LUDecompostion of matrix
+ * @since <0.3.7
  */
 exports.LUDecomposition = function (matrix) {
   if (matrix.length !== matrix[0].length) {
@@ -324,6 +490,12 @@ exports.LUDecomposition = function (matrix) {
 
 /**
  * 205 행렬의 스칼라곱
+ * 
+ * @author: DPS0340/Naesung(Merged)
+ * @param {matrix} matrix
+ * @param {number} k
+ * @return {number} Matrix scalar product
+ * @since <0.3.7
  */
 exports.matrixScalaMultiplation = function (matrix, k) {
   let res = []
@@ -339,6 +511,11 @@ exports.matrixScalaMultiplation = function (matrix, k) {
 
 /**
  * 206 행렬식
+ * 
+ * @author: DPS0340/Naesung(Merged)
+ * @param {matrix} matrix
+ * @return {number} Determinant
+ * @since <0.3.7
  */
 exports.determinant = function (matrix) {
   if (matrix.length !== matrix[0].length) {
@@ -372,6 +549,13 @@ exports.determinant = function (matrix) {
 
 /**
  * 207 가우스 소거법
+ * 
+ * @author: DPS0340
+ * @param {matrix} matrix
+ * @param {number} m
+ * @param {nmuber} n
+ * @return {number} Gaussian elimination
+ * @since <0.3.7
  */
 exports.gaussian = function (matrix, m, n) {
   let X = []
@@ -402,6 +586,12 @@ exports.gaussian = function (matrix, m, n) {
 
 /**
  * 208 행렬의 덧셈
+ * 
+ * @author: DPS0340/Naesung(Merged)
+ * @param {matrix} matrixA
+ * @param {matrix} matrixB
+ * @return {number} Matrix subtraction of matrixA and matrixB
+ * @since <0.3.7
  */
 exports.matrixAdd = function (matrixA, matrixB) {
   if (matrixA.length !== matrixB.length || matrixA[0].length !== matrixB[0].length) {
@@ -420,6 +610,12 @@ exports.matrixAdd = function (matrixA, matrixB) {
 
 /**
  * 209 행렬의 뺄셈
+ * 
+ * @author: DPS0340/Naesung(Merged)
+ * @param {matrix} matrixA
+ * @param {matrix} matrixB
+ * @return {number} Matrix sum of matrixA and matrixB
+ * @since <0.3.7
  */
 exports.matrixSub = function (matrixA, matrixB) {
   if (matrixA.length !== matrixB.length || matrixA[0].length !== matrixB[0].length) {
@@ -438,6 +634,16 @@ exports.matrixSub = function (matrixA, matrixB) {
 
 /**
  * 013 무게중심 공식
+ * 
+ * @author: Naesung
+ * @param {number} a1
+ * @param {number} a2
+ * @param {number} b1
+ * @param {number} b2
+ * @param {number} c1
+ * @param {number} c2
+ * @return {number} The center of gravity of the triangle using the coordinates of the vertices
+ * @since <0.3.7
  */
 exports.centerGravity = function (a1, a2, b1, b2, c1, c2) {
   return ((a1 + b1 + c1) / 3)((a2 + b2 + c2) / 3)
@@ -448,6 +654,11 @@ exports.centerGravity = function (a1, a2, b1, b2, c1, c2) {
 
 /**
  * 015 정사각형의 넓이 공식
+ * 
+ * @author: Naesung
+ * @param {number} a
+ * @return {number} Area of a square with one side a
+ * @since <0.3.7
  */
 exports.square = function (a) {
   return (a ** 2)
@@ -455,6 +666,12 @@ exports.square = function (a) {
 
 /**
  * 016 직사각형의 넓이 공식
+ * 
+ * @author: Naesung
+ * @param {number} a
+ * @param {number} b
+ * @return {number} THe area of rectangle with the side is a, b
+ * @since <0.3.7
  */
 exports.rectangleArea = function (a, b) {
   return (a * b)
@@ -462,6 +679,12 @@ exports.rectangleArea = function (a, b) {
 
 /**
  * 017 직사각형의 둘레 공식
+ * 
+ * @author: Naesung
+ * @param {number} a
+ * @param {number} b
+ * @return {number} The circumstance of rectangle with the side is a, b
+ * @since <0.3.7
  */
 exports.rectanglePerimeter = function (a, b) {
   return ((a) * 2 + (b) * 2)
@@ -469,6 +692,12 @@ exports.rectanglePerimeter = function (a, b) {
 
 /**
  * 018 직사각형의 대각선 길이 공식
+ * 
+ * @author: Naesung
+ * @param {number} a
+ * @param {number} b
+ * @return {number} Pythagoras Theorem
+ * @since <0.3.7
  */
 exports.rectangleDiagonal = function (a, b) {
   return (((a) ** 2 + (b) ** 2) ** 0.5)
@@ -476,6 +705,12 @@ exports.rectangleDiagonal = function (a, b) {
 
 /**
  * 019 마름모의 넓이 공식
+ * 
+ * @author: Naesung
+ * @param {number} a
+ * @param {number} b
+ * @return {number} The area of rhombus with digonal a, b
+ * @since <0.3.7
  */
 exports.rhombusArea = function (a, b) {
   return (0.5 * (a) * (b))
@@ -483,6 +718,12 @@ exports.rhombusArea = function (a, b) {
 
 /**
  * 020 평행사변형의 넓이 공식
+ * 
+ * @author: Naesung
+ * @param {number} a
+ * @param {number} h
+ * @return {number} The area of parallelogram
+ * @since <0.3.7
  */
 exports.parallelogramArea = function (a, h) {
   return (a * h)
@@ -490,6 +731,13 @@ exports.parallelogramArea = function (a, h) {
 
 /**
  * 021 사다리꼴의 넓이 공식
+ * 
+ * @author: Naesung
+ * @param {number} a
+ * @param {number} b
+ * @param {number} h
+ * @return {number} The area of trapezoid
+ * @since <0.3.7
  */
 exports.trapezoidArea = function (a, b, h) {
   return (0.5 * (a + b) * h)
@@ -497,6 +745,13 @@ exports.trapezoidArea = function (a, b, h) {
 
 /**
  * 022 사각형의 넓이 공식
+ * 
+ * @author: Naesung
+ * @param {number} a
+ * @param {number} b
+ * @param {number} t
+ * @return {number} The area of square
+ * @since <0.3.7
  */
 exports.squareArea = function (a, b, t) {
   return (0.5 * (a) * (b) * (Math.sin(t)))
@@ -504,13 +759,23 @@ exports.squareArea = function (a, b, t) {
 
 /**
  * 023 정오각형의 넓이 공식
+ * 
+ * @author: Naesung
+ * @param {number} a
+ * @return {number} The height of pentagon with side a
+ * @since <0.3.7
  */
 exports.pentagonArea = function (a) {
   return ((((a) ** 2) / 4) * ((25 + 10((5) ** 0.5)) ** 0.5))
 }
 
 /**
- * 024 정오각형의 넓이 공식
+ * 024 정오각형의 높이 공식
+ * 
+ * @author: Naesung
+ * @param {number} a
+ * @return {number} The length of height of pentagon
+ * @since <0.3.7
  */
 exports.pentagonHeight = function (a) {
   return (((25 + 10 * ((5) ** 0.5)) / 2) * (a))
@@ -518,6 +783,11 @@ exports.pentagonHeight = function (a) {
 
 /**
  * 025 정오각형의 대각선 길이
+ * 
+ * @author: Naesung
+ * @param {number} a
+ * @return {number} The length of digonal of pentagon
+ * @since <0.3.7
  */
 exports.pentagonDiagonal = function (a) {
   // 간단한 것인데 귀찮은 것이라 작성//
@@ -527,13 +797,23 @@ exports.pentagonDiagonal = function (a) {
 // 026 정육각형의 넓이 공식/
 /**
  * 가장 빠른 걸로
+ * 
+ * @author: Naesung
+ * @param {number} a
+ * @return {number} The area of hexagon with on side a
+ * @since <0.3.7
  */
 exports.hexagonArea = function (a) {
   return ((3 * ((3) ^ 0.5)) / 2) * (a ** 2)
 }
 
 /**
- * 027 다각형의 대각선 공식...을 왜 하고 잇지
+ * 027 다각형의 대각선 공식
+ * 
+ * @author: Naesung
+ * @param {number} n
+ * @return {number} The number of diagonal of polygon
+ * @since <0.3.7
  */
 exports.polydiag = function (n) {
   return (n * (n - 3) / 2)
@@ -541,6 +821,11 @@ exports.polydiag = function (n) {
 
 /**
  * 028.1 다각형의 내각의 합_60분법
+ * 
+ * @author: Naesung
+ * @param {number} n
+ * @return {number} The sum of the polygons cabinet (degree)
+ * @since <0.3.7
  */
 exports.polyAngleSumDeg = function (n) {
   return (180 * (n - 2))
@@ -548,6 +833,11 @@ exports.polyAngleSumDeg = function (n) {
 
 /**
  * 028.2 다각형의 내각의 합_호도법
+ * 
+ * @author: Naesung
+ * @param {number} n
+ * @return {number} The sum of the polygons cabinet (radian)
+ * @since <0.3.7
  */
 exports.polyAngleSumRad = function (n) {
   return ((Math.PI) * (n - 2))
@@ -555,6 +845,12 @@ exports.polyAngleSumRad = function (n) {
 
 /**
  * 029 정다각형의 넓이
+ * 
+ * @author: Naesung
+ * @param {number} n
+ * @param {number} a
+ * @return {number} The area of regular polygons
+ * @since <0.3.7
  */
 exports.polyarea = function (n, a) {
   return n * (a ** 2) / (4 * (Math.tan(a / (Math.PI))))
@@ -562,6 +858,11 @@ exports.polyarea = function (n, a) {
 
 /**
  * 030 정다각형의 내각
+ * 
+ * @author: Naesung
+ * @param {number} n
+ * @return {number} The sum of cabinet of polygon (degree)
+ * @since <0.3.7
  */
 exports.polyAngle_Deg = function (n) {
   return (180 * (n - 2) / n)
@@ -569,6 +870,11 @@ exports.polyAngle_Deg = function (n) {
 
 /**
  * 030.2 정사각형의 내각_호도법
+ * 
+ * @author: Naesung
+ * @param {number} n
+ * @return {number} The sum of cabinet of polygon (radian)
+ * @since <0.3.7
  */
 exports.polyAngle_Rad = function (n) {
   return ((Math.PI) * (n - 2) / n)
@@ -576,6 +882,11 @@ exports.polyAngle_Rad = function (n) {
 
 /**
  * 031 원의 넓이
+ * 
+ * @author: Naesung
+ * @param {number} r
+ * @return {number} The area of circle
+ * @since <0.3.7
  */
 exports.circleArea = function (r) {
   return ((Math.PI) * (r ** 2))
@@ -583,41 +894,39 @@ exports.circleArea = function (r) {
 
 /**
  * 032 원의 둘레
+ * 
+ * @author: Naesung
+ * @param {number} r
+ * @return {number} The circumstance of circle
+ * @since <0.3.7
  */
 exports.circlePerimeter = function (r) {
   return (2 * (Math.PI) * r)
 }
 
-// 033 원방 그래프//
-/*  exports.circleeq = function (x, y, a, b) {
-      return ()
-  } */
 
 /**
  * 034 원주각의 중심각
+ * 
+ * @author: Naesung
+ * @param {number} a
+ * @return {number} The center angle of circumferential angle
+ * @since <0.3.7
  */
 exports.circumference = function (a) {
   return (2 * a)
 }
 
-/**
- * 035 방멱의 정리, 일률과 혼동되지 않도록 mathpower으로 표기
- */
-exports.mathPower = function (f, g) {
-}
-// 이거 일치하는지 아닌지로 만들어야 될듯한데요
-// 선분이라 좀...
-
-// 036 접현의 정리//
-// 그냥 이건 다 똑같아서...
-
-// 037 원주율 공식//
-// 이게 공식이냐?!?!?!
-
 // 038 테일러 전개 이미 있다//
 
 /**
  * 039 부채꼴의 중심각 표시_rad
+ * 
+ * @author: Naesung
+ * @param {number} r
+ * @param {number} l
+ * @return {number} The center angle of sector form (radian)
+ * @since <0.3.7
  */
 exports.circularSectorAngle = function (r, l) {
   return (l / r)
@@ -625,13 +934,25 @@ exports.circularSectorAngle = function (r, l) {
 
 /**
  * 040 부채꼴의 넓이_rl
+ * 
+ * @author: Naesung
+ * @param {number} r
+ * @param {number} l
+ * @return {number} The area of sector form
+ * @since <0.3.7
  */
 exports.circularSectorArea_rl = function (r, l) {
   return (0.5 * r * l)
 }
 
 /**
- * 040.2 부채꼴의 넓이_rt_no Re Twit
+ * 040.2 부채꼴의 넓이_rt_no
+ * 
+ * @author: Naesung
+ * @param {number} r
+ * @param {number} t
+ * @return {number} THe area of sector form
+ * @since <0.3.7
  */
 exports.circularSectorArea_rt = function (r, t) {
   return (0.5 * r * (t ** 2))
@@ -639,6 +960,12 @@ exports.circularSectorArea_rt = function (r, t) {
 
 /**
  * 041 호의 길이 공식
+ * 
+ * @author: Naesung
+ * @param {number} r
+ * @param {number} l
+ * @return {number} The length of arc
+ * @since <0.3.7
  */
 exports.arcLength = function (r, l) {
   return (r * l)
@@ -646,6 +973,12 @@ exports.arcLength = function (r, l) {
 
 /**
  * 042 타원의 넓이
+ * 
+ * @author: Naesung
+ * @param {number} a
+ * @param {number} b
+ * @return {number} The area of eval
+ * @since <0.3.7
  */
 exports.evalArea = function (a, b) {
   return ((Math.PI) * a * b)
@@ -653,6 +986,12 @@ exports.evalArea = function (a, b) {
 
 /**
  * 043 타원의 이심률
+ * 
+ * @author: Naesung
+ * @param {number} a
+ * @param {number} b
+ * @return {number} THe eccentricity of eval
+ * @since <0.3.7
  */
 exports.evalEccentricity = function (a, b) {
   return ((1 - ((b ** 2) / (a ** 2))) ** 0.5)
@@ -662,6 +1001,11 @@ exports.evalEccentricity = function (a, b) {
 
 /**
  * 045 구의 부피
+ * 
+ * @author: Naesung
+ * @param {number} r
+ * @return {number} THe volume of sphere
+ * @since <0.3.7
  */
 exports.sphereVolume = function (r) {
   return ((4 / 3) * (Math.PI) * (r ** 2))
@@ -669,6 +1013,11 @@ exports.sphereVolume = function (r) {
 
 /**
  * 046 구의 겉넓이
+ * 
+ * @author: Naesung
+ * @param {number} r
+ * @return {number} The surface area of sphere
+ * @since <0.3.7
  */
 exports.sphereArea = function (r) {
   return (4 * (Math.PI) * (r ** 2))
@@ -676,6 +1025,12 @@ exports.sphereArea = function (r) {
 
 /**
  * 047 원기둥의 부피
+ * 
+ * @author: Naesung
+ * @param {number} r
+ * @param {number} h
+ * @return {number} The volume of cylinder
+ * @since <0.3.7
  */
 exports.cylinderVolume = function (r, h) {
   return ((Math.PI) * (r ** 2) * h)
@@ -683,6 +1038,12 @@ exports.cylinderVolume = function (r, h) {
 
 /**
  * 048 원기둥의 겉넓이
+ * 
+ * @author: Naesung
+ * @param {number} r
+ * @param {number} h
+ * @return {number} The surface area of cylinder
+ * @since <0.3.7
  */
 exports.cylinderArea = function (r, h) {
   return ((2 * (Math.PI) * r * h) + (2 * (Math.PI) * (r ** 2)))
@@ -690,6 +1051,12 @@ exports.cylinderArea = function (r, h) {
 
 /**
  * 049 원뿔의 부피
+ * 
+ * @author: Naesung
+ * @param {number} r
+ * @param {number} h
+ * @return {number} The volume of cone
+ * @since <0.3.7
  */
 exports.coneVolume = function (r, h) {
   return ((1 / 3) * (Math.PI) * (r ** 2) * h)
@@ -697,6 +1064,12 @@ exports.coneVolume = function (r, h) {
 
 /**
  * 050 원뿔의 겉넓이
+ * 
+ * @author: Naesung
+ * @param {number} r
+ * @param {number} h
+ * @return {number} The surface area of cone
+ * @since <0.3.7
  */
 exports.coneArea = function (r, h) {
   return (((Math.PI) * r * (((r ** 2) + (h ** 2)) ** 0.5)) + ((Math.PI) * (r ** 2)))
@@ -704,6 +1077,12 @@ exports.coneArea = function (r, h) {
 
 /**
  * 051 삼각뿔의 부피, 삼각형의 넓이는 위에 잇는 것 사용
+ * 
+ * @author: Naesung
+ * @param {number} a
+ * @param {number} h
+ * @return {number} The volume of triangular cone
+ * @since <0.3.7
  */
 exports.triangularPyramidVolume = function (a, h) {
   return ((1 / 3) * a * h)
@@ -711,6 +1090,12 @@ exports.triangularPyramidVolume = function (a, h) {
 
 /**
  * 052A 정사각뿔의 부피 공식
+ * 
+ * @author: Naesung
+ * @param {number} a
+ * @param {number} h
+ * @return {number}  The volume of square pyramid
+ * @since <0.3.7
  */
 exports.squarePyramidVolume_ah = function (a, h) {
   return ((1 / 3) * (a ** 2) * h)
@@ -718,6 +1103,12 @@ exports.squarePyramidVolume_ah = function (a, h) {
 
 /**
  * 052B 정사각뿔의 부피 공식
+ * 
+ * @author: Naesung
+ * @param {number} a
+ * @param {number} b
+ * @return {number} a plus b
+ * @since <0.3.7
  */
 exports.squarePyramidVolume_ab = function (a, b) {
   return ((1 / 3) * (a ** 2) * (((b ** 2) - ((a ** 2) / 2)) ** (0.5)))
@@ -725,6 +1116,12 @@ exports.squarePyramidVolume_ab = function (a, b) {
 
 /**
  * 053A 정사각뿔의 겉넓이 공식
+ * 
+ * @author: Naesung
+ * @param {number} a
+ * @param {number} b
+ * @return {number} The volume of square pyramid
+ * @since <0.3.7
  */
 exports.squarePyramidArea_ab = function (a, b) {
   return ((a * ((4 * (b ** 2) - (a ** 2)) ** (0.5))) + (a ** 2))
@@ -732,6 +1129,12 @@ exports.squarePyramidArea_ab = function (a, b) {
 
 /**
  * 053B 정사각뿔의 겉넓이 공식
+ * 
+ * @author: Naesung
+ * @param {number} a
+ * @param {number} b
+ * @return {number} The surface area of square pyramid
+ * @since <0.3.7
  */
 exports.squarePyramidArea_ah = function (a, h) {
   return ((a * ((4 * (h ** 2) - (a ** 2)) ** (0.5))) + (a ** 2))
@@ -739,6 +1142,12 @@ exports.squarePyramidArea_ah = function (a, h) {
 
 /**
  * 054 정사각뿔의 높이 공식
+ * 
+ * @author: Naesung
+ * @param {number} a
+ * @param {number} b
+ * @return {number} The height of square pyramid
+ * @since <0.3.7
  */
 exports.squarePyramidHeight = function (a, b) {
   return (((b ** 2) - ((a ** 2) / 2)) ** (0.5))
@@ -761,6 +1170,11 @@ exports.tetrahedronHeight = function (a) {
 
 /**
  * 058 정육면체의 부피 공식
+ *  
+ * @author: Naesung
+ * @param {number} a
+ * @return {number} The volume of cube
+ * @since <0.3.7
  */
 exports.cubeVolume = function (a) {
   return (a ** 3)
@@ -768,6 +1182,12 @@ exports.cubeVolume = function (a) {
 
 /**
  * 059 정육면체의 겉넓이 공식
+ * 
+ * @author: Naesung
+ * @param {number} a
+ * @param {number} b
+ * @return {number} The surface area of cube
+ * @since <0.3.7
  */
 exports.cubeArea = function (a) {
   return (6 * (a ** 2))
@@ -775,6 +1195,12 @@ exports.cubeArea = function (a) {
 
 /**
  * 060 직육면체의 넓이 공식
+ * 
+ * @author: Naesung
+ * @param {number} a
+ * @param {number} b
+ * @return {number} a plus b
+ * @since <0.3.7
  */
 exports.cuboidVolume = function (a, b, c) {
   return (a * b * c)
@@ -782,6 +1208,12 @@ exports.cuboidVolume = function (a, b, c) {
 
 /**
  * 061 직육면체의 겉넓이 공식
+ * 
+ * @author: Naesung
+ * @param {number} a
+ * @param {number} b
+ * @return {number} a plus b
+ * @since <0.3.7
  */
 exports.cuboidArea = function (a, b, c) {
   return (2 * ((a * b) + (b * c) + (c * a)))
@@ -789,6 +1221,12 @@ exports.cuboidArea = function (a, b, c) {
 
 /**
  * 062 직육면체의 대각선 길이 공식
+ * 
+ * @author: Naesung
+ * @param {number} a
+ * @param {number} b
+ * @return {number} a plus b
+ * @since <0.3.7
  */
 exports.cuboidDiagonal = function (a, b, c) {
   return (((a ** 2) + (b ** 2) + (c ** 2)) ** 0.5)
@@ -796,6 +1234,12 @@ exports.cuboidDiagonal = function (a, b, c) {
 
 /**
  * 063 오일러 다면체 정리
+ * 
+ * @author: Naesung
+ * @param {number} a
+ * @param {number} b
+ * @return {number} a plus b
+ * @since <0.3.7
  */
 exports.eulerPolyhedronTheorem = function (v, e, f) {
   if ((v - e + f) === 2) return true
@@ -804,6 +1248,12 @@ exports.eulerPolyhedronTheorem = function (v, e, f) {
 
 /**
  * 064A 근의 공식
+ * 
+ * @author: Naesung
+ * @param {number} a
+ * @param {number} b
+ * @return {number} a plus b
+ * @since <0.3.7
  */
 exports.rootFormula_plus = function (a, b, c) {
   return ((-b + (((b ** 2) - (4 * a * c)) ** 0.5)) / (2 * a))
@@ -811,6 +1261,12 @@ exports.rootFormula_plus = function (a, b, c) {
 
 /**
  * 064B 근의 공식
+ * 
+ * @author: Naesung
+ * @param {number} a
+ * @param {number} b
+ * @return {number} a plus b
+ * @since <0.3.7
  */
 exports.rootFormula_minus = function (a, b, c) {
   return ((-b - (((b ** 2) - (4 * a * c)) ** 0.5)) / (2 * a))
@@ -818,6 +1274,12 @@ exports.rootFormula_minus = function (a, b, c) {
 
 /**
  * 065A 짝수 근의 공식
+ * 
+ * @author: Naesung
+ * @param {number} a
+ * @param {number} b
+ * @return {number} a plus b
+ * @since <0.3.7
  */
 exports.rootFormula_EvenPlus = function (a, b, c) {
   return ((-(0.5 * b) + ((((0.5 * b) ** 2) - (a * c)) ** 0.5)) / a)
@@ -825,6 +1287,12 @@ exports.rootFormula_EvenPlus = function (a, b, c) {
 
 /**
  * 065B 짝수 근의 공식
+ * 
+ * @author: Naesung
+ * @param {number} a
+ * @param {number} b
+ * @return {number} a plus b
+ * @since <0.3.7
  */
 exports.rootFormula_EvenMinus = function (a, b, c) {
   return ((-(0.5 * b) - ((((0.5 * b) ** 2) - (a * c)) ** 0.5)) / a)
@@ -832,6 +1300,12 @@ exports.rootFormula_EvenMinus = function (a, b, c) {
 
 /**
  * 066 근과 계수와의 관계 공식
+ * 
+ * @author: Naesung
+ * @param {number} a
+ * @param {number} b
+ * @return {number} a plus b
+ * @since <0.3.7
  */
 exports.rootAndCoefficient = function (a, b, c, type) {
   if (type === 1) return -(b / a)
@@ -840,6 +1314,12 @@ exports.rootAndCoefficient = function (a, b, c, type) {
 
 /**
  * 067A 삼차방정식의 근과 계수와의 관계 공식
+ *  
+ * @author: Naesung
+ * @param {number} a
+ * @param {number} b
+ * @return {number} a plus b
+ * @since <0.3.7
  */
 exports.cubicEquation_first = function (a, b, c, d) {
   let x = (((0.5 * ((2 * (b ** 3) - (9 * a * b * c) + (27 * (a ** 2) * d) + (((2 * (b ** 3) - (9 * a * b * c) + (27 * (a ** 2) * d)) ** 2) - 4((b ** 2) - 3 * a * c) ** 3) ** 0.5))) ** (1 / 3)))
@@ -871,7 +1351,7 @@ exports.cubicEquation_third = function (a, b, c, d) {
 
 // 068 제곱근 근삿값//
 
-function Root () { // 함수아님 프로토타입임
+function Root() { // 함수아님 프로토타입임
   this.get = function (val, digit_) {
     let digit = digit_ || 10
     return parseFloat((val ** 0.5).toFixed(digit))
@@ -901,6 +1381,12 @@ exports.root = new Root()
 
 /**
  * 082A 등차수열 공식
+ * 
+ * @author: Naesung
+ * @param {number} a
+ * @param {number} b
+ * @return {number} a plus b
+ * @since <0.3.7
  */
 exports.arithmeticProgression = function (a, d, n) {
   return (a + (n - 1) * d)
@@ -908,6 +1394,12 @@ exports.arithmeticProgression = function (a, d, n) {
 
 /**
  * 082B 등차수열 공식
+ * 
+ * @author: Naesung
+ * @param {number} a
+ * @param {number} b
+ * @return {number} a plus b
+ * @since <0.3.7
  */
 exports.arithmeticProgression_n = function (d, n, s) {
   return (s - (n - 1) * d)
@@ -915,6 +1407,12 @@ exports.arithmeticProgression_n = function (d, n, s) {
 
 /**
  * 082C 등차수열 공식
+ * 
+ * @author: Naesung
+ * @param {number} a
+ * @param {number} b
+ * @return {number} a plus b
+ * @since <0.3.7
  */
 exports.arithmeticProgression_d = function (a, n, s) {
   return ((s - a) / (n - 1))
@@ -922,6 +1420,12 @@ exports.arithmeticProgression_d = function (a, n, s) {
 
 /**
  * 083A 등차수열의 합 공식
+ * 
+ * @author: Naesung
+ * @param {number} a
+ * @param {number} b
+ * @return {number} a plus b
+ * @since <0.3.7
  */
 exports.arithmeticProgressionSum_Term = function (a1, an, n) {
   return (((a1 + an) / 2) * n)
@@ -929,6 +1433,12 @@ exports.arithmeticProgressionSum_Term = function (a1, an, n) {
 
 /**
  * 083B 등차수열의 합 공식
+ * 
+ * @author: Naesung
+ * @param {number} a
+ * @param {number} b
+ * @return {number} a plus b
+ * @since <0.3.7
  */
 exports.artimeticProgressionSum = function (a1, n, d) {
   return ((((2 * a1) + ((n - 1) * d)) / 2) * n)
@@ -936,6 +1446,12 @@ exports.artimeticProgressionSum = function (a1, n, d) {
 
 /**
  * 084A 등비수열 공식
+ * 
+ * @author: Naesung
+ * @param {number} a
+ * @param {number} b
+ * @return {number} a plus b
+ * @since <0.3.7
  */
 exports.geometricSequence_a = function (an, n, r) {
   return (an / (r ** n))
@@ -943,6 +1459,12 @@ exports.geometricSequence_a = function (an, n, r) {
 
 /**
  * 084B 등비수열 공식
+ * 
+ * @author: Naesung
+ * @param {number} a
+ * @param {number} b
+ * @return {number} a plus b
+ * @since <0.3.7
  */
 exports.geometricSequence_n = function (an, a, r) {
   return Math.log(an / a) / Math.log(r)
@@ -950,6 +1472,12 @@ exports.geometricSequence_n = function (an, a, r) {
 
 /**
  * 084C 등비수열 공식
+ * 
+ * @author: Naesung
+ * @param {number} a
+ * @param {number} b
+ * @return {number} a plus b
+ * @since <0.3.7
  */
 exports.geometricSequence_r = function (an, a, n) {
   return ((an / a) ** (1 / n))
@@ -957,13 +1485,26 @@ exports.geometricSequence_r = function (an, a, n) {
 
 /**
  * 084D 등비수열 공식
+ * 
+ * @author: Naesung
+ * @param {number} a
+ * @param {number} b
+ * @return {number} a plus b
+ * @since <0.3.7
  */
 exports.geometricSequence_an = function (a, n, r) {
   return (a * (r ** n))
 }
 
+
 /**
  * 210 60도법-라디안 변환
+ * 
+ * @author: Naesung
+ * @param {number} a
+ * @param {number} b
+ * @return {number} a plus b
+ * @since <0.3.7
  */
 exports.degreeToRad = function (deg) {
   return deg * Math.PI / 180
@@ -971,6 +1512,12 @@ exports.degreeToRad = function (deg) {
 
 /**
  * 211 라디안-60도법 변환
+ * 
+ * @author: Naesung
+ * @param {number} a
+ * @param {number} b
+ * @return {number} a plus b
+ * @since <0.3.7
  */
 exports.radToDegree = function (rad) {
   return rad * 180 / Math.PI
@@ -978,6 +1525,12 @@ exports.radToDegree = function (rad) {
 
 /**
  * 212 diff
+ * 
+ * @author: Naesung
+ * @param {number} a
+ * @param {number} b
+ * @return {number} a plus b
+ * @since <0.3.7
  */
 exports.diff = function (f, density = 5) {
   let dx = 2 * (10 ** (-density))
@@ -988,6 +1541,12 @@ exports.diff = function (f, density = 5) {
 
 /**
  * 213 적분
+ * 
+ * @author: Naesung
+ * @param {number} a
+ * @param {number} b
+ * @return {number} a plus b
+ * @since <0.3.7
  */
 exports.integral = function (f, density = 5) {
   let g = (a, b) => {
@@ -1003,6 +1562,12 @@ exports.integral = function (f, density = 5) {
 
 /**
  * 214 sqrtDotProduct
+ * 
+ * @author: Naesung
+ * @param {number} a
+ * @param {number} b
+ * @return {number} a plus b
+ * @since <0.3.7
  */
 exports.sqrtDotProduct = function (row1, row2) {
   let res = 0
@@ -1015,6 +1580,12 @@ exports.sqrtDotProduct = function (row1, row2) {
 
 /**
  * 215 일반화
+ * 
+ * @author: Naesung
+ * @param {number} a
+ * @param {number} b
+ * @return {number} a plus b
+ * @since <0.3.7
  */
 exports.normailze = function (row) {
   return exports.matrix_scala_multiplation(row, 1 / exports.sqrtDotProduct(row, row))
@@ -1022,6 +1593,12 @@ exports.normailze = function (row) {
 
 /**
  * 216 교차
+ * 
+ * @author: Naesung
+ * @param {number} a
+ * @param {number} b
+ * @return {number} a plus b
+ * @since <0.3.7
  */
 exports.transpose = function (mat) {
   let res = []
@@ -1038,6 +1615,12 @@ exports.transpose = function (mat) {
 
 /**
  * 217 LQ 분해
+ * 
+ * @author: Naesung
+ * @param {number} a
+ * @param {number} b
+ * @return {number} a plus b
+ * @since <0.3.7
  */
 exports.LQDecomposition = function (mat, iterationCount = 1000) {
   let AT = exports.transpose(mat)
@@ -1259,6 +1842,12 @@ exports.isinrange = function (a, b) {
 
 /**
  * Finding Multiple Roots of Function.
+ * 
+ * @author: Naesung
+ * @param {number} a
+ * @param {number} b
+ * @return {number} a plus b
+ * @since <0.3.7
  */
 exports.Durand_Kerner = function (f, rootsNumber = 1, iterationCount = 15) {
   let roots = []
@@ -1283,6 +1872,12 @@ exports.Durand_Kerner = function (f, rootsNumber = 1, iterationCount = 15) {
 
 /**
  * Gauss–Seidel method.
+ * 
+ * @author: Naesung
+ * @param {number} a
+ * @param {number} b
+ * @return {number} a plus b
+ * @since <0.3.7
  */
 exports.Gauss_Seidel = function (mat, iterationCount = 15) {
   let x = []
@@ -1327,6 +1922,12 @@ exports.randomVector = function (len, norm = 1) {
 
 /**
  * Eigendecomposition of a matrix.
+ * 
+ * @author: Naesung
+ * @param {number} a
+ * @param {number} b
+ * @return {number} a plus b
+ * @since <0.3.7
  */
 exports.EigenVectorDecomposition = function (mat, iterationCount = 100) {
   let V = []
@@ -1412,6 +2013,12 @@ exports.EigenVectorDecomposition = function (mat, iterationCount = 100) {
 
 /**
  * Solves System of linear equations.
+ *  
+ * @author: Naesung
+ * @param {number} a
+ * @param {number} b
+ * @return {number} a plus b
+ * @since <0.3.7
  */
 exports.Cramer = function (mat) {
   let B = []
@@ -1452,6 +2059,12 @@ exports.Cramer = function (mat) {
 /**
  * Generates Random Value with ACORN Algorithm:
  * Which is Better, Faster, Simpler than Standard JS PRNG Implementation.
+ *  
+ * @author: Naesung
+ * @param {number} a
+ * @param {number} b
+ * @return {number} a plus b
+ * @since <0.3.7
  */
 exports.ACORN = function (seed = new Date().getTime(), moduloPower = 60, order = 10) {
   let M = 2 ** moduloPower

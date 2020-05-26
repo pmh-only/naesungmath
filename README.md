@@ -4,10 +4,8 @@
 
 저작권에 문제가 있다면 Pull Request 부탁드립니다.
 
-[Sangoon_is_Math](https://github.com/ttakkku/Sangoon_Is_Math)에서 착안했습니다.
-
 ## npm package 배포
-Naesungmath로 배포됩니다. naesungmath@0.3.6
+Naesungmath로 배포됩니다. naesungmath@0.10.0
 
 ## Contributors
 
