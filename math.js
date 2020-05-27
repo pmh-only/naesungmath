@@ -1448,9 +1448,10 @@ exports.artimeticProgressionSum = function (a1, n, d) {
  * 084A 등비수열 공식
  * 
  * @author: Naesung
- * @param {number} a
- * @param {number} b
- * @return {number} a plus b
+ * @param {number} an
+ * @param {number} n
+ * @param {number} r
+ * @return {number} Geometric sequence
  * @since <0.3.7
  */
 exports.geometricSequence_a = function (an, n, r) {
@@ -1461,9 +1462,10 @@ exports.geometricSequence_a = function (an, n, r) {
  * 084B 등비수열 공식
  * 
  * @author: Naesung
+ * @param {number} an
  * @param {number} a
- * @param {number} b
- * @return {number} a plus b
+ * @param {number} r
+ * @return {number} Geometric sequence
  * @since <0.3.7
  */
 exports.geometricSequence_n = function (an, a, r) {
@@ -1474,9 +1476,10 @@ exports.geometricSequence_n = function (an, a, r) {
  * 084C 등비수열 공식
  * 
  * @author: Naesung
+ * @param {number} an
  * @param {number} a
- * @param {number} b
- * @return {number} a plus b
+ * @param {number} n
+ * @return {number} Geometric sequence
  * @since <0.3.7
  */
 exports.geometricSequence_r = function (an, a, n) {
@@ -1488,8 +1491,9 @@ exports.geometricSequence_r = function (an, a, n) {
  * 
  * @author: Naesung
  * @param {number} a
- * @param {number} b
- * @return {number} a plus b
+ * @param {number} n
+ * @param {number} r
+ * @return {number} Geometric sequence
  * @since <0.3.7
  */
 exports.geometricSequence_an = function (a, n, r) {
@@ -1501,9 +1505,8 @@ exports.geometricSequence_an = function (a, n, r) {
  * 210 60도법-라디안 변환
  * 
  * @author: Naesung
- * @param {number} a
- * @param {number} b
- * @return {number} a plus b
+ * @param {number} deg
+ * @return {number} Convert degree to radian
  * @since <0.3.7
  */
 exports.degreeToRad = function (deg) {
@@ -1514,9 +1517,8 @@ exports.degreeToRad = function (deg) {
  * 211 라디안-60도법 변환
  * 
  * @author: Naesung
- * @param {number} a
- * @param {number} b
- * @return {number} a plus b
+ * @param {number} rad
+ * @return {number} Convert radian to degree
  * @since <0.3.7
  */
 exports.radToDegree = function (rad) {
@@ -1526,10 +1528,9 @@ exports.radToDegree = function (rad) {
 /**
  * 212 diff
  * 
- * @author: Naesung
- * @param {number} a
- * @param {number} b
- * @return {number} a plus b
+ * @author: DPS0340, Naesung(Merged)
+ * @param {string} f
+ * @return {number} Diff
  * @since <0.3.7
  */
 exports.diff = function (f, density = 5) {
@@ -1542,10 +1543,9 @@ exports.diff = function (f, density = 5) {
 /**
  * 213 적분
  * 
- * @author: Naesung
- * @param {number} a
- * @param {number} b
- * @return {number} a plus b
+ * @author: DPS0340, Naesung(Merged)
+ * @param {string} f
+ * @return {number} Integral
  * @since <0.3.7
  */
 exports.integral = function (f, density = 5) {
@@ -1563,10 +1563,10 @@ exports.integral = function (f, density = 5) {
 /**
  * 214 sqrtDotProduct
  * 
- * @author: Naesung
- * @param {number} a
- * @param {number} b
- * @return {number} a plus b
+ * @author: DPS0340
+ * @param {number} row1
+ * @param {number} row2
+ * @return {number} sqrtDotProduct
  * @since <0.3.7
  */
 exports.sqrtDotProduct = function (row1, row2) {
@@ -1581,10 +1581,9 @@ exports.sqrtDotProduct = function (row1, row2) {
 /**
  * 215 일반화
  * 
- * @author: Naesung
- * @param {number} a
- * @param {number} b
- * @return {number} a plus b
+ * @author: DPS0340
+ * @param {string} row
+ * @return {number} normalization
  * @since <0.3.7
  */
 exports.normailze = function (row) {
@@ -1594,10 +1593,9 @@ exports.normailze = function (row) {
 /**
  * 216 교차
  * 
- * @author: Naesung
- * @param {number} a
- * @param {number} b
- * @return {number} a plus b
+ * @author: DPS0340
+ * @param {string} mat
+ * @return {number} transpose
  * @since <0.3.7
  */
 exports.transpose = function (mat) {
@@ -1616,10 +1614,9 @@ exports.transpose = function (mat) {
 /**
  * 217 LQ 분해
  * 
- * @author: Naesung
- * @param {number} a
- * @param {number} b
- * @return {number} a plus b
+ * @author: DPS0340
+ * @param {string} mat
+ * @return {number} LQDecomposition
  * @since <0.3.7
  */
 exports.LQDecomposition = function (mat, iterationCount = 1000) {
@@ -1841,12 +1838,10 @@ exports.isinrange = function (a, b) {
 }
 
 /**
- * Finding Multiple Roots of Function.
  * 
- * @author: Naesung
- * @param {number} a
- * @param {number} b
- * @return {number} a plus b
+ * @author: DPS0340
+ * @param {string} f
+ * @return {number} Finding Multiple Roots of Function.
  * @since <0.3.7
  */
 exports.Durand_Kerner = function (f, rootsNumber = 1, iterationCount = 15) {
@@ -1871,12 +1866,11 @@ exports.Durand_Kerner = function (f, rootsNumber = 1, iterationCount = 15) {
 }
 
 /**
- * Gauss–Seidel method.
  * 
- * @author: Naesung
+ * @author: DPS0340
  * @param {number} a
  * @param {number} b
- * @return {number} a plus b
+ * @return {number} Gauss–Seidel method.
  * @since <0.3.7
  */
 exports.Gauss_Seidel = function (mat, iterationCount = 15) {
@@ -1921,12 +1915,10 @@ exports.randomVector = function (len, norm = 1) {
 }
 
 /**
- * Eigendecomposition of a matrix.
  * 
- * @author: Naesung
- * @param {number} a
- * @param {number} b
- * @return {number} a plus b
+ * @author: DPS0340
+ * @param {string} mat
+ * @return {number} Eigendecomposition of a matrix.
  * @since <0.3.7
  */
 exports.EigenVectorDecomposition = function (mat, iterationCount = 100) {
@@ -2012,12 +2004,10 @@ exports.EigenVectorDecomposition = function (mat, iterationCount = 100) {
 }
 
 /**
- * Solves System of linear equations.
  *  
- * @author: Naesung
- * @param {number} a
- * @param {number} b
- * @return {number} a plus b
+ * @author: DPS0340
+ * @param {string} mat
+ * @return {number} Solves System of linear equations.
  * @since <0.3.7
  */
 exports.Cramer = function (mat) {
@@ -2060,10 +2050,8 @@ exports.Cramer = function (mat) {
  * Generates Random Value with ACORN Algorithm:
  * Which is Better, Faster, Simpler than Standard JS PRNG Implementation.
  *  
- * @author: Naesung
- * @param {number} a
- * @param {number} b
- * @return {number} a plus b
+ * @author: DPS0340
+ * @return {random}
  * @since <0.3.7
  */
 exports.ACORN = function (seed = new Date().getTime(), moduloPower = 60, order = 10) {
