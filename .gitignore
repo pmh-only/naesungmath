@@ -2,3 +2,5 @@ node_modules/
 *.config
 .vs/ProjectSettings.json
 .vs/slnx.sqlite
+.vs/naesungmath/v16/.suo
+.vs/VSWorkspaceState.json
