@@ -6,7 +6,7 @@
  * @param {number} a
  * @param {number} b
  * @return {number} a + b
- * @since <0.3.7
+ * @since <0.37.0
  */
 exports.plus = function (a, b) {
   return a + b
@@ -19,7 +19,7 @@ exports.plus = function (a, b) {
  * @param {number} a
  * @param {number} b
  * @return {number} a - b
- * @since <0.3.7
+ * @since <0.37.0
  */
 exports.minus = function (a, b) {
   return a - b
@@ -32,7 +32,7 @@ exports.minus = function (a, b) {
  * @param {number} a
  * @param {number} b
  * @return {number} a * b
- * @since <0.3.7
+ * @since <0.37.0
  */
 exports.multiply = function (a, b) {
   return a * b
@@ -45,7 +45,7 @@ exports.multiply = function (a, b) {
  * @param {number} a
  * @param {number} b
  * @return {number} a / b
- * @since <0.3.7
+ * @since <0.37.0
  */
 exports.divide = function (a, b) {
   return a / b
@@ -58,7 +58,7 @@ exports.divide = function (a, b) {
  * @param {number} a
  * @param {number} b
  * @return {number} a ^ b
- * @since <0.3.7
+ * @since <0.37.0
  */
 exports.caret = function (a, b) {
   return a ** b
@@ -71,7 +71,7 @@ exports.caret = function (a, b) {
  * @param {number} a
  * @param {number} b
  * @return {number} (a, b)
- * @since <0.3.7
+ * @since <0.37.0
  */
 exports.pow = function (a, b) {
   return Math.pow(a, b)
@@ -83,7 +83,7 @@ exports.pow = function (a, b) {
  * @author: Naesung
  * @param {number} a
  * @return {number} root a
- * @since <0.3.7
+ * @since <0.37.0
  */
 exports.sqrt = function (a) {
   return Math.sqrt(a)
@@ -96,7 +96,7 @@ exports.sqrt = function (a) {
  * @param {number} a
  * @param {number} b
  * @return {number} random number from a to b
- * @since <0.3.7
+ * @since <0.37.0
  */
 exports.random = function (a, b) {
   var ranNum = Math.floor((Math.random() * b) + a)
@@ -110,7 +110,7 @@ exports.random = function (a, b) {
  * @param {number} a
  * @param {number} b
  * @return {number} find prime number between a and b
- * @since <0.3.7
+ * @since <0.37.0
  */
 exports.primeNumber = function (a, b) {
   const results = [2]
@@ -137,7 +137,7 @@ exports.primeNumber = function (a, b) {
  * @author: Naesung
  * @param {number} a
  * @return {number} change a to radian
- * @since <0.3.7
+ * @since <0.37.0
  */
 exports.radian = function (a) {
   return 2 * Math.PI * a
@@ -148,7 +148,7 @@ exports.radian = function (a) {
  * 
  * @author: Naesung
  * @return {number} pi
- * @since <0.3.7
+ * @since <0.37.0
  */
 exports.pi = Math.PI
 
@@ -162,7 +162,7 @@ exports.round = function (a) {
  * @param {number} a
  * @param {number} b
  * @return {number} a plus b
- * @since <0.3.7
+ * @since <0.37.0
  */
 exports.equilateralTriangleArea = function (a) {
   return 3 ** 0.5 / 4 * a * a
@@ -175,7 +175,7 @@ exports.equilateralTriangleArea = function (a) {
  * @param {number} a
  * @param {number} b
  * @return {number} a plus b
- * @since <0.3.7
+ * @since <0.37.0
  */
 exports.equilateralTriangleHeight = function (a) {
   return (3 ^ 0.5 / 2 * a)
@@ -188,7 +188,7 @@ exports.equilateralTriangleHeight = function (a) {
  * @param {number} a
  * @param {number} b
  * @return {number} Area of right triangle with each side a and b
- * @since <0.3.7
+ * @since <0.37.0
  */
 exports.rtria = function (a, b) {
   return (0.5 * a * b)
@@ -201,7 +201,7 @@ exports.rtria = function (a, b) {
  * @param {number} a
  * @param {number} b
  * @return {number} The length of the hypotenuse when each side is a, b in a right triangle
- * @since <0.3.7
+ * @since <0.37.0
  */
 exports.pytagoras = function (a, b) {
   return ((a * a + b * b) ** 0.5)
@@ -214,7 +214,7 @@ exports.pytagoras = function (a, b) {
  * @param {number} a
  * @param {number} b
  * @return {number} The length of an isosceles triangle with equal side a and base b
- * @since <0.3.7
+ * @since <0.37.0
  */
 exports.quadtria = function (a, b) {
   return (a / 4 * (4 * b * b - a * a) ** 0.5)
@@ -228,7 +228,7 @@ exports.quadtria = function (a, b) {
  * @param {number} b
  * @param {number} c
  * @return {number} Heron's formula
- * @since <0.3.7
+ * @since <0.37.0
  */
 exports.heron = function (a, b, c) {
   let cosTheta = ((a * a) + (b * b) - (c * c)) / (2 * a * b)
@@ -243,7 +243,7 @@ exports.heron = function (a, b, c) {
  * @param {number} a
  * @param {number} h
  * @return {number} Area of triangle given base and height
- * @since <0.3.7
+ * @since <0.37.0
  */
 exports.triangleAreaSide = function (a, h) {
   return (0.5 * a * h)
@@ -257,7 +257,7 @@ exports.triangleAreaSide = function (a, h) {
  * @param {number} b
  * @param {number} t
  * @return {number} Area of triangle using angle
- * @since <0.3.7
+ * @since <0.37.0
  */
 exports.triangleAreaAngle = function (a, b, t) {
   return (0.5 * a * b * (Math.sin(t)))
@@ -272,7 +272,7 @@ exports.triangleAreaAngle = function (a, b, t) {
  * @param {number} c
  * @param {number} r
  * @return {number} Inscribed circle and triangle area formula
- * @since <0.3.7
+ * @since <0.37.0
  */
 exports.inscribedCircleTriangleArea = function (a, b, c, r) {
   return (((a + b + c) / 2) * r)
@@ -287,7 +287,7 @@ exports.inscribedCircleTriangleArea = function (a, b, c, r) {
  * @param {number} c
  * @param {number} r
  * @return {number} Inscribed circle and triangle area formula
- * @since <0.3.7
+ * @since <0.37.0
  */
 exports.circumscribedCircleTriangleArea_Side = function (a, b, c, r) {
   return (a * b * c / 4 / r)
@@ -302,7 +302,7 @@ exports.circumscribedCircleTriangleArea_Side = function (a, b, c, r) {
  * @param {number} c
  * @param {number} r
  * @return {number} Inscribed circle and triangle area formula 
- * @since <0.3.7
+ * @since <0.37.0
  */
 exports.circumscribedCircleTriangleArea_Angle = function (a, b, c, r) {
   return (2 * r * r * (Math.sin(a)) * (Math.sin(b)) * (Math.sin(c)))
@@ -320,7 +320,7 @@ exports.circumscribedCircleTriangleArea_Angle = function (a, b, c, r) {
  * @param {number} count
  * @param {number} initx
  * @return Newton's method
- * @since <0.3.7
+ * @since <0.37.0
  */
 exports.newtonsMethod = function (f, count, initx = 2) {
   function diff (f, x, density = 5) {
@@ -348,7 +348,7 @@ exports.newtonsMethod = function (f, count, initx = 2) {
  * @param {number} a
  * @param {number} count
  * @return Taylor series
- * @since <0.3.7
+ * @since <0.37.0
  */
 exports.taylor = function (f, a, count) {
   let diffs = [(x) => f(a)]
@@ -399,7 +399,7 @@ exports.taylor = function (f, a, count) {
  * @param {number} f
  * @param {number} count
  * @return {number} Maclaurin series
- * @since <0.3.7
+ * @since <0.37.0
  */
 exports.maclaurin = function (f, count) {
   return exports.taylor(f, 0, count)
@@ -412,7 +412,7 @@ exports.maclaurin = function (f, count) {
  * @param {matrix} matrixA
  * @param {matrix} matrixB
  * @return {matrix} Matrix product of matrixA and matrixB
- * @since <0.3.7
+ * @since <0.37.0
  */
 exports.matrixMultiply = function (matrixA, matrixB) {
   if (matrixA[0].length !== matrixB.length) {
@@ -442,7 +442,7 @@ exports.matrixMultiply = function (matrixA, matrixB) {
  * @author: DPS0340
  * @param {matrix} matrix
  * @return {number} LUDecompostion of matrix
- * @since <0.3.7
+ * @since <0.37.0
  */
 exports.LUDecomposition = function (matrix) {
   if (matrix.length !== matrix[0].length) {
@@ -495,7 +495,7 @@ exports.LUDecomposition = function (matrix) {
  * @param {matrix} matrix
  * @param {number} k
  * @return {number} Matrix scalar product
- * @since <0.3.7
+ * @since <0.37.0
  */
 exports.matrixScalaMultiplation = function (matrix, k) {
   let res = []
@@ -515,7 +515,7 @@ exports.matrixScalaMultiplation = function (matrix, k) {
  * @author: DPS0340/Naesung(Merged)
  * @param {matrix} matrix
  * @return {number} Determinant
- * @since <0.3.7
+ * @since <0.37.0
  */
 exports.determinant = function (matrix) {
   if (matrix.length !== matrix[0].length) {
@@ -555,7 +555,7 @@ exports.determinant = function (matrix) {
  * @param {number} m
  * @param {nmuber} n
  * @return {number} Gaussian elimination
- * @since <0.3.7
+ * @since <0.37.0
  */
 exports.gaussian = function (matrix, m, n) {
   let X = []
@@ -591,7 +591,7 @@ exports.gaussian = function (matrix, m, n) {
  * @param {matrix} matrixA
  * @param {matrix} matrixB
  * @return {number} Matrix subtraction of matrixA and matrixB
- * @since <0.3.7
+ * @since <0.37.0
  */
 exports.matrixAdd = function (matrixA, matrixB) {
   if (matrixA.length !== matrixB.length || matrixA[0].length !== matrixB[0].length) {
@@ -615,7 +615,7 @@ exports.matrixAdd = function (matrixA, matrixB) {
  * @param {matrix} matrixA
  * @param {matrix} matrixB
  * @return {number} Matrix sum of matrixA and matrixB
- * @since <0.3.7
+ * @since <0.37.0
  */
 exports.matrixSub = function (matrixA, matrixB) {
   if (matrixA.length !== matrixB.length || matrixA[0].length !== matrixB[0].length) {
@@ -643,7 +643,7 @@ exports.matrixSub = function (matrixA, matrixB) {
  * @param {number} c1
  * @param {number} c2
  * @return {number} The center of gravity of the triangle using the coordinates of the vertices
- * @since <0.3.7
+ * @since <0.37.0
  */
 exports.centerGravity = function (a1, a2, b1, b2, c1, c2) {
   return ((a1 + b1 + c1) / 3)((a2 + b2 + c2) / 3)
@@ -658,7 +658,7 @@ exports.centerGravity = function (a1, a2, b1, b2, c1, c2) {
  * @author: Naesung
  * @param {number} a
  * @return {number} Area of a square with one side a
- * @since <0.3.7
+ * @since <0.37.0
  */
 exports.square = function (a) {
   return (a ** 2)
@@ -671,7 +671,7 @@ exports.square = function (a) {
  * @param {number} a
  * @param {number} b
  * @return {number} THe area of rectangle with the side is a, b
- * @since <0.3.7
+ * @since <0.37.0
  */
 exports.rectangleArea = function (a, b) {
   return (a * b)
@@ -684,7 +684,7 @@ exports.rectangleArea = function (a, b) {
  * @param {number} a
  * @param {number} b
  * @return {number} The circumstance of rectangle with the side is a, b
- * @since <0.3.7
+ * @since <0.37.0
  */
 exports.rectanglePerimeter = function (a, b) {
   return ((a) * 2 + (b) * 2)
@@ -697,7 +697,7 @@ exports.rectanglePerimeter = function (a, b) {
  * @param {number} a
  * @param {number} b
  * @return {number} Pythagoras Theorem
- * @since <0.3.7
+ * @since <0.37.0
  */
 exports.rectangleDiagonal = function (a, b) {
   return (((a) ** 2 + (b) ** 2) ** 0.5)
@@ -710,7 +710,7 @@ exports.rectangleDiagonal = function (a, b) {
  * @param {number} a
  * @param {number} b
  * @return {number} The area of rhombus with digonal a, b
- * @since <0.3.7
+ * @since <0.37.0
  */
 exports.rhombusArea = function (a, b) {
   return (0.5 * (a) * (b))
@@ -723,7 +723,7 @@ exports.rhombusArea = function (a, b) {
  * @param {number} a
  * @param {number} h
  * @return {number} The area of parallelogram
- * @since <0.3.7
+ * @since <0.37.0
  */
 exports.parallelogramArea = function (a, h) {
   return (a * h)
@@ -737,7 +737,7 @@ exports.parallelogramArea = function (a, h) {
  * @param {number} b
  * @param {number} h
  * @return {number} The area of trapezoid
- * @since <0.3.7
+ * @since <0.37.0
  */
 exports.trapezoidArea = function (a, b, h) {
   return (0.5 * (a + b) * h)
@@ -751,7 +751,7 @@ exports.trapezoidArea = function (a, b, h) {
  * @param {number} b
  * @param {number} t
  * @return {number} The area of square
- * @since <0.3.7
+ * @since <0.37.0
  */
 exports.squareArea = function (a, b, t) {
   return (0.5 * (a) * (b) * (Math.sin(t)))
@@ -763,7 +763,7 @@ exports.squareArea = function (a, b, t) {
  * @author: Naesung
  * @param {number} a
  * @return {number} The height of pentagon with side a
- * @since <0.3.7
+ * @since <0.37.0
  */
 exports.pentagonArea = function (a) {
   return ((((a) ** 2) / 4) * ((25 + 10((5) ** 0.5)) ** 0.5))
@@ -775,7 +775,7 @@ exports.pentagonArea = function (a) {
  * @author: Naesung
  * @param {number} a
  * @return {number} The length of height of pentagon
- * @since <0.3.7
+ * @since <0.37.0
  */
 exports.pentagonHeight = function (a) {
   return (((25 + 10 * ((5) ** 0.5)) / 2) * (a))
@@ -787,7 +787,7 @@ exports.pentagonHeight = function (a) {
  * @author: Naesung
  * @param {number} a
  * @return {number} The length of digonal of pentagon
- * @since <0.3.7
+ * @since <0.37.0
  */
 exports.pentagonDiagonal = function (a) {
   // 간단한 것인데 귀찮은 것이라 작성//
@@ -801,7 +801,7 @@ exports.pentagonDiagonal = function (a) {
  * @author: Naesung
  * @param {number} a
  * @return {number} The area of hexagon with on side a
- * @since <0.3.7
+ * @since <0.37.0
  */
 exports.hexagonArea = function (a) {
   return ((3 * ((3) ^ 0.5)) / 2) * (a ** 2)
@@ -813,7 +813,7 @@ exports.hexagonArea = function (a) {
  * @author: Naesung
  * @param {number} n
  * @return {number} The number of diagonal of polygon
- * @since <0.3.7
+ * @since <0.37.0
  */
 exports.polydiag = function (n) {
   return (n * (n - 3) / 2)
@@ -825,7 +825,7 @@ exports.polydiag = function (n) {
  * @author: Naesung
  * @param {number} n
  * @return {number} The sum of the polygons cabinet (degree)
- * @since <0.3.7
+ * @since <0.37.0
  */
 exports.polyAngleSumDeg = function (n) {
   return (180 * (n - 2))
@@ -837,7 +837,7 @@ exports.polyAngleSumDeg = function (n) {
  * @author: Naesung
  * @param {number} n
  * @return {number} The sum of the polygons cabinet (radian)
- * @since <0.3.7
+ * @since <0.37.0
  */
 exports.polyAngleSumRad = function (n) {
   return ((Math.PI) * (n - 2))
@@ -850,7 +850,7 @@ exports.polyAngleSumRad = function (n) {
  * @param {number} n
  * @param {number} a
  * @return {number} The area of regular polygons
- * @since <0.3.7
+ * @since <0.37.0
  */
 exports.polyarea = function (n, a) {
   return n * (a ** 2) / (4 * (Math.tan(a / (Math.PI))))
@@ -862,7 +862,7 @@ exports.polyarea = function (n, a) {
  * @author: Naesung
  * @param {number} n
  * @return {number} The sum of cabinet of polygon (degree)
- * @since <0.3.7
+ * @since <0.37.0
  */
 exports.polyAngle_Deg = function (n) {
   return (180 * (n - 2) / n)
@@ -874,7 +874,7 @@ exports.polyAngle_Deg = function (n) {
  * @author: Naesung
  * @param {number} n
  * @return {number} The sum of cabinet of polygon (radian)
- * @since <0.3.7
+ * @since <0.37.0
  */
 exports.polyAngle_Rad = function (n) {
   return ((Math.PI) * (n - 2) / n)
@@ -886,7 +886,7 @@ exports.polyAngle_Rad = function (n) {
  * @author: Naesung
  * @param {number} r
  * @return {number} The area of circle
- * @since <0.3.7
+ * @since <0.37.0
  */
 exports.circleArea = function (r) {
   return ((Math.PI) * (r ** 2))
@@ -898,7 +898,7 @@ exports.circleArea = function (r) {
  * @author: Naesung
  * @param {number} r
  * @return {number} The circumstance of circle
- * @since <0.3.7
+ * @since <0.37.0
  */
 exports.circlePerimeter = function (r) {
   return (2 * (Math.PI) * r)
@@ -911,7 +911,7 @@ exports.circlePerimeter = function (r) {
  * @author: Naesung
  * @param {number} a
  * @return {number} The center angle of circumferential angle
- * @since <0.3.7
+ * @since <0.37.0
  */
 exports.circumference = function (a) {
   return (2 * a)
@@ -926,7 +926,7 @@ exports.circumference = function (a) {
  * @param {number} r
  * @param {number} l
  * @return {number} The center angle of sector form (radian)
- * @since <0.3.7
+ * @since <0.37.0
  */
 exports.circularSectorAngle = function (r, l) {
   return (l / r)
@@ -939,7 +939,7 @@ exports.circularSectorAngle = function (r, l) {
  * @param {number} r
  * @param {number} l
  * @return {number} The area of sector form
- * @since <0.3.7
+ * @since <0.37.0
  */
 exports.circularSectorArea_rl = function (r, l) {
   return (0.5 * r * l)
@@ -952,7 +952,7 @@ exports.circularSectorArea_rl = function (r, l) {
  * @param {number} r
  * @param {number} t
  * @return {number} THe area of sector form
- * @since <0.3.7
+ * @since <0.37.0
  */
 exports.circularSectorArea_rt = function (r, t) {
   return (0.5 * r * (t ** 2))
@@ -965,7 +965,7 @@ exports.circularSectorArea_rt = function (r, t) {
  * @param {number} r
  * @param {number} l
  * @return {number} The length of arc
- * @since <0.3.7
+ * @since <0.37.0
  */
 exports.arcLength = function (r, l) {
   return (r * l)
@@ -978,7 +978,7 @@ exports.arcLength = function (r, l) {
  * @param {number} a
  * @param {number} b
  * @return {number} The area of eval
- * @since <0.3.7
+ * @since <0.37.0
  */
 exports.evalArea = function (a, b) {
   return ((Math.PI) * a * b)
@@ -991,7 +991,7 @@ exports.evalArea = function (a, b) {
  * @param {number} a
  * @param {number} b
  * @return {number} THe eccentricity of eval
- * @since <0.3.7
+ * @since <0.37.0
  */
 exports.evalEccentricity = function (a, b) {
   return ((1 - ((b ** 2) / (a ** 2))) ** 0.5)
@@ -1005,7 +1005,7 @@ exports.evalEccentricity = function (a, b) {
  * @author: Naesung
  * @param {number} r
  * @return {number} THe volume of sphere
- * @since <0.3.7
+ * @since <0.37.0
  */
 exports.sphereVolume = function (r) {
   return ((4 / 3) * (Math.PI) * (r ** 2))
@@ -1017,7 +1017,7 @@ exports.sphereVolume = function (r) {
  * @author: Naesung
  * @param {number} r
  * @return {number} The surface area of sphere
- * @since <0.3.7
+ * @since <0.37.0
  */
 exports.sphereArea = function (r) {
   return (4 * (Math.PI) * (r ** 2))
@@ -1030,7 +1030,7 @@ exports.sphereArea = function (r) {
  * @param {number} r
  * @param {number} h
  * @return {number} The volume of cylinder
- * @since <0.3.7
+ * @since <0.37.0
  */
 exports.cylinderVolume = function (r, h) {
   return ((Math.PI) * (r ** 2) * h)
@@ -1043,7 +1043,7 @@ exports.cylinderVolume = function (r, h) {
  * @param {number} r
  * @param {number} h
  * @return {number} The surface area of cylinder
- * @since <0.3.7
+ * @since <0.37.0
  */
 exports.cylinderArea = function (r, h) {
   return ((2 * (Math.PI) * r * h) + (2 * (Math.PI) * (r ** 2)))
@@ -1056,7 +1056,7 @@ exports.cylinderArea = function (r, h) {
  * @param {number} r
  * @param {number} h
  * @return {number} The volume of cone
- * @since <0.3.7
+ * @since <0.37.0
  */
 exports.coneVolume = function (r, h) {
   return ((1 / 3) * (Math.PI) * (r ** 2) * h)
@@ -1069,7 +1069,7 @@ exports.coneVolume = function (r, h) {
  * @param {number} r
  * @param {number} h
  * @return {number} The surface area of cone
- * @since <0.3.7
+ * @since <0.37.0
  */
 exports.coneArea = function (r, h) {
   return (((Math.PI) * r * (((r ** 2) + (h ** 2)) ** 0.5)) + ((Math.PI) * (r ** 2)))
@@ -1082,7 +1082,7 @@ exports.coneArea = function (r, h) {
  * @param {number} a
  * @param {number} h
  * @return {number} The volume of triangular cone
- * @since <0.3.7
+ * @since <0.37.0
  */
 exports.triangularPyramidVolume = function (a, h) {
   return ((1 / 3) * a * h)
@@ -1095,7 +1095,7 @@ exports.triangularPyramidVolume = function (a, h) {
  * @param {number} a
  * @param {number} h
  * @return {number}  The volume of square pyramid
- * @since <0.3.7
+ * @since <0.37.0
  */
 exports.squarePyramidVolume_ah = function (a, h) {
   return ((1 / 3) * (a ** 2) * h)
@@ -1108,7 +1108,7 @@ exports.squarePyramidVolume_ah = function (a, h) {
  * @param {number} a
  * @param {number} b
  * @return {number} a plus b
- * @since <0.3.7
+ * @since <0.37.0
  */
 exports.squarePyramidVolume_ab = function (a, b) {
   return ((1 / 3) * (a ** 2) * (((b ** 2) - ((a ** 2) / 2)) ** (0.5)))
@@ -1121,7 +1121,7 @@ exports.squarePyramidVolume_ab = function (a, b) {
  * @param {number} a
  * @param {number} b
  * @return {number} The volume of square pyramid
- * @since <0.3.7
+ * @since <0.37.0
  */
 exports.squarePyramidArea_ab = function (a, b) {
   return ((a * ((4 * (b ** 2) - (a ** 2)) ** (0.5))) + (a ** 2))
@@ -1134,7 +1134,7 @@ exports.squarePyramidArea_ab = function (a, b) {
  * @param {number} a
  * @param {number} b
  * @return {number} The surface area of square pyramid
- * @since <0.3.7
+ * @since <0.37.0
  */
 exports.squarePyramidArea_ah = function (a, h) {
   return ((a * ((4 * (h ** 2) - (a ** 2)) ** (0.5))) + (a ** 2))
@@ -1147,7 +1147,7 @@ exports.squarePyramidArea_ah = function (a, h) {
  * @param {number} a
  * @param {number} b
  * @return {number} The height of square pyramid
- * @since <0.3.7
+ * @since <0.37.0
  */
 exports.squarePyramidHeight = function (a, b) {
   return (((b ** 2) - ((a ** 2) / 2)) ** (0.5))
@@ -1174,7 +1174,7 @@ exports.tetrahedronHeight = function (a) {
  * @author: Naesung
  * @param {number} a
  * @return {number} The volume of cube
- * @since <0.3.7
+ * @since <0.37.0
  */
 exports.cubeVolume = function (a) {
   return (a ** 3)
@@ -1185,9 +1185,8 @@ exports.cubeVolume = function (a) {
  * 
  * @author: Naesung
  * @param {number} a
- * @param {number} b
  * @return {number} The surface area of cube
- * @since <0.3.7
+ * @since <0.37.0
  */
 exports.cubeArea = function (a) {
   return (6 * (a ** 2))
@@ -1199,8 +1198,9 @@ exports.cubeArea = function (a) {
  * @author: Naesung
  * @param {number} a
  * @param {number} b
- * @return {number} a plus b
- * @since <0.3.7
+ * @param {number} c
+ * @return {number} The volume of cuboid
+ * @since <0.37.0
  */
 exports.cuboidVolume = function (a, b, c) {
   return (a * b * c)
@@ -1212,8 +1212,9 @@ exports.cuboidVolume = function (a, b, c) {
  * @author: Naesung
  * @param {number} a
  * @param {number} b
- * @return {number} a plus b
- * @since <0.3.7
+ * @param {number} c
+ * @return {number} The surface area of cuboid
+ * @since <0.37.0
  */
 exports.cuboidArea = function (a, b, c) {
   return (2 * ((a * b) + (b * c) + (c * a)))
@@ -1225,8 +1226,9 @@ exports.cuboidArea = function (a, b, c) {
  * @author: Naesung
  * @param {number} a
  * @param {number} b
+ * @param {number} c
  * @return {number} a plus b
- * @since <0.3.7
+ * @since <0.37.0
  */
 exports.cuboidDiagonal = function (a, b, c) {
   return (((a ** 2) + (b ** 2) + (c ** 2)) ** 0.5)
@@ -1236,10 +1238,11 @@ exports.cuboidDiagonal = function (a, b, c) {
  * 063 오일러 다면체 정리
  * 
  * @author: Naesung
- * @param {number} a
- * @param {number} b
- * @return {number} a plus b
- * @since <0.3.7
+ * @param {number} v
+ * @param {number} e
+ * @param {number} f
+ * @return {number} Euler polyhedrob theroem
+ * @since <0.37.0
  */
 exports.eulerPolyhedronTheorem = function (v, e, f) {
   if ((v - e + f) === 2) return true
@@ -1252,8 +1255,9 @@ exports.eulerPolyhedronTheorem = function (v, e, f) {
  * @author: Naesung
  * @param {number} a
  * @param {number} b
- * @return {number} a plus b
- * @since <0.3.7
+ * @param {number} c
+ * @return {number} Root formula
+ * @since <0.37.0
  */
 exports.rootFormula_plus = function (a, b, c) {
   return ((-b + (((b ** 2) - (4 * a * c)) ** 0.5)) / (2 * a))
@@ -1265,8 +1269,9 @@ exports.rootFormula_plus = function (a, b, c) {
  * @author: Naesung
  * @param {number} a
  * @param {number} b
- * @return {number} a plus b
- * @since <0.3.7
+ * @param {number} c
+ * @return {number} Root formula
+ * @since <0.37.0
  */
 exports.rootFormula_minus = function (a, b, c) {
   return ((-b - (((b ** 2) - (4 * a * c)) ** 0.5)) / (2 * a))
@@ -1278,8 +1283,9 @@ exports.rootFormula_minus = function (a, b, c) {
  * @author: Naesung
  * @param {number} a
  * @param {number} b
- * @return {number} a plus b
- * @since <0.3.7
+ * @param {number} c
+ * @return {number} Root formula(even root)
+ * @since <0.37.0
  */
 exports.rootFormula_EvenPlus = function (a, b, c) {
   return ((-(0.5 * b) + ((((0.5 * b) ** 2) - (a * c)) ** 0.5)) / a)
@@ -1291,8 +1297,9 @@ exports.rootFormula_EvenPlus = function (a, b, c) {
  * @author: Naesung
  * @param {number} a
  * @param {number} b
- * @return {number} a plus b
- * @since <0.3.7
+ * @param {number} c
+ * @return {number} Root formula(even root)
+ * @since <0.37.0
  */
 exports.rootFormula_EvenMinus = function (a, b, c) {
   return ((-(0.5 * b) - ((((0.5 * b) ** 2) - (a * c)) ** 0.5)) / a)
@@ -1304,8 +1311,10 @@ exports.rootFormula_EvenMinus = function (a, b, c) {
  * @author: Naesung
  * @param {number} a
  * @param {number} b
- * @return {number} a plus b
- * @since <0.3.7
+ * @param {number} c
+ * @param {number} type
+ * @return {number} Relation of root and coefficient
+ * @since <0.37.0
  */
 exports.rootAndCoefficient = function (a, b, c, type) {
   if (type === 1) return -(b / a)
@@ -1318,8 +1327,10 @@ exports.rootAndCoefficient = function (a, b, c, type) {
  * @author: Naesung
  * @param {number} a
  * @param {number} b
- * @return {number} a plus b
- * @since <0.3.7
+ * @param {number} c
+ * @param {number} d
+ * @return {number} Root formula of cubic equation
+ * @since <0.37.0
  */
 exports.cubicEquation_first = function (a, b, c, d) {
   let x = (((0.5 * ((2 * (b ** 3) - (9 * a * b * c) + (27 * (a ** 2) * d) + (((2 * (b ** 3) - (9 * a * b * c) + (27 * (a ** 2) * d)) ** 2) - 4((b ** 2) - 3 * a * c) ** 3) ** 0.5))) ** (1 / 3)))
@@ -1329,6 +1340,8 @@ exports.cubicEquation_first = function (a, b, c, d) {
 
 /**
  * 067B 삼차방정식의 근과 계수와의 관계 공식
+ * 
+ * python 버전에서 사용하세요.
  */
 /*
 exports.cubicEquation_second = function (a, b, c, d) {
@@ -1340,6 +1353,8 @@ exports.cubicEquation_second = function (a, b, c, d) {
 
 /**
  * 067C 삼차방정식의 근과 계수와의 관계 공식
+ * 
+ * python 버전에서 사용하세요.
  */
 /*
 exports.cubicEquation_third = function (a, b, c, d) {
@@ -1349,7 +1364,15 @@ exports.cubicEquation_third = function (a, b, c, d) {
 }
 */
 
-// 068 제곱근 근삿값//
+/**
+ * 068 제곱근 근삿값
+ * 
+ * @param {number} val
+ * @param {number} digit_
+ * @return {number}
+ * @since <0.37.0
+ * 
+ */
 
 function Root() { // 함수아님 프로토타입임
   this.get = function (val, digit_) {
@@ -1384,9 +1407,10 @@ exports.root = new Root()
  * 
  * @author: Naesung
  * @param {number} a
- * @param {number} b
- * @return {number} a plus b
- * @since <0.3.7
+ * @param {number} d
+ * @param {number} n
+ * @return {number} Arithmetic progresstion
+ * @since <0.37.0
  */
 exports.arithmeticProgression = function (a, d, n) {
   return (a + (n - 1) * d)
@@ -1396,10 +1420,11 @@ exports.arithmeticProgression = function (a, d, n) {
  * 082B 등차수열 공식
  * 
  * @author: Naesung
- * @param {number} a
- * @param {number} b
- * @return {number} a plus b
- * @since <0.3.7
+ * @param {number} d
+ * @param {number} n
+ * @param {number} s
+ * @return {number} Arithmetic progresstion
+ * @since <0.37.0
  */
 exports.arithmeticProgression_n = function (d, n, s) {
   return (s - (n - 1) * d)
@@ -1410,9 +1435,10 @@ exports.arithmeticProgression_n = function (d, n, s) {
  * 
  * @author: Naesung
  * @param {number} a
- * @param {number} b
- * @return {number} a plus b
- * @since <0.3.7
+ * @param {number} n
+ * @param {number} s
+ * @return {number} Arithmetic progresstion
+ * @since <0.37.0
  */
 exports.arithmeticProgression_d = function (a, n, s) {
   return ((s - a) / (n - 1))
@@ -1422,10 +1448,11 @@ exports.arithmeticProgression_d = function (a, n, s) {
  * 083A 등차수열의 합 공식
  * 
  * @author: Naesung
- * @param {number} a
- * @param {number} b
- * @return {number} a plus b
- * @since <0.3.7
+ * @param {number} a1
+ * @param {number} an
+ * @param {number} n
+ * @return {number} Arithmetic progresstion
+ * @since <0.37.0
  */
 exports.arithmeticProgressionSum_Term = function (a1, an, n) {
   return (((a1 + an) / 2) * n)
@@ -1435,10 +1462,11 @@ exports.arithmeticProgressionSum_Term = function (a1, an, n) {
  * 083B 등차수열의 합 공식
  * 
  * @author: Naesung
- * @param {number} a
- * @param {number} b
- * @return {number} a plus b
- * @since <0.3.7
+ * @param {number} a1
+ * @param {number} n
+ * @param {number} d
+ * @return {number} Arithmetic progresstion
+ * @since <0.37.0
  */
 exports.artimeticProgressionSum = function (a1, n, d) {
   return ((((2 * a1) + ((n - 1) * d)) / 2) * n)
@@ -1452,7 +1480,7 @@ exports.artimeticProgressionSum = function (a1, n, d) {
  * @param {number} n
  * @param {number} r
  * @return {number} Geometric sequence
- * @since <0.3.7
+ * @since <0.37.0
  */
 exports.geometricSequence_a = function (an, n, r) {
   return (an / (r ** n))
@@ -1466,7 +1494,7 @@ exports.geometricSequence_a = function (an, n, r) {
  * @param {number} a
  * @param {number} r
  * @return {number} Geometric sequence
- * @since <0.3.7
+ * @since <0.37.0
  */
 exports.geometricSequence_n = function (an, a, r) {
   return Math.log(an / a) / Math.log(r)
@@ -1480,7 +1508,7 @@ exports.geometricSequence_n = function (an, a, r) {
  * @param {number} a
  * @param {number} n
  * @return {number} Geometric sequence
- * @since <0.3.7
+ * @since <0.37.0
  */
 exports.geometricSequence_r = function (an, a, n) {
   return ((an / a) ** (1 / n))
@@ -1494,7 +1522,7 @@ exports.geometricSequence_r = function (an, a, n) {
  * @param {number} n
  * @param {number} r
  * @return {number} Geometric sequence
- * @since <0.3.7
+ * @since <0.37.0
  */
 exports.geometricSequence_an = function (a, n, r) {
   return (a * (r ** n))
@@ -1507,7 +1535,7 @@ exports.geometricSequence_an = function (a, n, r) {
  * @author: Naesung
  * @param {number} deg
  * @return {number} Convert degree to radian
- * @since <0.3.7
+ * @since <0.37.0
  */
 exports.degreeToRad = function (deg) {
   return deg * Math.PI / 180
@@ -1519,7 +1547,7 @@ exports.degreeToRad = function (deg) {
  * @author: Naesung
  * @param {number} rad
  * @return {number} Convert radian to degree
- * @since <0.3.7
+ * @since <0.37.0
  */
 exports.radToDegree = function (rad) {
   return rad * 180 / Math.PI
@@ -1531,7 +1559,7 @@ exports.radToDegree = function (rad) {
  * @author: DPS0340, Naesung(Merged)
  * @param {string} f
  * @return {number} Diff
- * @since <0.3.7
+ * @since <0.37.0
  */
 exports.diff = function (f, density = 5) {
   let dx = 2 * (10 ** (-density))
@@ -1546,7 +1574,7 @@ exports.diff = function (f, density = 5) {
  * @author: DPS0340, Naesung(Merged)
  * @param {string} f
  * @return {number} Integral
- * @since <0.3.7
+ * @since <0.37.0
  */
 exports.integral = function (f, density = 5) {
   let g = (a, b) => {
@@ -1567,7 +1595,7 @@ exports.integral = function (f, density = 5) {
  * @param {number} row1
  * @param {number} row2
  * @return {number} sqrtDotProduct
- * @since <0.3.7
+ * @since <0.37.0
  */
 exports.sqrtDotProduct = function (row1, row2) {
   let res = 0
@@ -1584,7 +1612,7 @@ exports.sqrtDotProduct = function (row1, row2) {
  * @author: DPS0340
  * @param {string} row
  * @return {number} normalization
- * @since <0.3.7
+ * @since <0.37.0
  */
 exports.normailze = function (row) {
   return exports.matrix_scala_multiplation(row, 1 / exports.sqrtDotProduct(row, row))
@@ -1596,7 +1624,7 @@ exports.normailze = function (row) {
  * @author: DPS0340
  * @param {string} mat
  * @return {number} transpose
- * @since <0.3.7
+ * @since <0.37.0
  */
 exports.transpose = function (mat) {
   let res = []
@@ -1617,7 +1645,7 @@ exports.transpose = function (mat) {
  * @author: DPS0340
  * @param {string} mat
  * @return {number} LQDecomposition
- * @since <0.3.7
+ * @since <0.37.0
  */
 exports.LQDecomposition = function (mat, iterationCount = 1000) {
   let AT = exports.transpose(mat)
@@ -1842,7 +1870,7 @@ exports.isinrange = function (a, b) {
  * @author: DPS0340
  * @param {string} f
  * @return {number} Finding Multiple Roots of Function.
- * @since <0.3.7
+ * @since <0.37.0
  */
 exports.Durand_Kerner = function (f, rootsNumber = 1, iterationCount = 15) {
   let roots = []
@@ -1871,7 +1899,7 @@ exports.Durand_Kerner = function (f, rootsNumber = 1, iterationCount = 15) {
  * @param {number} a
  * @param {number} b
  * @return {number} Gauss–Seidel method.
- * @since <0.3.7
+ * @since <0.37.0
  */
 exports.Gauss_Seidel = function (mat, iterationCount = 15) {
   let x = []
@@ -1919,7 +1947,7 @@ exports.randomVector = function (len, norm = 1) {
  * @author: DPS0340
  * @param {string} mat
  * @return {number} Eigendecomposition of a matrix.
- * @since <0.3.7
+ * @since <0.37.0
  */
 exports.EigenVectorDecomposition = function (mat, iterationCount = 100) {
   let V = []
@@ -2008,7 +2036,7 @@ exports.EigenVectorDecomposition = function (mat, iterationCount = 100) {
  * @author: DPS0340
  * @param {string} mat
  * @return {number} Solves System of linear equations.
- * @since <0.3.7
+ * @since <0.37.0
  */
 exports.Cramer = function (mat) {
   let B = []
@@ -2052,7 +2080,7 @@ exports.Cramer = function (mat) {
  *  
  * @author: DPS0340
  * @return {random}
- * @since <0.3.7
+ * @since <0.37.0
  */
 exports.ACORN = function (seed = new Date().getTime(), moduloPower = 60, order = 10) {
   let M = 2 ** moduloPower
