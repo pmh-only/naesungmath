@@ -23,6 +23,22 @@ naesungmath@0.3.1(202002)
 
 0.3.0 이전 버전은 deprecated 처리되었으니, 0.3.0 이하 버전을 사용하시는 분은 업데이트 해주시기 바랍니다. (그대로 이용할 수 있습니다.)
 
+## 저작권
+0.37.0 버전부터는 라이선스가 변경됩니다.
+
+Copyright 2020 Naesung Licensed under the
+Educational Community License, Version 2.0 (the "License"); you may
+not use this file except in compliance with the License. You may
+obtain a copy of the License at
+ 
+http://www.osedu.org/licenses/ECL-2.0
+ 
+Unless required by applicable law or agreed to in writing,
+software distributed under the License is distributed on an "AS IS"
+BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express
+or implied. See the License for the specific language governing
+permissions and limitations under the License.
+
 ## 활용
 수식 계산기, 수학 교육
 
