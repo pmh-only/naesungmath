@@ -4,54 +4,6 @@
 // exports.ApolloniusTheorem = function (ab, ac , am, bm) {
 // 044 타원의 방정식//
 
-// 056 정사면체의 겉넓이 공식//
-exports.tetrahedronArea = function (a) {
-  return ((3 ** (0.5)) * (a ** 2))
-}
-
-// 057 정사면체의 높이 공식//
-exports.tetrahedronHeight = function (a) {
-  return (((2 / 3) ** (0.5)) * a)
-}
-
-/**
- * 058 정육면체의 부피 공식
- *  
- * @author: Naesung
- * @param {number} a
- * @return {number} The volume of cube
- * @since <0.37.0
- */
-exports.cubeVolume = function (a) {
-  return (a ** 3)
-}
-
-/**
- * 059 정육면체의 겉넓이 공식
- * 
- * @author: Naesung
- * @param {number} a
- * @return {number} The surface area of cube
- * @since <0.37.0
- */
-exports.cubeArea = function (a) {
-  return (6 * (a ** 2))
-}
-
-/**
- * 060 직육면체의 넓이 공식
- * 
- * @author: Naesung
- * @param {number} a
- * @param {number} b
- * @param {number} c
- * @return {number} The volume of cuboid
- * @since <0.37.0
- */
-exports.cuboidVolume = function (a, b, c) {
-  return (a * b * c)
-}
-
 /**
  * 061 직육면체의 겉넓이 공식
  * 
