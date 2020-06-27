@@ -44,5 +44,5 @@ permissions and limitations under the License.
 
 ## Contributors
 
-[![Naesung](https://avatars0.githubusercontent.com/u/42634731?s=460&v=4)](https://github.com/Naesung) 
-[![DPS0340](https://avatars0.githubusercontent.com/u/32592965?s=460&v=4)](https://github.com/DPS0340)
+[![Naesung](https://avatars0.githubusercontent.com/u/42634731?s=460&v=4)](https://github.com/Naesung) (0.0.1-0.37.0)
+[![DPS0340](https://avatars0.githubusercontent.com/u/32592965?s=460&v=4)](https://github.com/DPS0340) (0.0.1-0.3.0)
