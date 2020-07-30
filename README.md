@@ -1,4 +1,4 @@
-# MyNSLibrary / Naesungmath
+# Naesungmath
 
 기초 자료는 대한수학회 배포물을 기준으로 만들었습니다.
 
