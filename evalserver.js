@@ -1,3 +1,4 @@
+/*
 const nmath = require('./math.js')
 const assert = require('assert')
 const repl = require('repl')
@@ -8,3 +9,4 @@ const r = repl.start('> ')
 r.context.help = help
 r.context.nmath = nmath
 r.context.assert = assert
+*/
