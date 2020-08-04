@@ -1,10 +1,10 @@
 {
     "name": "naesungmath",
-    "version": "0.37.0",
+    "version": "1.0.0",
     "description": "Math and Science",
-    "main": "math.js",
+    "main": "/src",
     "scripts": {
-        "test": "node ./example/test.js"
+        "test": ""
     },
     "repository": {
         "type": "git",
