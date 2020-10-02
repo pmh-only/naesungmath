@@ -3,9 +3,10 @@
     "version": "1.0.0",
     "description": "Math and Science",
     "main": "/src",
-    "scripts": {
-        "test": ""
-    },
+  "scripts": {
+    "test": "node main.js",
+    "check": "npx standard"
+  },
     "repository": {
         "type": "git",
         "url": "git+https://github.com/Naesung/naesungmath.git"
