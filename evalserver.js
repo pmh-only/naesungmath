@@ -1,5 +1,5 @@
 /*
-const nmath = require('./math.js')
+const nmath = require('./src')
 const assert = require('assert')
 const repl = require('repl')
 
