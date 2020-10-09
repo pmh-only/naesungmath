@@ -6,6 +6,9 @@
 
 문의는 minseo0388@outlook.com, 129dot03@kakao.com으로 하면 됩니다.
 
+[![Coverage Status](https://coveralls.io/repos/github/Naesung/naesungmath/badge.svg?branch=master)](https://github.com/Naesung/naesungmath)
+[![Maintainability](https://api.codeclimate.com/v1/badges/5abbae229dbcd797e9ce/maintainability)](https://github.com/Naesung/naesungmath)
+
 ## npm package 배포
 Naesungmath로 배포됩니다.
 
