@@ -1,13 +1,1 @@
-/**
- * 065B ¦�� ���� ����
- * 
- * @author: Choi Minseo
- * @param {number} a
- * @param {number} b
- * @param {number} c
- * @return {number} Root formula(even root)
- * @since <0.37.0
- */
-exports.rootFormula_EvenMinus = function (a, b, c) {
-    return ((-(0.5 * b) - ((((0.5 * b) ** 2) - (a * c)) ** 0.5)) / a)
-}
+

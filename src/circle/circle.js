@@ -103,3 +103,27 @@ exports.circularSectorArea_rl = function (r, l) {
     return (0.5 * r * l)
 }
 
+/**
+ * 041 ȣ�� ���� ����
+ * 
+ * @author: Naesung
+ * @param {number} r
+ * @param {number} l
+ * @return {number} The length of arc
+ * @since <0.37.0
+ */
+exports.arcLength = function (r, l) {
+    return (r * l)
+}
+
+/**
+ * 210 60����-���� ��ȯ
+ * 
+ * @author: Choi Minseo
+ * @param {number} deg
+ * @return {number} Convert degree to radian
+ * @since <0.37.0
+ */
+exports.degreeToRad = function (deg) {
+    return deg * Math.PI / 180
+}
