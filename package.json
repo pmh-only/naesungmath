@@ -9,17 +9,17 @@
   },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/Naesung/naesungmath.git"
+        "url": "git+https://github.com/Choi Minseo/naesungmath.git"
     },
-    "author": "Naesung",
+    "author": "Choi Minseo",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/Naesung/naesungmath/issues"
+        "url": "https://github.com/Choi Minseo/naesungmath/issues"
     },
     "homepage": "https://MyNSLab.net",
     "keywords": [
         "Naesungmath",
-        "Naesung",
+        "Choi Minseo",
         "Nmath"
     ],
     "dependencies": {

@@ -1,7 +1,7 @@
 /**
- * 083A µîÂ÷¼ö¿­ÀÇ ÇÕ °ø½Ä
+ * 083A ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
  * 
- * @author: Naesung
+ * @author: Choi Minseo
  * @param {number} a1
  * @param {number} an
  * @param {number} n

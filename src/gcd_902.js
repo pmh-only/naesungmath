@@ -1,7 +1,7 @@
 /**
  * 902 gcd
  *
- * @author: DPS0340, Naesung
+ * @author: DPS0340, Choi Minseo
  * @param {number} a
  * @param {number} b
  * @return {number} gcd

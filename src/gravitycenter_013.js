@@ -1,7 +1,7 @@
 /**
- * 013 ¹«°ÔÁß½É °ø½Ä
+ * 013 ï¿½ï¿½ï¿½ï¿½ï¿½ß½ï¿½ ï¿½ï¿½ï¿½ï¿½
  * 
- * @author: Naesung
+ * @author: Choi Minseo
  * @param {number} a1
  * @param {number} a2
  * @param {number} b1

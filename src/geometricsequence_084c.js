@@ -1,7 +1,7 @@
 /**
- * 084C µîºñ¼ö¿­ °ø½Ä
+ * 084C ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
  * 
- * @author: Naesung
+ * @author: Choi Minseo
  * @param {number} an
  * @param {number} a
  * @param {number} n

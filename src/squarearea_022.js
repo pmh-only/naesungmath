@@ -1,7 +1,7 @@
 /**
- * 022 »ç°¢ÇüÀÇ ³ÐÀÌ °ø½Ä
+ * 022 ï¿½ç°¢ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
  * 
- * @author: Naesung
+ * @author: Choi Minseo
  * @param {number} a
  * @param {number} b
  * @param {number} t

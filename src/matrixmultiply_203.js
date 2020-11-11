@@ -1,7 +1,7 @@
 /**
- * 203 Çà·Ä°ö
+ * 203 ï¿½ï¿½Ä°ï¿½
  * 
- * @author: DPS0340/Naesung(´ëÇÑ¼öÇÐÇùÈ¸ ÀÚ·á Áßº¹ ÅëÇÕ)
+ * @author: DPS0340/Choi Minseo(ï¿½ï¿½ï¿½Ñ¼ï¿½ï¿½ï¿½ï¿½ï¿½È¸ ï¿½Ú·ï¿½ ï¿½ßºï¿½ ï¿½ï¿½ï¿½ï¿½)
  * @param {matrix} matrixA
  * @param {matrix} matrixB
  * @return {matrix} Matrix product of matrixA and matrixB
@@ -9,7 +9,7 @@
  */
 exports.matrixMultiply = function (matrixA, matrixB) {
     if (matrixA[0].length !== matrixB.length) {
-        console.log('Àß¸øµÈ Çà·Ä°ö ÀÎÀÚÀÇ Å©±â')
+        console.log('ï¿½ß¸ï¿½ï¿½ï¿½ ï¿½ï¿½Ä°ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Å©ï¿½ï¿½')
         return
     }
     let result = []

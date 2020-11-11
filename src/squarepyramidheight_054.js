@@ -1,7 +1,7 @@
 /**
- * 054 Á¤»ç°¢»ÔÀÇ ³ôÀÌ °ø½Ä
+ * 054 ï¿½ï¿½ï¿½ç°¢ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
  * 
- * @author: Naesung
+ * @author: Choi Minseo
  * @param {number} a
  * @param {number} b
  * @return {number} The height of square pyramid

@@ -1,7 +1,7 @@
 /**
- * 211 ¶óµð¾È-60µµ¹ý º¯È¯
+ * 211 ï¿½ï¿½ï¿½ï¿½-60ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È¯
  * 
- * @author: Naesung
+ * @author: Choi Minseo
  * @param {number} rad
  * @return {number} Convert radian to degree
  * @since <0.37.0

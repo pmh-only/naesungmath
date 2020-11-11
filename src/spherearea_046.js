@@ -1,7 +1,7 @@
 /**
- * 046 ±¸ÀÇ °Ñ³ÐÀÌ
+ * 046 ï¿½ï¿½ï¿½ï¿½ ï¿½Ñ³ï¿½ï¿½ï¿½
  * 
- * @author: Naesung
+ * @author: Choi Minseo
  * @param {number} r
  * @return {number} The surface area of sphere
  * @since <0.37.0

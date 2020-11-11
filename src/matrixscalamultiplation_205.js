@@ -1,7 +1,7 @@
 /**
- * 205 Çà·ÄÀÇ ½ºÄ®¶ó°ö
+ * 205 ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ä®ï¿½ï¿½ï¿½
  * 
- * @author: DPS0340/Naesung(Merged)
+ * @author: DPS0340/Choi Minseo(Merged)
  * @param {matrix} matrix
  * @param {number} k
  * @return {number} Matrix scalar product

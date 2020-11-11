@@ -1,7 +1,7 @@
 /**
- * 000H ·£´ý
+ * 000H ï¿½ï¿½ï¿½ï¿½
  * 
- * @author: Naesung
+ * @author: Choi Minseo
  * @param {number} a
  * @param {number} b
  * @return {number} random number from a to b

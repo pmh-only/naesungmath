@@ -1,7 +1,7 @@
 /**
- * 023 Á¤¿À°¢ÇüÀÇ ³ÐÀÌ °ø½Ä
+ * 023 ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
  * 
- * @author: Naesung
+ * @author: Choi Minseo
  * @param {number} a
  * @return {number} The height of pentagon with side a
  * @since <0.37.0

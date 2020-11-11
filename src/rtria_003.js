@@ -1,7 +1,7 @@
 /**
- * 003 Á÷°¢»ï°¢ÇüÀÇ ³ÐÀÌ
+ * 003 ï¿½ï¿½ï¿½ï¿½ï¿½ï°¢ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
  *  
- * @author: Naesung
+ * @author: Choi Minseo
  * @param {number} a
  * @param {number} b
  * @return {number} Area of right triangle with each side a and b

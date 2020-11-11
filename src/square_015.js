@@ -1,7 +1,7 @@
 /**
- * 015 Á¤»ç°¢ÇüÀÇ ³ÐÀÌ °ø½Ä
+ * 015 ï¿½ï¿½ï¿½ç°¢ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
  * 
- * @author: Naesung
+ * @author: Choi Minseo
  * @param {number} a
  * @return {number} Area of a square with one side a
  * @since <0.37.0

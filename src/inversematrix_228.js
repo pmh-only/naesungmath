@@ -1,7 +1,7 @@
 /**
  * 228 InverseMatrix
  *
- * @author: DPS0340, Naesung
+ * @author: DPS0340, Choi Minseo
  * @param {matrix} A
  * @return {number} InverseMatrix
  * @since <0.37.0

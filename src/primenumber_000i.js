@@ -1,7 +1,7 @@
 /**
- * 007 »ï°¢ÇüÀÇ ³ÐÀÌ
+ * 007 ï¿½ï°¢ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
  * 
- * @author: Naesung
+ * @author: Choi Minseo
  * @param {number} a
  * @param {number} h
  * @return {number} Area of triangle given base and height

@@ -1,7 +1,7 @@
 /**
  * 221 SingularValueDecomposition
  *
- * @author: DPS0340, Naesung
+ * @author: DPS0340, Choi Minseo
  * @param {matrix} mat
  * @return {number} SingularValueDecomposition
  * @since <0.37.0

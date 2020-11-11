@@ -1,12 +1,12 @@
 /**
- * 025 Á¤¿À°¢ÇüÀÇ ´ë°¢¼± ±æÀÌ
+ * 025 ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ë°¢ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
  * 
- * @author: Naesung
+ * @author: Choi Minseo
  * @param {number} a
  * @return {number} The length of digonal of pentagon
  * @since <0.37.0
  */
 exports.pentagonDiagonal = function (a) {
-    // °£´ÜÇÑ °ÍÀÎµ¥ ±ÍÂúÀº °ÍÀÌ¶ó ÀÛ¼º//
+    // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Îµï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ì¶ï¿½ ï¿½Û¼ï¿½//
     return ((1 + ((5) ** 0.5) / 2) * (a))
 }

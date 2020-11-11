@@ -1,7 +1,7 @@
 /**
- * 049 ¿ø»ÔÀÇ ºÎÇÇ
+ * 049 ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
  * 
- * @author: Naesung
+ * @author: Choi Minseo
  * @param {number} r
  * @param {number} h
  * @return {number} The volume of cone

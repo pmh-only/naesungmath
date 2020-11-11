@@ -1,7 +1,7 @@
 /**
- * 018 Á÷»ç°¢ÇüÀÇ ´ë°¢¼± ±æÀÌ °ø½Ä
+ * 018 ï¿½ï¿½ï¿½ç°¢ï¿½ï¿½ï¿½ï¿½ ï¿½ë°¢ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
  * 
- * @author: Naesung
+ * @author: Choi Minseo
  * @param {number} a
  * @param {number} b
  * @return {number} Pythagoras Theorem

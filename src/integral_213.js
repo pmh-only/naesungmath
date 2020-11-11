@@ -1,7 +1,7 @@
 /**
- * 213 ÀûºÐ
+ * 213 ï¿½ï¿½ï¿½ï¿½
  * 
- * @author: DPS0340, Naesung
+ * @author: DPS0340, Choi Minseo
  * @param {string} f
  * @return {number} Integral
  * @since <0.37.0

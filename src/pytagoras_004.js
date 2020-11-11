@@ -1,7 +1,7 @@
 /**
- * 004 ÇÇÅ¸°í¶ó½º Á¤¸®
+ * 004 ï¿½ï¿½Å¸ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
  * 
- * @author: Naesung
+ * @author: Choi Minseo
  * @param {number} a
  * @param {number} b
  * @return {number} The length of the hypotenuse when each side is a, b in a right triangle

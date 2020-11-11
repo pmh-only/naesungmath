@@ -1,7 +1,7 @@
 /**
- * 005 ÀÌµîº¯»ï°¢ÇüÀÇ ³ÐÀÌ
+ * 005 ï¿½Ìµîº¯ï¿½ï°¢ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
  *  
- * @author: Naesung
+ * @author: Choi Minseo
  * @param {number} a
  * @param {number} b
  * @return {number} The length of an isosceles triangle with equal side a and base b

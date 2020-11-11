@@ -1,7 +1,7 @@
 /**
- * 002 Á¤»ï°¢ÇüÀÇ ³ôÀÌ
+ * 002 ï¿½ï¿½ï¿½ï°¢ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
  * 
- * @author: Naesung
+ * @author: Choi Minseo
  * @param {number} a
  * @param {number} b
  * @return {number} a plus b

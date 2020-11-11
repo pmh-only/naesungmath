@@ -1,7 +1,7 @@
 /**
- * 050 ¿ø»ÔÀÇ °Ñ³ÐÀÌ
+ * 050 ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ñ³ï¿½ï¿½ï¿½
  * 
- * @author: Naesung
+ * @author: Choi Minseo
  * @param {number} r
  * @param {number} h
  * @return {number} The surface area of cone

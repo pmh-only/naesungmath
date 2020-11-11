@@ -1,7 +1,7 @@
 /**
- * 028.2 ´Ù°¢ÇüÀÇ ³»°¢ÀÇ ÇÕ_È£µµ¹ý
+ * 028.2 ï¿½Ù°ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½_È£ï¿½ï¿½ï¿½ï¿½
  * 
- * @author: Naesung
+ * @author: Choi Minseo
  * @param {number} n
  * @return {number} The sum of the polygons cabinet (radian)
  * @since <0.37.0

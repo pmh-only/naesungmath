@@ -1,7 +1,7 @@
 /**
- * 000J È£µµ¹ý
+ * 000J È£ï¿½ï¿½ï¿½ï¿½
  * 
- * @author: Naesung
+ * @author: Choi Minseo
  * @param {number} a
  * @return {number} change a to radian
  * @since <0.37.0

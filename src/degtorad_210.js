@@ -1,7 +1,7 @@
 /**
- * 210 60µµ¹ý-¶óµð¾È º¯È¯
+ * 210 60ï¿½ï¿½ï¿½ï¿½-ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È¯
  * 
- * @author: Naesung
+ * @author: Choi Minseo
  * @param {number} deg
  * @return {number} Convert degree to radian
  * @since <0.37.0

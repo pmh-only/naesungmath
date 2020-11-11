@@ -1,7 +1,7 @@
 /**
- * 021 »ç´Ù¸®²ÃÀÇ ³ÐÀÌ °ø½Ä
+ * 021 ï¿½ï¿½Ù¸ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
  * 
- * @author: Naesung
+ * @author: Choi Minseo
  * @param {number} a
  * @param {number} b
  * @param {number} h

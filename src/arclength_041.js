@@ -1,7 +1,7 @@
 /**
- * 041 È£ÀÇ ±æÀÌ °ø½Ä
+ * 041 È£ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
  * 
- * @author: Naesung
+ * @author: Choi Minseo
  * @param {number} r
  * @param {number} l
  * @return {number} The length of arc

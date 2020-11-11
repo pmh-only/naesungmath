@@ -1,7 +1,7 @@
 /**
- * 028.1 ´Ù°¢ÇüÀÇ ³»°¢ÀÇ ÇÕ_60ºÐ¹ý
+ * 028.1 ï¿½Ù°ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½_60ï¿½Ð¹ï¿½
  * 
- * @author: Naesung
+ * @author: Choi Minseo
  * @param {number} n
  * @return {number} The sum of the polygons cabinet (degree)
  * @since <0.37.0
