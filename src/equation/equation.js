@@ -6,7 +6,7 @@
  * @param {number} b
  * @param {number} c
  * @return {number} Root formula
- * @since <0.37.0
+ * 
  */
 exports.rootFormula_plus = function (a, b, c) {
     return ((-b + (((b ** 2) - (4 * a * c)) ** 0.5)) / (2 * a))
@@ -20,7 +20,7 @@ exports.rootFormula_plus = function (a, b, c) {
  * @param {number} b
  * @param {number} c
  * @return {number} Root formula
- * @since <0.37.0
+ * 
  */
 exports.rootFormula_minus = function (a, b, c) {
     return ((-b - (((b ** 2) - (4 * a * c)) ** 0.5)) / (2 * a))
@@ -34,7 +34,7 @@ exports.rootFormula_minus = function (a, b, c) {
  * @param {number} b
  * @param {number} c
  * @return {number} Root formula(even root)
- * @since <0.37.0
+ * 
  */
 exports.rootFormula_EvenPlus = function (a, b, c) {
     return ((-(0.5 * b) + ((((0.5 * b) ** 2) - (a * c)) ** 0.5)) / a)
@@ -48,7 +48,7 @@ exports.rootFormula_EvenPlus = function (a, b, c) {
  * @param {number} b
  * @param {number} c
  * @return {number} Root formula(even root)
- * @since <0.37.0
+ * 
  */
 exports.rootFormula_EvenMinus = function (a, b, c) {
     return ((-(0.5 * b) - ((((0.5 * b) ** 2) - (a * c)) ** 0.5)) / a)
@@ -63,7 +63,7 @@ exports.rootFormula_EvenMinus = function (a, b, c) {
  * @param {number} c
  * @param {number} type
  * @return {number} Relation of root and coefficient
- * @since <0.37.0
+ * 
  */
 exports.rootAndCoefficient = function (a, b, c, type) {
     if (type === 1) return -(b / a)
@@ -79,7 +79,7 @@ exports.rootAndCoefficient = function (a, b, c, type) {
  * @param {number} c
  * @param {number} d
  * @return {number} Root formula of cubic equation
- * @since <0.37.0
+ * 
  */
 exports.cubicEquation_first = function (a, b, c, d) {
     let x = (((0.5 * ((2 * (b ** 3) - (9 * a * b * c) + (27 * (a ** 2) * d) + (((2 * (b ** 3) - (9 * a * b * c) + (27 * (a ** 2) * d)) ** 2) - 4((b ** 2) - 3 * a * c) ** 3) ** 0.5))) ** (1 / 3)))

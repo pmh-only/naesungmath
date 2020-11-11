@@ -4,7 +4,7 @@
  * @author: DPS0340/Choi Minseo(Merged)
  * @param {matrix} matrix
  * @return {number} Determinant
- * @since <0.37.0
+ * 
  */
 exports.determinant = function (matrix) {
     if (matrix.length !== matrix[0].length) {

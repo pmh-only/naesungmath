@@ -1,12 +1,12 @@
 /**
- * 207 °¡¿ì½º ¼Ò°Å¹ý
+ * 207 ï¿½ï¿½ï¿½ì½º ï¿½Ò°Å¹ï¿½
  * 
  * @author: DPS0340
  * @param {matrix} matrix
  * @param {number} m
  * @param {nmuber} n
  * @return {number} Gaussian elimination
- * @since <0.37.0
+ * 
  */
 exports.gaussian = function (matrix, m, n) {
     let X = []

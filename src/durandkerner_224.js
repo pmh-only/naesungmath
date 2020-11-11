@@ -3,7 +3,7 @@
  * @author: DPS0340
  * @param {string} f
  * @return {number} Finding Multiple Roots of Function.
- * @since <0.37.0
+ * 
  */
 exports.Durand_Kerner = function (f, rootsNumber = 1, iterationCount = 15) {
     let roots = []

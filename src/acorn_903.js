@@ -5,7 +5,7 @@
  *  
  * @author: DPS0340
  * @return {random}
- * @since <0.37.0
+ * 
  */
 exports.ACORN = function (seed = new Date().getTime(), moduloPower = 60, order = 10) {
     let M = 2 ** moduloPower

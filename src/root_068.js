@@ -1,14 +1,14 @@
 /**
- * 068 Á¦°ö±Ù ±Ù»ñ°ª
+ * 068 ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ù»ï¿½
  * 
  * @param {number} val
  * @param {number} digit_
  * @return {number}
- * @since <0.37.0
+ * 
  * 
  */
 
-function Root() { // ÇÔ¼ö¾Æ´Ô ÇÁ·ÎÅäÅ¸ÀÔÀÓ
+function Root() { // ï¿½Ô¼ï¿½ï¿½Æ´ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å¸ï¿½ï¿½ï¿½ï¿½
     this.get = function (val, digit_) {
         let digit = digit_ || 10
         return parseFloat((val ** 0.5).toFixed(digit))

@@ -5,7 +5,7 @@
  * @param {matrix} matrix
  * @param {number} k
  * @return {number} Matrix scalar product
- * @since <0.37.0
+ * 
  */
 exports.matrixScalaMultiplation = function (matrix, k) {
     let res = []

@@ -6,7 +6,7 @@
  * @param {number} a
  * @param {number} count
  * @return Taylor series
- * @since <0.37.0
+ * 
  */
 exports.taylor = function (f, a, count) {
     let diffs = [(x) => f(a)]

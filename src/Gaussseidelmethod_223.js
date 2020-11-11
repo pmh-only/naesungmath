@@ -4,7 +4,7 @@
  * @param {number} a
  * @param {number} b
  * @return {number} Gauss–Seidel method.
- * @since <0.37.0
+ * 
  */
 exports.Gauss_Seidel = function (mat, iterationCount = 15) {
     let x = []

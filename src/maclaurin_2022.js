@@ -1,11 +1,11 @@
 /**
- * 202.2 ¸ÅÅ¬·Î¸° ±Þ¼ö
+ * 202.2 ï¿½ï¿½Å¬ï¿½Î¸ï¿½ ï¿½Þ¼ï¿½
  * 
  * @author: DPS0340
  * @param {number} f
  * @param {number} count
  * @return {number} Maclaurin series
- * @since <0.37.0
+ * 
  */
 exports.maclaurin = function (f, count) {
     return exports.taylor(f, 0, count)

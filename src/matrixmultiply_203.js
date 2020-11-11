@@ -5,7 +5,7 @@
  * @param {matrix} matrixA
  * @param {matrix} matrixB
  * @return {matrix} Matrix product of matrixA and matrixB
- * @since <0.37.0
+ * 
  */
 exports.matrixMultiply = function (matrixA, matrixB) {
     if (matrixA[0].length !== matrixB.length) {

@@ -1,12 +1,12 @@
 /**
- * 201 ╢╨ео ╧Ф╧Щ
+ * 201 О©╫О©╫О©╫О©╫ О©╫О©╫О©╫
  * 
  * @author: DPS0340
  * @param {number} f
  * @param {number} count
  * @param {number} initx
  * @return Newton's method
- * @since <0.37.0
+ * 
  */
 exports.newtonsMethod = function (f, count, initx = 2) {
     function diff(f, x, density = 5) {

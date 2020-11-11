@@ -6,7 +6,7 @@
  * @param {number} b
  * @param {number} c
  * @return {number} Heron's formula
- * @since <0.37.0
+ * 
  */
 exports.heron = function (a, b, c) {
     let cosTheta = ((a * a) + (b * b) - (c * c)) / (2 * a * b)
