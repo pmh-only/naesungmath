@@ -4,7 +4,7 @@
  * @author: DPS0340
  * @param {string} mat
  * @return {number} houseHolder
- * @since <0.37.0
+ * 
  */
 exports.houseHolder = function (mat) {
     function SG(N) {

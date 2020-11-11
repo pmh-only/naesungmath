@@ -4,7 +4,7 @@
  * @author: DPS0340
  * @param {string} len
  * @return {number}
- * @since <0.37.0
+ * 
  */
 exports.randomVector = function (len, norm = 1) {
     let x = []

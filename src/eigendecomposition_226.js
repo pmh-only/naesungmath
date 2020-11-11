@@ -3,7 +3,7 @@
  * @author: DPS0340
  * @param {matrix} mat
  * @return {number} Eigendecomposition of a matrix.
- * @since <0.37.0
+ * 
  */
 exports.EigenVectorDecomposition = function (mat, iterationCount = 100) {
     let V = []

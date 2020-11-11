@@ -4,7 +4,7 @@
  * @author: DPS0340, Choi Minseo
  * @param {matrix} mat
  * @return {number} SingularValueDecomposition
- * @since <0.37.0
+ * 
  */
 exports.SingularValueDecomposition = function (mat, iterationCount = 2) {
  let M = mat;

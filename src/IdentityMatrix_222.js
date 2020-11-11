@@ -4,7 +4,7 @@
  * @author: DPS0340, Choi Minseo
  * @param {string} n
  * @return {number} IdentityMatrix
- * @since <0.37.0
+ * 
  */
 exports.IdentityMatrix = function (n) {
     let res = []

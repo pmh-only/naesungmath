@@ -4,7 +4,7 @@
  * @author: DPS0340
  * @param {string} mat
  * @return {number} Solves System of linear equations.
- * @since <0.37.0
+ * 
  */
 exports.Cramer = function (mat) {
     let B = []

@@ -1,10 +1,10 @@
 /**
- * 217 LQ ºÐÇØ
+ * 217 LQ ï¿½ï¿½ï¿½ï¿½
  * 
  * @author: DPS0340
  * @param {string} mat
  * @return {number} LQDecomposition
- * @since <0.37.0
+ * 
  */
 exports.LQDecomposition = function (mat, iterationCount = 1000) {
     let AT = exports.transpose(mat)

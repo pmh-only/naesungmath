@@ -4,7 +4,7 @@
  * @author: DPS0340, Choi Minseo
  * @param {matrix} A
  * @return {number} InverseMatrix
- * @since <0.37.0
+ * 
 */
 exports.InverseMatrix = function (A) {
     if (exports.determinant(A) === 0) {

@@ -5,7 +5,7 @@
  * @param {matrix} matrixA
  * @param {matrix} matrixB
  * @return {number} Matrix subtraction of matrixA and matrixB
- * @since <0.37.0
+ * 
  */
 exports.matrixAdd = function (matrixA, matrixB) {
     if (matrixA.length !== matrixB.length || matrixA[0].length !== matrixB[0].length) {

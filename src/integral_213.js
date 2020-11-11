@@ -4,7 +4,7 @@
  * @author: DPS0340, Choi Minseo
  * @param {string} f
  * @return {number} Integral
- * @since <0.37.0
+ * 
  */
 exports.integral = function (f, density = 5) {
     let g = (a, b) => {

@@ -1,14 +1,14 @@
 /**
- * 204 LU ºÐÇØ¹ý
+ * 204 LU ï¿½ï¿½ï¿½Ø¹ï¿½
  * 
  * @author: DPS0340
  * @param {matrix} matrix
  * @return {number} LUDecompostion of matrix
- * @since <0.37.0
+ * 
  */
 exports.LUDecomposition = function (matrix) {
     if (matrix.length !== matrix[0].length) {
-        console.log('Çà°ú ¿­ÀÇ Å©±â°¡ °°Áö ¾ÊÀ½')
+        console.log('ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ Å©ï¿½â°¡ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½')
         return
     }
     const len = matrix.length

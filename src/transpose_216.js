@@ -1,10 +1,10 @@
 /**
- * 216 ±³Â÷
+ * 216 ï¿½ï¿½ï¿½ï¿½
  * 
  * @author: DPS0340
  * @param {string} mat
  * @return {number} transpose
- * @since <0.37.0
+ * 
  */
 exports.transpose = function (mat) {
     let res = []
