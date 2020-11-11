@@ -21,7 +21,6 @@ Or with yarn:
 ## Contributors
 Contributors Not yet.
 
-
 ## 저작권
 Copyright 2020 Choi Minseo Licensed under the
 Educational Community License, Version 2.0 (the "License"); you may
