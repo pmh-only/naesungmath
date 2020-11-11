@@ -1,7 +1,7 @@
 /**
- * 059 Á¤À°¸éÃ¼ÀÇ °Ñ³ÐÀÌ °ø½Ä
+ * 059 ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã¼ï¿½ï¿½ ï¿½Ñ³ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
  * 
- * @author: Naesung
+ * @author: Choi Minseo
  * @param {number} a
  * @return {number} The surface area of cube
  * @since <0.37.0

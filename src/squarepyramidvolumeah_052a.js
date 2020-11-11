@@ -1,7 +1,7 @@
 /**
- * 052A Á¤»ç°¢»ÔÀÇ ºÎÇÇ °ø½Ä
+ * 052A ï¿½ï¿½ï¿½ç°¢ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
  * 
- * @author: Naesung
+ * @author: Choi Minseo
  * @param {number} a
  * @param {number} h
  * @return {number}  The volume of square pyramid

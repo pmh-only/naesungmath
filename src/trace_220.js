@@ -1,7 +1,7 @@
 /**
  * 220 trace
  *
- * @author: Naesung
+ * @author: Choi Minseo
  * @param {matrix} 
  * @return {number} trace
  * @since <0.37.0

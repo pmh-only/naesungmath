@@ -1,7 +1,7 @@
 /**
- * 000G Á¦°ö
+ * 000G ï¿½ï¿½ï¿½ï¿½
  * 
- * @author: Naesung
+ * @author: Choi Minseo
  * @param {number} a
  * @return {number} root a
  * @since <0.37.0

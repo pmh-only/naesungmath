@@ -1,7 +1,7 @@
 /**
- * 061 Á÷À°¸éÃ¼ÀÇ °Ñ³ÐÀÌ °ø½Ä
+ * 061 ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã¼ï¿½ï¿½ ï¿½Ñ³ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
  * 
- * @author: Naesung
+ * @author: Choi Minseo
  * @param {number} a
  * @param {number} b
  * @param {number} c

@@ -1,7 +1,7 @@
 /**
  * 222 IdentityMatrix
  *
- * @author: DPS0340, Naesung
+ * @author: DPS0340, Choi Minseo
  * @param {string} n
  * @return {number} IdentityMatrix
  * @since <0.37.0

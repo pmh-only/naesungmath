@@ -1,7 +1,7 @@
 /**
- * 016 Á÷»ç°¢ÇüÀÇ ³ÐÀÌ °ø½Ä
+ * 016 ï¿½ï¿½ï¿½ç°¢ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
  * 
- * @author: Naesung
+ * @author: Choi Minseo
  * @param {number} a
  * @param {number} b
  * @return {number} THe area of rectangle with the side is a, b

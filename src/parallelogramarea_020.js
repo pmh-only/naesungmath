@@ -1,7 +1,7 @@
 /**
- * 020 ÆòÇà»çº¯ÇüÀÇ ³ÐÀÌ °ø½Ä
+ * 020 ï¿½ï¿½ï¿½ï¿½çº¯ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
  * 
- * @author: Naesung
+ * @author: Choi Minseo
  * @param {number} a
  * @param {number} h
  * @return {number} The area of parallelogram

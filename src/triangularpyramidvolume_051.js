@@ -1,7 +1,7 @@
 /**
- * 051 »ï°¢»ÔÀÇ ºÎÇÇ, »ï°¢ÇüÀÇ ³ÐÀÌ´Â À§¿¡ ÀÕ´Â °Í »ç¿ë
+ * 051 ï¿½ï°¢ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½, ï¿½ï°¢ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ì´ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Õ´ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½
  * 
- * @author: Naesung
+ * @author: Choi Minseo
  * @param {number} a
  * @param {number} h
  * @return {number} The volume of triangular cone

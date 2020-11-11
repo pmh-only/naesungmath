@@ -1,7 +1,7 @@
 /**
- * 009 ³»Á¢¿ø°ú »ï°¢ÇüÀÇ ³ÐÀÌ °ø½Ä
+ * 009 ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï°¢ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
  * 
- * @author: Naesung
+ * @author: Choi Minseo
  * @param {number} a
  * @param {number} b
  * @param {number} c

@@ -1,7 +1,7 @@
 /**
  * 219 outterProduct_matrix
  *
- * @author: Naesung
+ * @author: Choi Minseo
  * @param {matrix} u
  * @param {matrix} v
  * @return {matrix} outterProduct_matrix

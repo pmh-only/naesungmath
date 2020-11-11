@@ -1,6 +1,6 @@
 /**
- * 001 Á¤»ï°¢ÇüÀÇ ³ÐÀÌ
- * @author: Naesung
+ * 001 ï¿½ï¿½ï¿½ï°¢ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+ * @author: Choi Minseo
  * @param {number} a
  * @param {number} b
  * @return {number} a plus b

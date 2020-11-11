@@ -1,7 +1,7 @@
 /**
- * 019 ¸¶¸§¸ðÀÇ ³ÐÀÌ °ø½Ä
+ * 019 ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
  * 
- * @author: Naesung
+ * @author: Choi Minseo
  * @param {number} a
  * @param {number} b
  * @return {number} The area of rhombus with digonal a, b

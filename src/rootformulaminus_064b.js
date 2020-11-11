@@ -1,7 +1,7 @@
 /**
- * 064B ±ÙÀÇ °ø½Ä
+ * 064B ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
  * 
- * @author: Naesung
+ * @author: Choi Minseo
  * @param {number} a
  * @param {number} b
  * @param {number} c

@@ -1,7 +1,7 @@
 /**
- * 027 ´Ù°¢ÇüÀÇ ´ë°¢¼± °ø½Ä
+ * 027 ï¿½Ù°ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ë°¢ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
  * 
- * @author: Naesung
+ * @author: Choi Minseo
  * @param {number} n
  * @return {number} The number of diagonal of polygon
  * @since <0.37.0

@@ -1,14 +1,14 @@
 /**
- * 206 Çà·Ä½Ä
+ * 206 ï¿½ï¿½Ä½ï¿½
  * 
- * @author: DPS0340/Naesung(Merged)
+ * @author: DPS0340/Choi Minseo(Merged)
  * @param {matrix} matrix
  * @return {number} Determinant
  * @since <0.37.0
  */
 exports.determinant = function (matrix) {
     if (matrix.length !== matrix[0].length) {
-        console.log('Çà°ú ¿­ÀÇ Å©±â°¡ °°Áö ¾ÊÀ½')
+        console.log('ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ Å©ï¿½â°¡ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½')
         return
     }
     if (matrix.length > 2) {

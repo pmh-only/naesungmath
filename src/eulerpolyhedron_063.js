@@ -1,7 +1,7 @@
 /**
- * 063 ¿ÀÀÏ·¯ ´Ù¸éÃ¼ Á¤¸®
+ * 063 ï¿½ï¿½ï¿½Ï·ï¿½ ï¿½Ù¸ï¿½Ã¼ ï¿½ï¿½ï¿½ï¿½
  * 
- * @author: Naesung
+ * @author: Choi Minseo
  * @param {number} v
  * @param {number} e
  * @param {number} f

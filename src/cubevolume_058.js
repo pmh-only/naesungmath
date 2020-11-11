@@ -1,7 +1,7 @@
 /**
- * 058 Á¤À°¸éÃ¼ÀÇ ºÎÇÇ °ø½Ä
+ * 058 ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã¼ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
  *  
- * @author: Naesung
+ * @author: Choi Minseo
  * @param {number} a
  * @return {number} The volume of cube
  * @since <0.37.0

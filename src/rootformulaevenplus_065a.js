@@ -1,7 +1,7 @@
 /**
- * 065A Â¦¼ö ±ÙÀÇ °ø½Ä
+ * 065A Â¦ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
  * 
- * @author: Naesung
+ * @author: Choi Minseo
  * @param {number} a
  * @param {number} b
  * @param {number} c

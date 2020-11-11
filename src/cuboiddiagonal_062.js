@@ -1,7 +1,7 @@
 /**
- * 062 Á÷À°¸éÃ¼ÀÇ ´ë°¢¼± ±æÀÌ °ø½Ä
+ * 062 ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã¼ï¿½ï¿½ ï¿½ë°¢ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
  * 
- * @author: Naesung
+ * @author: Choi Minseo
  * @param {number} a
  * @param {number} b
  * @param {number} c

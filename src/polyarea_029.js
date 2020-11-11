@@ -1,7 +1,7 @@
 /**
- * 029 Á¤´Ù°¢ÇüÀÇ ³ÐÀÌ
+ * 029 ï¿½ï¿½ï¿½Ù°ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
  * 
- * @author: Naesung
+ * @author: Choi Minseo
  * @param {number} n
  * @param {number} a
  * @return {number} The area of regular polygons

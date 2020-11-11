@@ -1,7 +1,7 @@
 /**
- * 030 Á¤´Ù°¢ÇüÀÇ ³»°¢
+ * 030 ï¿½ï¿½ï¿½Ù°ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
  * 
- * @author: Naesung
+ * @author: Choi Minseo
  * @param {number} n
  * @return {number} The sum of cabinet of polygon (degree)
  * @since <0.37.0

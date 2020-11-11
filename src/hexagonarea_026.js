@@ -1,8 +1,8 @@
-// 026 Á¤À°°¢ÇüÀÇ ³ÐÀÌ °ø½Ä/
+// 026 ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½/
 /**
- * °¡Àå ºü¸¥ °É·Î
+ * ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½É·ï¿½
  * 
- * @author: Naesung
+ * @author: Choi Minseo
  * @param {number} a
  * @return {number} The area of hexagon with on side a
  * @since <0.37.0

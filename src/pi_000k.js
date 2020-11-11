@@ -1,7 +1,7 @@
 /**
- * 000K ÆÄÀÌ
+ * 000K ï¿½ï¿½ï¿½ï¿½
  * 
- * @author: Naesung
+ * @author: Choi Minseo
  * @return {number} pi
  * @since <0.37.0
  */

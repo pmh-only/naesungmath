@@ -1,7 +1,7 @@
 /**
- * 017 Á÷»ç°¢ÇüÀÇ µÑ·¹ °ø½Ä
+ * 017 ï¿½ï¿½ï¿½ç°¢ï¿½ï¿½ï¿½ï¿½ ï¿½Ñ·ï¿½ ï¿½ï¿½ï¿½ï¿½
  * 
- * @author: Naesung
+ * @author: Choi Minseo
  * @param {number} a
  * @param {number} b
  * @return {number} The circumstance of rectangle with the side is a, b

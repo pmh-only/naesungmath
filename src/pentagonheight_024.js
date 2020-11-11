@@ -1,7 +1,7 @@
 /**
- * 024 Á¤¿À°¢ÇüÀÇ ³ôÀÌ °ø½Ä
+ * 024 ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
  * 
- * @author: Naesung
+ * @author: Choi Minseo
  * @param {number} a
  * @return {number} The length of height of pentagon
  * @since <0.37.0

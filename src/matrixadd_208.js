@@ -1,7 +1,7 @@
 /**
- * 208 Çà·ÄÀÇ µ¡¼À
+ * 208 ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
  * 
- * @author: DPS0340/Naesung(Merged)
+ * @author: DPS0340/Choi Minseo(Merged)
  * @param {matrix} matrixA
  * @param {matrix} matrixB
  * @return {number} Matrix subtraction of matrixA and matrixB
@@ -9,7 +9,7 @@
  */
 exports.matrixAdd = function (matrixA, matrixB) {
     if (matrixA.length !== matrixB.length || matrixA[0].length !== matrixB[0].length) {
-        console.log('Çà·ÄÀÇ Å©±â ºÒÀÏÄ¡')
+        console.log('ï¿½ï¿½ï¿½ï¿½ï¿½ Å©ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ä¡')
         return
     }
     let result = []

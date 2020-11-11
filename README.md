@@ -6,8 +6,8 @@
 
 문의는 minseo0388@outlook.com, 129dot03@kakao.com으로 하면 됩니다.
 
-[![Coverage Status](https://coveralls.io/repos/github/Naesung/naesungmath/badge.svg?branch=master)](https://github.com/Naesung/naesungmath)
-[![Maintainability](https://api.codeclimate.com/v1/badges/5abbae229dbcd797e9ce/maintainability)](https://github.com/Naesung/naesungmath)
+[![Coverage Status](https://coveralls.io/repos/github/Choi Minseo/naesungmath/badge.svg?branch=master)](https://github.com/Choi Minseo/naesungmath)
+[![Maintainability](https://api.codeclimate.com/v1/badges/5abbae229dbcd797e9ce/maintainability)](https://github.com/Choi Minseo/naesungmath)
 
 ## npm package 배포
 Naesungmath로 배포됩니다.
@@ -29,7 +29,7 @@ naesungmath@0.3.1(202002)
 ## 저작권
 0.37.0 버전부터는 라이선스가 변경됩니다.
 
-Copyright 2020 Naesung Licensed under the
+Copyright 2020 Choi Minseo Licensed under the
 Educational Community License, Version 2.0 (the "License"); you may
 not use this file except in compliance with the License. You may
 obtain a copy of the License at
@@ -47,5 +47,5 @@ permissions and limitations under the License.
 
 ## Contributors
 
-[![Naesung](https://avatars0.githubusercontent.com/u/42634731?s=460&v=4)](https://github.com/Naesung) (0.0.1-0.37.0)
+[![Choi Minseo](https://avatars0.githubusercontent.com/u/42634731?s=460&v=4)](https://github.com/Choi Minseo) (0.0.1-0.37.0)
 [![DPS0340](https://avatars0.githubusercontent.com/u/32592965?s=460&v=4)](https://github.com/DPS0340) (0.0.1-0.3.0)

@@ -1,7 +1,7 @@
 /**
- * 202.1 Å×ÀÏ·¯ ±Þ¼ö
+ * 202.1 ï¿½ï¿½ï¿½Ï·ï¿½ ï¿½Þ¼ï¿½
  * 
- * @author: Naesung
+ * @author: Choi Minseo
  * @param {number} f
  * @param {number} a
  * @param {number} count

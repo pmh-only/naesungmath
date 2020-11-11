@@ -1,7 +1,7 @@
 /**
- * 000C °öÇÏ±â
+ * 000C ï¿½ï¿½ï¿½Ï±ï¿½
  * 
- * @author: Naesung
+ * @author: Choi Minseo
  * @param {number} a
  * @param {number} b
  * @return {number} a * b

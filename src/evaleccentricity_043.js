@@ -1,7 +1,7 @@
 /**
- * 043 Å¸¿øÀÇ ÀÌ½É·ü
+ * 043 Å¸ï¿½ï¿½ï¿½ï¿½ ï¿½Ì½É·ï¿½
  * 
- * @author: Naesung
+ * @author: Choi Minseo
  * @param {number} a
  * @param {number} b
  * @return {number} THe eccentricity of eval

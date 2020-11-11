@@ -1,7 +1,7 @@
 /**
  * 212 diff
  * 
- * @author: DPS0340, Naesung
+ * @author: DPS0340, Choi Minseo
  * @param {string} f
  * @return {number} Diff
  * @since <0.37.0
