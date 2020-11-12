@@ -2,24 +2,24 @@
     "name": "naesungmath",
     "version": "1.0.0",
     "description": "Math and Science",
-    "main": "/src",
+    "main": "/src/*",
   "scripts": {
     "test": "node main.js",
     "check": "npx standard"
   },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/Choi Minseo/naesungmath.git"
+        "url": "git+https://github.com/minseo0388/naesungmath.git"
     },
     "author": "Choi Minseo",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/Choi Minseo/naesungmath/issues"
+        "url": "https://github.com/minseo0388/naesungmath/issues"
     },
     "homepage": "https://MyNSLab.net",
     "keywords": [
         "Naesungmath",
-        "Choi Minseo",
+        "Naesung",
         "Nmath"
     ],
     "dependencies": {
