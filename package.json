@@ -2,7 +2,7 @@
     "name": "naesungmath",
     "version": "1.0.0",
     "description": "Math and Science",
-    "main": "/src/*",
+    "main": "/src/math.js",
   "scripts": {
     "test": "node main.js",
     "check": "npx standard"

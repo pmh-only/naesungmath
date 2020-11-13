@@ -21,7 +21,7 @@ Or with yarn:
 
 ## Contributors
 
-Contributors Not yet.
+[@AkiaCode](https://github.com/akiacode)
 
 ## 저작권
 
