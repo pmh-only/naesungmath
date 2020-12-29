@@ -125,6 +125,38 @@ exports.geometricSequence_an = function (a, n, r) {
 }
 
 /**
+ * 085 등비수열의 합 공식
+ * 
+ * @author: Choi Minseo
+ * @param {number} a 
+ * @param {number} r
+ * @param {number} n
+ * @return {number} Sum of geometric progression 
+ */
+exports.geometricProgressionSum = function(a, r, n) {
+    return a * (1 - (r**n)) / (1 - r)
+}
+
+/**
+ * 086 무한등비수열의 합
+ * 
+ * @author: Choi Minseo
+ * @param {number} a 
+ * @param {number} r
+ * @return {number} Sum of infinite geometric progression
+ */
+exports.geometricProgrssionInfinitySum = function (a, r) {
+    return a / (1 - r)
+}
+
+/**
+ * 
+ * @param {number} r 
+ * @param {number} n 
+ * @param {*} count 
+ */
+
+/**
  * 202.1 ���Ϸ� �޼�
  * 
  * @author: Choi Minseo
