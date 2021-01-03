@@ -1,6 +1,6 @@
 {
     "name": "naesungmath",
-    "version": "1.0.0",
+    "version": "2.0.0",
     "description": "Math and Science",
     "main": "/src/math.js",
   "scripts": {
@@ -16,7 +16,7 @@
     "bugs": {
         "url": "https://github.com/minseo0388/naesungmath/issues"
     },
-    "homepage": "https://MyNSLab.net",
+    "homepage": "https://MyNSLab.net/naesungmath",
     "keywords": [
         "Naesungmath",
         "Naesung",

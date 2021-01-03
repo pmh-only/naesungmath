@@ -150,13 +150,6 @@ exports.geometricProgrssionInfinitySum = function (a, r) {
 }
 
 /**
- * 
- * @param {number} r 
- * @param {number} n 
- * @param {*} count 
- */
-
-/**
  * 202.1 ���Ϸ� �޼�
  * 
  * @author: Choi Minseo

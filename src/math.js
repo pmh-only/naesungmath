@@ -20,7 +20,7 @@ module.exports = {
     calc: require('./calc/calc'),
     calculus: require('./calculus/calculus'),
     equation: require('./equation/equation'),
-    //matrix: require('./matrix/matrix'),
+    matrix: require('./matrix/matrix'),
     others: require('./others/others'),
     progress: require('./progress/progress'),
     vector: require('./vector/vector'),
