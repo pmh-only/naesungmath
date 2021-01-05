@@ -21,7 +21,7 @@ Or with yarn:
 
 ## Contributors
 
-[@AkiaCode](https://github.com/akiacode)
+[@AkiaCode](https://github.com/akiacode) [@comjun04](https://github.com/comjun04) [@DPS0340](https://github.com/dps0340) 
 
 ## 저작권
 
