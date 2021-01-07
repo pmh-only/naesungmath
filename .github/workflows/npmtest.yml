@@ -1,4 +1,0 @@
-name: NPM Test & Webhook
-# You may pin to the exact commit or the version.
-# uses: SenorGrande/Test-Webhook@fe7726ddf056196c60beb90e3e62c360d5a566af
-uses: SenorGrande/Test-Webhook@v1
