@@ -5,7 +5,7 @@
  * @param {number} a
  * @param {number} d
  * @param {number} n
- * @return {number} Arithmetic progresstion
+ * @return {number} Arithmetic progression
  
  */
 exports.arithmeticProgression = function (a, d, n) {
@@ -19,7 +19,7 @@ exports.arithmeticProgression = function (a, d, n) {
  * @param {number} d
  * @param {number} n
  * @param {number} s
- * @return {number} Arithmetic progresstion
+ * @return {number} Arithmetic progression
  
  */
 exports.arithmeticProgression_n = function (d, n, s) {
@@ -33,7 +33,7 @@ exports.arithmeticProgression_n = function (d, n, s) {
  * @param {number} a
  * @param {number} n
  * @param {number} s
- * @return {number} Arithmetic progresstion
+ * @return {number} Arithmetic progression
  
  */
 exports.arithmeticProgression_d = function (a, n, s) {
@@ -47,7 +47,7 @@ exports.arithmeticProgression_d = function (a, n, s) {
  * @param {number} a1
  * @param {number} an
  * @param {number} n
- * @return {number} Arithmetic progresstion
+ * @return {number} Arithmetic progression
  
  */
 exports.arithmeticProgressionSum_Term = function (a1, an, n) {
@@ -61,10 +61,10 @@ exports.arithmeticProgressionSum_Term = function (a1, an, n) {
  * @param {number} a1
  * @param {number} n
  * @param {number} d
- * @return {number} Arithmetic progresstion
+ * @return {number} Arithmetic progression
  
  */
-exports.artimeticProgressionSum = function (a1, n, d) {
+exports.arithmeticProgressionSum = function (a1, n, d) {
     return ((((2 * a1) + ((n - 1) * d)) / 2) * n)
 }
 
@@ -75,10 +75,10 @@ exports.artimeticProgressionSum = function (a1, n, d) {
  * @param {number} an
  * @param {number} n
  * @param {number} r
- * @return {number} Geometric sequence
+ * @return {number} Geometric progression
  
  */
-exports.geometricSequence_a = function (an, n, r) {
+exports.geometricProgression_a = function (an, n, r) {
     return (an / (r ** n))
 }
 
@@ -89,10 +89,10 @@ exports.geometricSequence_a = function (an, n, r) {
  * @param {number} an
  * @param {number} a
  * @param {number} r
- * @return {number} Geometric sequence
+ * @return {number} Geometric progression
  
  */
-exports.geometricSequence_n = function (an, a, r) {
+exports.geometricProgression_n = function (an, a, r) {
     return Math.log(an / a) / Math.log(r)
 }
 
@@ -103,10 +103,10 @@ exports.geometricSequence_n = function (an, a, r) {
  * @param {number} an
  * @param {number} a
  * @param {number} n
- * @return {number} Geometric sequence
+ * @return {number} Geometric progression
  
  */
-exports.geometricSequence_r = function (an, a, n) {
+exports.geometricProgress_r = function (an, a, n) {
     return ((an / a) ** (1 / n))
 }
 
@@ -117,10 +117,10 @@ exports.geometricSequence_r = function (an, a, n) {
  * @param {number} a
  * @param {number} n
  * @param {number} r
- * @return {number} Geometric sequence
+ * @return {number} Geometric progression
  
  */
-exports.geometricSequence_an = function (a, n, r) {
+exports.geometricProgression_an = function (a, n, r) {
     return (a * (r ** n))
 }
 
@@ -145,8 +145,90 @@ exports.geometricProgressionSum = function(a, r, n) {
  * @param {number} r
  * @return {number} Sum of infinite geometric progression
  */
-exports.geometricProgrssionInfinitySum = function (a, r) {
+exports.geometricProgressionInfinitySum = function (a, r) {
     return a / (1 - r)
+}
+
+/**
+ * 088.1 연속된 수로 구성된 수열의 합
+ * 
+ * @author: Choi Minseo
+ * @param {number} n 
+ * @param {number} k 
+ * @return {number} Sum of progress which number is consisted of consecutive numbers
+ */
+exports.sigma = function (n, k) {
+    return (((1 / 2) * n * (n + 1)) - ((1 / 2) * k * (k + 1)))
+}
+
+/**
+ * 088.2 제곱인 수로 구성된 수열의 합
+ * 
+ * @author: Choi Minseo
+ * @param {number} n 
+ * @param {number} k 
+ * @return {number} Sum of progress which number is consisted of the squares of numbers 
+ */
+exports.sigmaSquare = function (n, k) {
+    return (((1 / 6) * n * (n + 1) * ((2 * n) + 1)) - ((1 / 6) * k * (k + 1) * ((2 * k) + 1)))
+}
+
+/**
+ * 088.3 세제곱인 수로 구성된 수열의 합
+ * 
+ * @author: Choi Minseo
+ * @param {number} n 
+ * @param {number} k 
+ * @return {number} Sum of progress which number is consisted of the cubic number 
+ */
+exports.sigmaCube = function (n, k)  {
+    return (((1 / 4) * (n ** 2) * ((n + 1) ** 2)) - ((1 / 4) * (k ** 2) * ((k + 1) ** 2)))
+}
+
+/**
+ * 089.1 무한급수(분모가 n!이고 분자가 x의 k제곱)
+ * @param {number} x 
+ * @return {number} Infinite series (the denominator is n! and the numerator is x to the power of k)
+ */
+exports.infiniteSeries_1 = function (x) {
+    return (Math.E ** x)
+}
+
+/**
+ * 089.2 무한급수(분모가 n!이고 분자가 k 곱하기 x의 k제곱)
+ * @param {number} x 
+ * @return {number} Infinite series (The denominator is n! and the numerator is k times x to the power of k)
+ */
+exports.infiniteSeries_2 = function (x) {
+    return (x * (Math.E ** x))
+}
+
+/**
+ * 089.3 무한급수(x의 k제곱, |x| < 1)
+ * @param {number} x 
+ * @return {number} Infinite series (x to the power of k, |x| < 1)
+ */
+exports.infiniteSeries_3 = function (x) {
+    if (x > 1 || x < -1 || x == 1 || x == -1) {
+        console.log('Check |x| < 1')
+    }
+    else {
+        return (1 / (1 - x))
+    }
+}
+
+/**
+ * 089.4 무한급수(k 곱하기 x의 k제곱, |x| < 1)
+ * @param {number} x 
+ * @return {number} Infinite series (k times x to the power of k, |x| < 1)
+ */
+exports.infiniteSeries_4 = function (x) {
+    if (x > 1 || x < -1 || x == 1 || x == -1) {
+        console.log('Check |x| < 1')
+    }
+    else {
+        return (x / ((1 - x) ** 2))
+    }
 }
 
 /**
