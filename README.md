@@ -6,6 +6,10 @@
 
 We made it based on **`<Math Formula>`**, which was distributed by the Korean Mathematical Society and Korean Mathematical Instructor Research Group.
 
+공식 221개 중 117개 완료 (52.9%)
+
+## Contributing
+
 Issue 와 Pull Request는 검토 후 과감히 수용합니다.
 
 Review and accept Issue and Pull Request boldly.
@@ -20,9 +24,21 @@ For more information, contact minseo0388@daum.net or 129dot03@kakao.com.
 
 ## npm package 배포
 
-**npmjs.org에 Naesungmath로 배포됩니다.**
+**npmjs.org에 `Naesungmath`로 배포됩니다.**
 
-**Published as Naesungmath at npmjs.org**
+**Published as `Naesungmath` at npmjs.org**
+
+**최신 안정화 버전은 `2.0.0` 입니다.**
+
+**The latest stabilized version is `2.0.0`.**
+
+### Update Notice
+
+**2.0.0 버전은 1.x대 버전과 호환되지 않습니다.**
+
+**2.0.0 version is `incompatible` with 1.x versions.**
+
+### Add package
 
 `npm i naesungmath`
 
@@ -38,11 +54,11 @@ Or with yarn:
 
 [@AkiaCode](https://github.com/akiacode) [@DPS0340](https://github.com/dps0340) [@comjun04](https://github.com/comjun04)
 
-## 저작권
+## License
 
-`라이선스 오류로 인해 소스 코드의 라이선스가 중복 표기되었습니다. 2.0.0 버전 부터 MIT 라이선스로 복구합니다.`
+**라이선스 오류로 인해 소스 코드의 라이선스가 중복 표기되었습니다. 2.0.0 버전 부터 MIT 라이선스로 복구합니다.**
 
-`License error caused the source code to be duplicated. Recover from version 2.0.0 to MIT license.`
+**License error caused the source code to be duplicated. Recover from version 2.0.0 to MIT license.**
 
 MIT License
 
