@@ -22,7 +22,7 @@ export function arithmeticProgression (a, d, n) {
  * @return {number} Arithmetic progression
 
  */
-export function arithmeticProgression_n (d, n, s) {
+export function arithmeticProgressionn (d, n, s) {
   return (s - (n - 1) * d)
 }
 
@@ -36,7 +36,7 @@ export function arithmeticProgression_n (d, n, s) {
  * @return {number} Arithmetic progression
 
  */
-export function arithmeticProgression_d (a, n, s) {
+export function arithmeticProgressiond (a, n, s) {
   return ((s - a) / (n - 1))
 }
 
@@ -50,7 +50,7 @@ export function arithmeticProgression_d (a, n, s) {
  * @return {number} Arithmetic progression
 
  */
-export function arithmeticProgressionSum_Term (a1, an, n) {
+export function arithmeticProgressionSumterm (a1, an, n) {
   return (((a1 + an) / 2) * n)
 }
 
@@ -78,7 +78,7 @@ export function arithmeticProgressionSum (a1, n, d) {
  * @return {number} Geometric progression
 
  */
-export function geometricProgression_a (an, n, r) {
+export function geometricProgressiona (an, n, r) {
   return (an / (r ** n))
 }
 
@@ -92,7 +92,7 @@ export function geometricProgression_a (an, n, r) {
  * @return {number} Geometric progression
 
  */
-export function geometricProgression_n (an, a, r) {
+export function geometricProgressionn (an, a, r) {
   return Math.log(an / a) / Math.log(r)
 }
 
@@ -106,7 +106,7 @@ export function geometricProgression_n (an, a, r) {
  * @return {number} Geometric progression
 
  */
-export function geometricProgress_r (an, a, n) {
+export function geometricProgressr (an, a, n) {
   return ((an / a) ** (1 / n))
 }
 
@@ -120,7 +120,7 @@ export function geometricProgress_r (an, a, n) {
  * @return {number} Geometric progression
 
  */
-export function geometricProgression_an (a, n, r) {
+export function geometricProgressionan (a, n, r) {
   return (a * (r ** n))
 }
 
@@ -190,7 +190,7 @@ export function sigmaCube (n, k) {
  * @param {number} x
  * @return {number} Infinite series (the denominator is n! and the numerator is x to the power of k)
  */
-export function infiniteSeries_1 (x) {
+export function infiniteSeries1 (x) {
   return (Math.E ** x)
 }
 
@@ -199,7 +199,7 @@ export function infiniteSeries_1 (x) {
  * @param {number} x
  * @return {number} Infinite series (The denominator is n! and the numerator is k times x to the power of k)
  */
-export function infiniteSeries_2 (x) {
+export function infiniteSeries2 (x) {
   return (x * (Math.E ** x))
 }
 
@@ -208,8 +208,8 @@ export function infiniteSeries_2 (x) {
  * @param {number} x
  * @return {number} Infinite series (x to the power of k, |x| < 1)
  */
-export function infiniteSeries_3 (x) {
-  if (x > 1 || x < -1 || x == 1 || x == -1) {
+export function infiniteSeries3 (x) {
+  if (x > 1 || x < -1 || x === 1 || x === -1) {
     console.log('Check |x| < 1')
   } else {
     return (1 / (1 - x))
@@ -221,8 +221,8 @@ export function infiniteSeries_3 (x) {
  * @param {number} x
  * @return {number} Infinite series (k times x to the power of k, |x| < 1)
  */
-export function infiniteSeries_4 (x) {
-  if (x > 1 || x < -1 || x == 1 || x == -1) {
+export function infiniteSeries4 (x) {
+  if (x > 1 || x < -1 || x === 1 || x === -1) {
     console.log('Check |x| < 1')
   } else {
     return (x / ((1 - x) ** 2))

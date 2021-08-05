@@ -55,7 +55,7 @@ export function polyarea (n, a) {
  * @return {number} The sum of cabinet of polygon (degree)
  *
  */
-export function polyAngle_Deg (n) {
+export function polyAngleDeg (n) {
   return (180 * (n - 2) / n)
 }
 
@@ -67,6 +67,6 @@ export function polyAngle_Deg (n) {
  * @return {number} The sum of cabinet of polygon (radian)
  *
  */
-export function polyAngle_Rad (n) {
+export function polyAngleRad (n) {
   return ((Math.PI) * (n - 2) / n)
 }

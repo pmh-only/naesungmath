@@ -158,7 +158,7 @@ export function determinant (matrix) {
  * @return {number} Finding Multiple Roots of Function.
  *
  */
-export function Durand_Kerner (f, rootsNumber = 1, iterationCount = 15) {
+export function DurandKerner (f, rootsNumber = 1, iterationCount = 15) {
   const roots = []
   for (let i = 0; i < rootsNumber; i++) {
     roots.push(i + 1)
@@ -313,7 +313,7 @@ export function gaussian (matrix, m, n) {
  * @return {number} Gauss–Seidel method.
  *
  */
-export function Gauss_Seidel (mat, iterationCount = 15) {
+export function GaussSeidel (mat, iterationCount = 15) {
   const x = []
 
   for (let i = 0; i < mat.length; i++) {
@@ -654,7 +654,7 @@ export function normailze (row) {
  * @return {matrix} outterProduct_matrix
  *
  */
-export function outterProduct_matrix (u, v) {
+export function outterProductmatrix (u, v) {
   return exports.matrixmultiply(u, exports.transpose(v))
 }
 

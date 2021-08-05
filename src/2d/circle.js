@@ -101,7 +101,7 @@ export function circularSectorAngle (r, l) {
  * @return {number} THe area of sector form
  *
  */
-export function circularSectorArea_rt (r, t) {
+export function circularSectorAreart (r, t) {
   return (0.5 * r * (t ** 2))
 }
 
@@ -114,7 +114,7 @@ export function circularSectorArea_rt (r, t) {
  * @return {number} The area of sector form
  *
  */
-export function circularSectorArea_rl (r, l) {
+export function circularSectorArearl (r, l) {
   return (0.5 * r * l)
 }
 
