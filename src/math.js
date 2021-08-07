@@ -1,12 +1,12 @@
 module.exports = {
   // 2d
-  circle: require('./2d/circle/circle'),
-  oval: require('./2d/oval/oval'),
-  triangle: require('./2d/triangle/triangle'),
-  rectangle: require('./2d/rectangle/rectangle'),
-  polygon: require('./2d/polygon/polygon'),
-  pentagon: require('./2d/pentagon/pentagon'),
-  hexagon: require('./2d/hexagon/hexagon'),
+  circle: require('./2d/circle'),
+  oval: require('./2d/oval'),
+  triangle: require('./2d/triangle'),
+  rectangle: require('./2d/rectangle'),
+  polygon: require('./2d/polygon'),
+  pentagon: require('./2d/pentagon'),
+  hexagon: require('./2d/hexagon'),
   // 3d
   cone: require('./3d/cone/cone'),
   cube: require('./3d/cube/cube'),
