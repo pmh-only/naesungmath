@@ -46,7 +46,7 @@ export function circumscribedCircleTriangleAreaAngle (a, b, c, r) {
 /**
  * 031 ���� ����
  *
- * @author: Naesung
+ * @author: Choi Minseo
  * @param {number} r
  * @return {number} The area of circle
  *
@@ -121,7 +121,7 @@ export function circularSectorArearl (r, l) {
 /**
  * 041 ȣ�� ���� ����
  *
- * @author: Naesung
+ * @author: Choi Minseo
  * @param {number} r
  * @param {number} l
  * @return {number} The length of arc

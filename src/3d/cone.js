@@ -1,7 +1,7 @@
 /**
  * 050 ������ �ѳ���
  *
- * @author: Naesung
+ * @author: Choi Minseo
  * @param {number} r
  * @param {number} h
  * @return {number} The surface area of cone
@@ -13,7 +13,7 @@ export function coneArea (r, h) {
 /**
  * 049 ������ ����
  *
- * @author: Naesung
+ * @author: Choi Minseo
  * @param {number} r
  * @param {number} h
  * @return {number} The volume of cone
