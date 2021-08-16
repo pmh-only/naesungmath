@@ -4,7 +4,7 @@
  * @author: Choi Minseo
  * @param {number} a
  * @param {number} b
- * @return {number} The area of eval
+ * @return {number} The area of oval
  *
  */
 export function ovalArea (a, b) {
@@ -17,7 +17,7 @@ export function ovalArea (a, b) {
  * @author: Choi Minseo
  * @param {number} a
  * @param {number} b
- * @return {number} THe eccentricity of eval
+ * @return {number} THe eccentricity of oval
  *
  */
 export function evalEccentricity (a, b) {

@@ -93,29 +93,22 @@ export function circularSectorAngle (r, l) {
 }
 
 /**
- * 040.2 ��ä���� ����_rt_no
+ * 040 ��ä���� ����
  *
  * @author: Choi Minseo
  * @param {number} r
  * @param {number} t
+ * @param {number} l
  * @return {number} THe area of sector form
  *
  */
-export function circularSectorAreart (r, t) {
-  return (0.5 * r * (t ** 2))
-}
-
-/**
- * 040 ��ä���� ����_rl
- *
- * @author: Choi Minseo
- * @param {number} r
- * @param {number} l
- * @return {number} The area of sector form
- *
- */
-export function circularSectorArearl (r, l) {
-  return (0.5 * r * l)
+export function circularSectorAreart (r, t, l) {
+  if (r != null) {
+    if (t != null || l != null) {
+      if (t != null) return (0.5 * r * (t ** 2))
+      else return (0.5 * r * l)
+    }
+  }
 }
 
 /**
@@ -140,5 +133,5 @@ export function arcLength (r, l) {
  *
  */
 export function degreeToRad (deg) {
-  return deg * Math.PI / 180
+  return (deg * Math.PI / 180)
 }
