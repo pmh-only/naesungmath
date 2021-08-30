@@ -1,6 +1,13 @@
 # Naesungmath
 
 [Official Docs](https://github.com/minseo0388)
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fminseo0388%2Fnaesungmath&count_bg=%23FFA800&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
+[![Coverage Status](https://coveralls.io/repos/github/minseo0388/naesungmath/badge.svg?branch=master)](https://github.com/minseo0388/naesungmath)
+[![Maintainability](https://api.codeclimate.com/v1/badges/5abbae229dbcd797e9ce/maintainability)](https://github.com/minseo0388/naesungmath)
+[![GitHub issues](https://img.shields.io/github/issues/minseo0388/naesungmath)](https://github.com/minseo0388/naesungmath/issues)
+[![GitHub forks](https://img.shields.io/github/forks/minseo0388/naesungmath)](https://github.com/minseo0388/naesungmath/network)
+[![GitHub stars](https://img.shields.io/github/stars/minseo0388/naesungmath)](https://github.com/minseo0388/naesungmath/stargazers)
+[![GitHub license](https://img.shields.io/github/license/minseo0388/naesungmath)](https://github.com/minseo0388/naesungmath/blob/master/LICENSE)
 
 대한수학회와 수학강사연구모임이 배포한 `과학은 마법이다! 주문을 외워보자 <수학공식>`을 기준으로 만들었습니다.
 
@@ -18,9 +25,7 @@ Review and accept Issue and Pull Request boldly.
 
 For more information, contact minseo0388@daum.net or 129dot03@kakao.com.
 
-[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fminseo0388%2Fnaesungmath&count_bg=%23FFA800&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
-[![Coverage Status](https://coveralls.io/repos/github/minseo0388/naesungmath/badge.svg?branch=master)](https://github.com/minseo0388/naesungmath)
-[![Maintainability](https://api.codeclimate.com/v1/badges/5abbae229dbcd797e9ce/maintainability)](https://github.com/minseo0388/naesungmath)
+
 
 ## npm package 배포
 
