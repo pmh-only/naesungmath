@@ -1,6 +1,6 @@
 # Naesungmath
 
-[Official Docs](https://github.com/minseo0388)
+[Official Docs](https://github.com/minseo0388/naesungmath)
 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fminseo0388%2Fnaesungmath&count_bg=%23FFA800&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
 [![Coverage Status](https://coveralls.io/repos/github/minseo0388/naesungmath/badge.svg?branch=master)](https://github.com/minseo0388/naesungmath)
 [![Maintainability](https://api.codeclimate.com/v1/badges/5abbae229dbcd797e9ce/maintainability)](https://github.com/minseo0388/naesungmath)
