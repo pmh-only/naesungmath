@@ -1,6 +1,6 @@
 module.exports = {
   // 2d
-  circle: require('./2d/circle'),
+  circle: require('./2d/210'),
   oval: require('./2d/oval'),
   triangle: require('./2d/triangle'),
   rectangle: require('./2d/rectangle'),
