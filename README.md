@@ -6,6 +6,8 @@ We made it based on `<Math Formula>`, which was distributed by the Korean Mathem
 
 공식 221개 중 117개 완료 (52.9%)
 
+[![image](https://nodei.co/npm/naesungmath.png?downloads=true&stars=true)](https://nodei.co/npm/naesungmath/)
+
 ## Contributing
 
 Issue 와 Pull Request는 검토 후 과감히 수용합니다.
