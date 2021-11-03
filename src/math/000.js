@@ -164,3 +164,19 @@ export function random (a, b) {
 export function sqrt (a) {
   return Math.sqrt(a)
 }
+
+/**
+ * 000H factorial
+ *
+ * @author: Choi Minseo
+ * @param {number} n
+ * @return n!
+ *
+ */
+export function factorial(n) {
+  const init = 1
+  for (let i = 1; i <= n; i++) {
+    result = init * i
+  }
+  return result
+}
